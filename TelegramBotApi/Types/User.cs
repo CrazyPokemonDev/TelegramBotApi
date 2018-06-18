@@ -38,6 +38,11 @@ namespace TelegramBotApi.Types
         public string LastName;
 
         /// <summary>
+        /// First and last name (if any) concatenated using a space
+        /// </summary>
+        public string FullName => (FirstName + " " + LastName).Trim();
+
+        /// <summary>
         /// The username of the user or bot, if any. Without the preceding "@".
         /// </summary>
         [JsonProperty(PropertyName = "username")]

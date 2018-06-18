@@ -46,9 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\ChatType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelegramBot.cs" />
     <Compile Include="Types\ApiResponse.cs" />
+    <Compile Include="Types\Chat.cs" />
     <Compile Include="Types\User.cs" />
   </ItemGroup>
   <ItemGroup>

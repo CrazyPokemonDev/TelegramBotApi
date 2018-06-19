@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TelegramBotApi.Enums
+﻿namespace TelegramBotApi.Enums
 {
+    /*
+     * 
+     * IF YOU ADD A TYPE HERE, ADD IT IN Chat.cs AS WELL!!!!!!!!
+     * ADD IT IN BOTH THE GETTER AND THE SETTER OF Type!
+     * 
+     */
+
     /// <summary>
     /// Type of a chat
     /// </summary>

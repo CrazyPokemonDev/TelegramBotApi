@@ -1,9 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TelegramBotApi.Enums;
 
 namespace TelegramBotApi.Types
@@ -21,7 +16,7 @@ namespace TelegramBotApi.Types
         public long Id;
 
         [JsonProperty(PropertyName = "type")]
-        private readonly string _type;
+        private string _type;
         /// <summary>
         /// Type of the chat
         /// </summary>
@@ -41,6 +36,27 @@ namespace TelegramBotApi.Types
                         return ChatType.Channel;
                     default:
                         return ChatType.Unknown;
+                }
+            }
+            set
+            {
+                switch (value)
+                {
+                    case ChatType.Channel:
+                        _type = "channel";
+                        break;
+                    case ChatType.Group:
+                        _type = "group";
+                        break;
+                    case ChatType.Private:
+                        _type = "private";
+                        break;
+                    case ChatType.Supergroup:
+                        _type = "supergroup";
+                        break;
+                    default:
+                        _type = "unknown";
+                        break;
                 }
             }
         }

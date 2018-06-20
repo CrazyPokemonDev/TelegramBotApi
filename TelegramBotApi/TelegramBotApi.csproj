@@ -47,17 +47,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\ChatType.cs" />
+    <Compile Include="Enums\MaskPositionPointType.cs" />
     <Compile Include="Enums\MessageEntityType.cs" />
     <Compile Include="Enums\ParseMode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelegramBot.cs" />
     <Compile Include="Types\ApiResponse.cs" />
     <Compile Include="Types\Audio.cs" />
+    <Compile Include="Types\ChatPhoto.cs" />
     <Compile Include="Types\Exceptions\ApiRequestException.cs" />
     <Compile Include="Types\Game\CallbackGame.cs" />
     <Compile Include="Types\CallbackQuery.cs" />
     <Compile Include="Types\Chat.cs" />
+    <Compile Include="Types\Contact.cs" />
     <Compile Include="Types\Document.cs" />
+    <Compile Include="Types\File.cs" />
     <Compile Include="Types\GameHighScore.cs" />
     <Compile Include="Types\Game\Animation.cs" />
     <Compile Include="Types\Game\Game.cs" />
@@ -97,6 +101,7 @@
     <Compile Include="Types\Markup\ReplyKeyboardMarkup.cs" />
     <Compile Include="Types\Markup\ReplyKeyboardRemove.cs" />
     <Compile Include="Types\Markup\ReplyMarkupBase.cs" />
+    <Compile Include="Types\MaskPosition.cs" />
     <Compile Include="Types\Message.cs" />
     <Compile Include="Types\MessageEntity.cs" />
     <Compile Include="Types\Payment\Invoice.cs" />
@@ -108,13 +113,18 @@
     <Compile Include="Types\Payment\ShippingQuery.cs" />
     <Compile Include="Types\Payment\SuccessfulPayment.cs" />
     <Compile Include="Types\PhotoSize.cs" />
+    <Compile Include="Types\Sticker.cs" />
+    <Compile Include="Types\StickerSet.cs" />
     <Compile Include="Types\Update.cs" />
     <Compile Include="Types\Upload\SendFile.cs" />
     <Compile Include="Types\Upload\SendFileId.cs" />
     <Compile Include="Types\Upload\SendFileMultipart.cs" />
     <Compile Include="Types\Upload\SendFileUrl.cs" />
     <Compile Include="Types\User.cs" />
+    <Compile Include="Types\UserProfilePictures.cs" />
+    <Compile Include="Types\Venue.cs" />
     <Compile Include="Types\Video.cs" />
+    <Compile Include="Types\VideoNote.cs" />
     <Compile Include="Types\Voice.cs" />
   </ItemGroup>
   <ItemGroup>

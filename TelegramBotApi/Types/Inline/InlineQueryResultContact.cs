@@ -4,18 +4,19 @@ using TelegramBotApi.Types.Markup;
 namespace TelegramBotApi.Types.Inline
 {
     /// <summary>
-    /// Represents a link to an article or web page.
+    /// Represents a contact with a phone number. By default, this contact will be sent by the user. 
+    /// Alternatively, you can use input_message_content to send a message with the specified content instead of the contact.
     /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
-    public class InlineQueryResultArticle : InlineQueryResult
+    public class InlineQueryResultContact : InlineQueryResult
     {
-        private string _type = "article";
+        private string _type = "contact";
 
         /// <summary>
-        /// Type of the result, must be article
+        /// Type of the result, must be contact
         /// </summary>
         [JsonProperty(PropertyName = "type", Required = Required.Always)]
-        public override string Type { get { return _type; } set { _type = "article"; } }
+        public override string Type { get { return _type; } set { _type = "contact"; } }
 
         /// <summary>
         /// Unique identifier for this result, 1-64 Bytes
@@ -24,17 +25,23 @@ namespace TelegramBotApi.Types.Inline
         public override string Id { get; set; }
 
         /// <summary>
-        /// Title of the result
+        /// Contact's phone number
         /// </summary>
-        [JsonProperty(PropertyName = "title", Required = Required.Always)]
-        public string Title;
+        [JsonProperty(PropertyName = "phone_number", Required = Required.Always)]
+        public string PhoneNumber;
 
         /// <summary>
-        /// Content of the message to be sent
+        /// Contact's first name
         /// </summary>
-        [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        [JsonProperty(PropertyName = "first_name", Required = Required.Always)]
+        public string FirstName;
 
+        /// <summary>
+        /// Optional. Contact's last name
+        /// </summary>
+        [JsonProperty(PropertyName = "last_name")]
+        public string LastName;
+        
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
@@ -42,27 +49,15 @@ namespace TelegramBotApi.Types.Inline
         public InlineKeyboardMarkup ReplyMarkup;
 
         /// <summary>
-        /// Optional. URL of the result
+        /// Content of the message to be sent instead of the contact
         /// </summary>
-        [JsonProperty(PropertyName = "url")]
-        public string Url;
-
-        /// <summary>
-        /// Optional. Pass True, if you don't want the URL to be shown in the message
-        /// </summary>
-        [JsonProperty(PropertyName = "hide_url")]
-        public bool HideUrl;
-
-        /// <summary>
-        /// Optional. Short description of the result
-        /// </summary>
-        [JsonProperty(PropertyName = "description")]
-        public string Description;
+        [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
+        public InputMessageContent InputMessageContent;
 
         /// <summary>
         /// Optional. Url of the thumbnail for the result
         /// </summary>
-        [JsonProperty(PropertyName = "thumb_url")]
+        [JsonProperty(PropertyName = "thumb_url", Required = Required.Always)]
         public string ThumbUrl;
 
         /// <summary>

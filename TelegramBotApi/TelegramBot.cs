@@ -55,6 +55,10 @@ namespace TelegramBotApi
                     args.Remove(kvp.Key);
                     return await ApiMethodMultipartAsync<T>(method, args, kvp.Key, sfm);
                 }
+                if (kvp.Value is SendFileAttach sfa)
+                {
+                    return await ApiMethodMultipartAsync<T>(method, args, SendFileAttach.AttachName, sfa);
+                }
                 url += $"{kvp.Key}={Serialize(kvp.Value)}&";
             }
             HttpWebRequest request = WebRequest.CreateHttp(url);
@@ -63,7 +67,7 @@ namespace TelegramBotApi
         }
 
         private async Task<T> ApiMethodMultipartAsync<T>(string method, Dictionary<string, object> args, 
-            string multipartObjectKey, SendFileMultipart multipartFile)
+            string multipartObjectKey, ISendFileMultipart multipartFile)
         {
             HttpClient httpClient = new HttpClient();
             MultipartFormDataContent form = new MultipartFormDataContent();
@@ -84,6 +88,8 @@ namespace TelegramBotApi
                     return sfi.FileId;
                 case SendFileUrl sfu:
                     return sfu.Url;
+                case SendFileAttach sfa:
+                    return "attach://" + SendFileAttach.AttachName;
             }
             return JsonConvert.SerializeObject(obj);
         }

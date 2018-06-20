@@ -23,7 +23,7 @@ namespace TelegramBotApi.Types
         public User From;
 
         [JsonProperty(PropertyName = "date")]
-        private readonly long _date;
+        private long _date;
         /// <summary>
         /// The exact time this message was sent
         /// </summary>
@@ -32,6 +32,10 @@ namespace TelegramBotApi.Types
             get
             {
                 return DateTimeOffset.FromUnixTimeSeconds(_date).DateTime;
+            }
+            set
+            {
+                _date = ((DateTimeOffset)value).ToUnixTimeSeconds();
             }
         }
 
@@ -66,7 +70,7 @@ namespace TelegramBotApi.Types
         public string ForwardSignature;
 
         [JsonProperty("forward_date")]
-        private readonly long _forwardDate;
+        private long _forwardDate;
         /// <summary>
         /// For forwarded messages, the date and time the original message was sent
         /// </summary>
@@ -75,6 +79,10 @@ namespace TelegramBotApi.Types
             get
             {
                 return DateTimeOffset.FromUnixTimeSeconds(_forwardDate).DateTime;
+            }
+            set
+            {
+                _forwardDate = ((DateTimeOffset)value).ToUnixTimeSeconds();
             }
         }
 
@@ -85,7 +93,7 @@ namespace TelegramBotApi.Types
         public Message ReplyToMessage;
 
         [JsonProperty(PropertyName = "edit_date")]
-        private readonly long _editDate;
+        private long _editDate;
         /// <summary>
         /// Date and time this message was last edited.
         /// </summary>
@@ -94,6 +102,10 @@ namespace TelegramBotApi.Types
             get
             {
                 return DateTimeOffset.FromUnixTimeSeconds(_editDate).DateTime;
+            }
+            set
+            {
+                _editDate = ((DateTimeOffset)value).ToUnixTimeSeconds();
             }
         }
 

@@ -18,7 +18,7 @@ namespace TelegramBotApi.Types.Upload
         /// <param name="urlFileIdOrPath">The url or telegram file id of the file</param>
         public static implicit operator SendFile(string urlFileIdOrPath)
         {
-            if (File.Exists(urlFileIdOrPath)) return new SendFileMultipart(urlFileIdOrPath);
+            if (System.IO.File.Exists(urlFileIdOrPath)) return new SendFileMultipart(urlFileIdOrPath);
             if (Uri.IsWellFormedUriString(urlFileIdOrPath, UriKind.RelativeOrAbsolute)) return new SendFileUrl(urlFileIdOrPath);
             else return new SendFileId(urlFileIdOrPath);
         }
@@ -40,6 +40,10 @@ namespace TelegramBotApi.Types.Upload
         /// <summary>
         /// Send via URL
         /// </summary>
-        Url
+        Url,
+        /// <summary>
+        /// Send as attached multipart/form file. Telegram apparently needs two different types of this.
+        /// </summary>
+        Attach
     }
 }

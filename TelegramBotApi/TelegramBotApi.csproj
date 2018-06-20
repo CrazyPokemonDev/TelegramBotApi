@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\ChatMemberStatus.cs" />
     <Compile Include="Enums\ChatType.cs" />
     <Compile Include="Enums\MaskPositionPointType.cs" />
     <Compile Include="Enums\MessageEntityType.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="TelegramBot.cs" />
     <Compile Include="Types\ApiResponse.cs" />
     <Compile Include="Types\Audio.cs" />
+    <Compile Include="Types\ChatMember.cs" />
     <Compile Include="Types\Exceptions\ApiRequestException.cs" />
     <Compile Include="Types\ChatPhoto.cs" />
     <Compile Include="Types\Game\CallbackGame.cs" />
@@ -117,7 +119,12 @@
     <Compile Include="Types\Sticker.cs" />
     <Compile Include="Types\StickerSet.cs" />
     <Compile Include="Types\Update.cs" />
+    <Compile Include="Types\Upload\InputMedia.cs" />
+    <Compile Include="Types\Upload\InputMediaPhoto.cs" />
+    <Compile Include="Types\Upload\InputMediaVideo.cs" />
+    <Compile Include="Types\Upload\ISendFileMultipart.cs" />
     <Compile Include="Types\Upload\SendFile.cs" />
+    <Compile Include="Types\Upload\SendFileAttach.cs" />
     <Compile Include="Types\Upload\SendFileId.cs" />
     <Compile Include="Types\Upload\SendFileMultipart.cs" />
     <Compile Include="Types\Upload\SendFileUrl.cs" />

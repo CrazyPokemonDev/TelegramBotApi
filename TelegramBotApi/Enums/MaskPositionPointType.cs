@@ -1,5 +1,9 @@
 ﻿namespace TelegramBotApi.Enums
 {
+    /*
+     * IF YOU ADD SOMETHING, ADD IT TO MaskPosition.cs TOO!
+     * 
+     * */
     /// <summary>
     /// Typeoif MaskPosition Point
     /// </summary>

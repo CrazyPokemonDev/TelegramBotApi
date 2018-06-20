@@ -48,18 +48,54 @@
   <ItemGroup>
     <Compile Include="Enums\ChatType.cs" />
     <Compile Include="Enums\MessageEntityType.cs" />
+    <Compile Include="Enums\ParseMode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelegramBot.cs" />
     <Compile Include="Types\ApiResponse.cs" />
     <Compile Include="Types\Audio.cs" />
+    <Compile Include="Types\Game\CallbackGame.cs" />
     <Compile Include="Types\CallbackQuery.cs" />
     <Compile Include="Types\Chat.cs" />
-    <Compile Include="Types\Contact.cs" />
     <Compile Include="Types\Document.cs" />
-    <Compile Include="Types\File.cs" />
+    <Compile Include="Types\GameHighScore.cs" />
+    <Compile Include="Types\Game\Animation.cs" />
+    <Compile Include="Types\Game\Game.cs" />
     <Compile Include="Types\Inline\ChosenInlineResult.cs" />
     <Compile Include="Types\Inline\InlineQuery.cs" />
+    <Compile Include="Types\Inline\InlineQueryResult.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultArticle.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultAudio.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultCachedAudio.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultCachedDocument.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultCachedGif.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultCachedMpeg4Gif.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultCachedPhoto.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultCachedSticker.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultCachedVideo.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultCachedVoice.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultContact.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultDocument.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultGame.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultGif.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultLocation.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultMpeg4Gif.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultPhoto.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultVenue.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultVideo.cs" />
+    <Compile Include="Types\Inline\InlineQueryResultVoice.cs" />
+    <Compile Include="Types\Inline\InputContactMessageContent.cs" />
+    <Compile Include="Types\Inline\InputLocationMessageContent.cs" />
+    <Compile Include="Types\Inline\InputMessageContent.cs" />
+    <Compile Include="Types\Inline\InputTextMessageContent.cs" />
+    <Compile Include="Types\Inline\InputVenueMessageContent.cs" />
     <Compile Include="Types\Location.cs" />
+    <Compile Include="Types\Markup\ForceReplyMarkup.cs" />
+    <Compile Include="Types\Markup\InlineKeyboardButton.cs" />
+    <Compile Include="Types\Markup\InlineKeyboardMarkup.cs" />
+    <Compile Include="Types\Markup\KeyboardButton.cs" />
+    <Compile Include="Types\Markup\ReplyKeyboardMarkup.cs" />
+    <Compile Include="Types\Markup\ReplyKeyboardRemove.cs" />
+    <Compile Include="Types\Markup\ReplyMarkupBase.cs" />
     <Compile Include="Types\Message.cs" />
     <Compile Include="Types\MessageEntity.cs" />
     <Compile Include="Types\Payment\Invoice.cs" />
@@ -73,10 +109,7 @@
     <Compile Include="Types\PhotoSize.cs" />
     <Compile Include="Types\Update.cs" />
     <Compile Include="Types\User.cs" />
-    <Compile Include="Types\UserProfilePictures.cs" />
-    <Compile Include="Types\Venue.cs" />
     <Compile Include="Types\Video.cs" />
-    <Compile Include="Types\VideoNote.cs" />
     <Compile Include="Types\Voice.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +120,5 @@
       <Version>11.0.2</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

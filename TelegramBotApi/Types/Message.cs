@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using TelegramBotApi.Types.Payment;
+using TelegramBotApi.Types.Game;
 
 namespace TelegramBotApi.Types
 {
@@ -167,7 +168,7 @@ namespace TelegramBotApi.Types
         /// Information about the game, if this is a game message
         /// </summary>
         [JsonProperty(PropertyName = "game")]
-        public Game Game;
+        public Game.Game Game;
 
         /// <summary>
         /// Available sizes of the photo, if this is one

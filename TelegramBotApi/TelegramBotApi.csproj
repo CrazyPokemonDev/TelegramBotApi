@@ -54,7 +54,9 @@
     <Compile Include="Types\Audio.cs" />
     <Compile Include="Types\CallbackQuery.cs" />
     <Compile Include="Types\Chat.cs" />
+    <Compile Include="Types\Contact.cs" />
     <Compile Include="Types\Document.cs" />
+    <Compile Include="Types\File.cs" />
     <Compile Include="Types\Inline\ChosenInlineResult.cs" />
     <Compile Include="Types\Inline\InlineQuery.cs" />
     <Compile Include="Types\Location.cs" />
@@ -71,7 +73,10 @@
     <Compile Include="Types\PhotoSize.cs" />
     <Compile Include="Types\Update.cs" />
     <Compile Include="Types\User.cs" />
+    <Compile Include="Types\UserProfilePictures.cs" />
+    <Compile Include="Types\Venue.cs" />
     <Compile Include="Types\Video.cs" />
+    <Compile Include="Types\VideoNote.cs" />
     <Compile Include="Types\Voice.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,5 +87,6 @@
       <Version>11.0.2</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -54,8 +54,8 @@
     <Compile Include="TelegramBot.cs" />
     <Compile Include="Types\ApiResponse.cs" />
     <Compile Include="Types\Audio.cs" />
-    <Compile Include="Types\ChatPhoto.cs" />
     <Compile Include="Types\Exceptions\ApiRequestException.cs" />
+    <Compile Include="Types\ChatPhoto.cs" />
     <Compile Include="Types\Game\CallbackGame.cs" />
     <Compile Include="Types\CallbackQuery.cs" />
     <Compile Include="Types\Chat.cs" />

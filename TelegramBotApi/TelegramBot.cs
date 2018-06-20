@@ -3,9 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using TelegramBotApi.Types;
+using TelegramBotApi.Types.Exceptions;
+using TelegramBotApi.Types.Upload;
 
 namespace TelegramBotApi
 {
@@ -47,21 +50,59 @@ namespace TelegramBotApi
             string url = ApiUrl + method + "?";
             foreach (var kvp in args)
             {
-                url += $"{kvp.Key}={kvp.Value}&";
+                if (kvp.Value is SendFileMultipart sfm)
+                {
+                    args.Remove(kvp.Key);
+                    return await ApiMethodMultipartAsync<T>(method, args, kvp.Key, sfm);
+                }
+                url += $"{kvp.Key}={Serialize(kvp.Value)}&";
             }
             HttpWebRequest request = WebRequest.CreateHttp(url);
             WebResponse response = await request.GetResponseAsync();
             return DeserializeResponse<T>(response);
         }
 
-        // Handle exceptions that are given back as Http errors here, just keeping this as a placeholder for now
+        private async Task<T> ApiMethodMultipartAsync<T>(string method, Dictionary<string, object> args, 
+            string multipartObjectKey, SendFileMultipart multipartFile)
+        {
+            HttpClient httpClient = new HttpClient();
+            MultipartFormDataContent form = new MultipartFormDataContent();
+            foreach (var kvp in args)
+            {
+                form.Add(new StringContent(Serialize(kvp.Value)), kvp.Key);
+            }
+            form.Add(new StreamContent(multipartFile.FileStream), multipartObjectKey);
+            string url = ApiUrl + method;
+            return DeserializeResponse<T>(await httpClient.PostAsync(url, form).Result.Content.ReadAsStringAsync());
+        }
+
+        private string Serialize(object obj)
+        {
+            switch (obj)
+            {
+                case SendFileId sfi:
+                    return sfi.FileId;
+                case SendFileUrl sfu:
+                    return sfu.Url;
+            }
+            return JsonConvert.SerializeObject(obj);
+        }
+
         private T DeserializeResponse<T>(WebResponse response)
         {
             using (StreamReader sr = new StreamReader(response.GetResponseStream()))
             {
                 string responseData = sr.ReadToEnd();
-                return JsonConvert.DeserializeObject<ApiResponse<T>>(responseData).ResponseObject;
+                return DeserializeResponse<T>(responseData);
             }
+        }
+
+        // Handle exceptions that are given back as Http errors here, just keeping this as a placeholder for now
+        private T DeserializeResponse<T>(string response)
+        {
+            var apiRes = JsonConvert.DeserializeObject<ApiResponse<T>>(response);
+            if (!apiRes.Ok) throw new ApiRequestException(apiRes.Description, apiRes.Parameters);
+            return apiRes.ResponseObject;
         }
         #endregion
     }

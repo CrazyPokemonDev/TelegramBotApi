@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using TelegramBotApi.Types.Payment;
-using TelegramBotApi.Types.Game;
 
 namespace TelegramBotApi.Types
 {

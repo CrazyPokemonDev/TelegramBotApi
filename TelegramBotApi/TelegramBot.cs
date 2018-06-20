@@ -96,13 +96,18 @@ namespace TelegramBotApi
                 return DeserializeResponse<T>(responseData);
             }
         }
-
-        // Handle exceptions that are given back as Http errors here, just keeping this as a placeholder for now
+        
         private T DeserializeResponse<T>(string response)
         {
             var apiRes = JsonConvert.DeserializeObject<ApiResponse<T>>(response);
-            if (!apiRes.Ok) throw new ApiRequestException(apiRes.Description, apiRes.Parameters);
+            if (!apiRes.Ok) throw GenerateApiException(apiRes);
             return apiRes.ResponseObject;
+        }
+
+        private static ApiRequestException GenerateApiException<T>(ApiResponse<T> apiRes)
+        {
+            //TODO: add more specific exceptions later on
+            return new ApiRequestException(apiRes.Description, apiRes.Parameters);
         }
         #endregion
     }

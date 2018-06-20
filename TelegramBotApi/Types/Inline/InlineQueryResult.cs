@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TelegramBotApi.Types.Inline
+﻿namespace TelegramBotApi.Types.Inline
 {
     /// <summary>
     /// This object represents one result of an inline query. Telegram clients currently support results of the following 20 types:

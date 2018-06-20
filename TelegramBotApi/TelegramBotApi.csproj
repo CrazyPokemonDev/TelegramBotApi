@@ -113,6 +113,7 @@
     <Compile Include="Types\Payment\ShippingQuery.cs" />
     <Compile Include="Types\Payment\SuccessfulPayment.cs" />
     <Compile Include="Types\PhotoSize.cs" />
+    <Compile Include="Types\ResponseParameters.cs" />
     <Compile Include="Types\Sticker.cs" />
     <Compile Include="Types\StickerSet.cs" />
     <Compile Include="Types\Update.cs" />

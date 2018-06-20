@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using TelegramBotApi.Types.Markup;
-using TelegramBotApi.Enums;
 
 namespace TelegramBotApi.Types.Inline
 {

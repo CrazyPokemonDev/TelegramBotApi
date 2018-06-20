@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TelegramBotApi.Types.Upload
+﻿namespace TelegramBotApi.Types.Upload
 {
     /// <summary>
     /// A file that has already been uploaded to telegram to be sent using a telegram file identifier
     /// </summary>
-    
+
     public class SendFileId : SendFile
     {
         /// <summary>

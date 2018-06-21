@@ -15,6 +15,6 @@ namespace TelegramBotApi.Types.Upload
         /// <summary>
         /// The file stream of this file
         /// </summary>
-        Stream FileStream { get; }
+        Stream FileStream { get; set; }
     }
 }

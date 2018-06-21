@@ -18,7 +18,7 @@ namespace TelegramBotApi.Types.Game
         /// User
         /// </summary>
         [JsonProperty(PropertyName = "user", Required = Required.Always)]
-        public User Userd;
+        public User User;
 
         /// <summary>
         /// Score

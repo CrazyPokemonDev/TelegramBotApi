@@ -66,34 +66,18 @@ namespace TelegramBotApi.Types.Inline
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode = null;
 
+        /// <summary>
+        /// The parse mode of the caption
+        /// </summary>
         public ParseMode ParseMode
         {
             get
             {
-                switch (_parseMode.ToLower())
-                {
-                    case "markdown":
-                        return ParseMode.Markdown;
-                    case "html":
-                        return ParseMode.Html;
-                    default:
-                        return ParseMode.None;
-                }
+                return Enum.GetParseMode(_parseMode);
             }
             set
             {
-                switch (value)
-                {
-                    case ParseMode.Markdown:
-                        _parseMode = "Markdown";
-                        break;
-                    case ParseMode.Html:
-                        _parseMode = "Html";
-                        break;
-                    default:
-                        _parseMode = null;
-                        break;
-                }
+                _parseMode = Enum.GetString(value);
             }
         }
 

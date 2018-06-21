@@ -19,40 +19,11 @@ namespace TelegramBotApi.Types
         {
             get
             {
-                switch (_point)
-                {
-                    case "forehead":
-                        return MaskPositionPointType.Forehead;
-                    case "eyes":
-                        return MaskPositionPointType.Eyes;
-                    case "mouth":
-                        return MaskPositionPointType.Mouth;
-                    case "chin":
-                        return MaskPositionPointType.Chin;
-                    default:
-                        return MaskPositionPointType.Unknown;
-                }
+                return Enum.GetMaskPositionPointType(_point);
             }
             set
             {
-                switch (value)
-                {
-                    case MaskPositionPointType.Forehead:
-                        _point = "forehead";
-                        break;
-                    case MaskPositionPointType.Eyes:
-                        _point = "eyes";
-                        break;
-                    case MaskPositionPointType.Mouth:
-                        _point = "mouth";
-                        break;
-                    case MaskPositionPointType.Chin:
-                        _point = "chin";
-                        break;
-                    default:
-                        _point = "unknown";
-                        break;
-                }
+                _point = Enum.GetString(value);
             }
         }
 

@@ -49,30 +49,11 @@ namespace TelegramBotApi.Types.Inline
         {
             get
             {
-                switch (_parseMode.ToLower())
-                {
-                    case "markdown":
-                        return ParseMode.Markdown;
-                    case "html":
-                        return ParseMode.Html;
-                    default:
-                        return ParseMode.None;
-                }
+                return Enum.GetParseMode(_parseMode);
             }
             set
             {
-                switch (value)
-                {
-                    case ParseMode.Markdown:
-                        _parseMode = "Markdown";
-                        break;
-                    case ParseMode.Html:
-                        _parseMode = "Html";
-                        break;
-                    default:
-                        _parseMode = null;
-                        break;
-                }
+                _parseMode = Enum.GetString(value);
             }
         }
 

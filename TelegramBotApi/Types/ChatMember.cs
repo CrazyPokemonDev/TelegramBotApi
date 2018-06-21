@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using TelegramBotApi.Enums;
+using Enum = TelegramBotApi.Enums.Enum;
 
 namespace TelegramBotApi.Types
 {
@@ -25,50 +26,11 @@ namespace TelegramBotApi.Types
         {
             get
             {
-                switch (_status)
-                {
-                    case "creator":
-                        return ChatMemberStatus.Creator;
-                    case "administrator":
-                        return ChatMemberStatus.Administrator;
-                    case "member":
-                        return ChatMemberStatus.Member;
-                    case "restricted":
-                        return ChatMemberStatus.Restricted;
-                    case "left":
-                        return ChatMemberStatus.Left;
-                    case "kicked":
-                        return ChatMemberStatus.Kicked;
-                    default:
-                        return ChatMemberStatus.Unknown;
-                }
+                return Enum.GetChatMemberStatus(_status);
             }
             set
             {
-                switch (value)
-                {
-                    case ChatMemberStatus.Administrator:
-                        _status = "administrator";
-                        break;
-                    case ChatMemberStatus.Creator:
-                        _status = "creator";
-                        break;
-                    case ChatMemberStatus.Kicked:
-                        _status = "kicked";
-                        break;
-                    case ChatMemberStatus.Left:
-                        _status = "left";
-                        break;
-                    case ChatMemberStatus.Member:
-                        _status = "member";
-                        break;
-                    case ChatMemberStatus.Restricted:
-                        _status = "restricted";
-                        break;
-                    case ChatMemberStatus.Unknown:
-                        _status = "unknown";
-                        break;
-                }
+                _status = Enum.GetString(value);
             }
         }
 

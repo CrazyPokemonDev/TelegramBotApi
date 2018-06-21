@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using TelegramBotApi.Enums;
 using TelegramBotApi.Types;
 using TelegramBotApi.Types.Exceptions;
 using TelegramBotApi.Types.Upload;
@@ -90,6 +91,8 @@ namespace TelegramBotApi
                     return sfu.Url;
                 case SendFileAttach sfa:
                     return "attach://" + SendFileAttach.AttachName;
+                case string s:
+                    return s;
             }
             return JsonConvert.SerializeObject(obj);
         }

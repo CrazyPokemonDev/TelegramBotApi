@@ -24,40 +24,11 @@ namespace TelegramBotApi.Types
         {
             get
             {
-                switch (_type)
-                {
-                    case "private":
-                        return ChatType.Private;
-                    case "group":
-                        return ChatType.Group;
-                    case "supergroup":
-                        return ChatType.Supergroup;
-                    case "channel":
-                        return ChatType.Channel;
-                    default:
-                        return ChatType.Unknown;
-                }
+                return Enum.GetChatType(_type);
             }
             set
             {
-                switch (value)
-                {
-                    case ChatType.Channel:
-                        _type = "channel";
-                        break;
-                    case ChatType.Group:
-                        _type = "group";
-                        break;
-                    case ChatType.Private:
-                        _type = "private";
-                        break;
-                    case ChatType.Supergroup:
-                        _type = "supergroup";
-                        break;
-                    default:
-                        _type = "unknown";
-                        break;
-                }
+                _type = Enum.GetString(value);
             }
         }
 

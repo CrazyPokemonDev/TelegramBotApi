@@ -18,80 +18,11 @@ namespace TelegramBotApi.Types
         {
             get
             {
-                switch (_type)
-                {
-                    case "mention":
-                        return MessageEntityType.Mention;
-                    case "hashtag":
-                        return MessageEntityType.Hashtag;
-                    case "bot_command":
-                        return MessageEntityType.BotCommand;
-                    case "url":
-                        return MessageEntityType.Url;
-                    case "email":
-                        return MessageEntityType.Email;
-                    case "bold":
-                        return MessageEntityType.Bold;
-                    case "italic":
-                        return MessageEntityType.Italic;
-                    case "code":
-                        return MessageEntityType.Code;
-                    case "pre":
-                        return MessageEntityType.Pre;
-                    case "text_link":
-                        return MessageEntityType.TextLink;
-                    case "text_mention":
-                        return MessageEntityType.TextMention;
-                    case "phone_number":
-                        return MessageEntityType.PhoneNumber;
-                    default:
-                        return MessageEntityType.Unknown;
-                }
+                return Enum.GetMessageEntityType(_type);
             }
             set
             {
-                switch (value)
-                {
-                    case MessageEntityType.Bold:
-                        _type = "bold";
-                        break;
-                    case MessageEntityType.BotCommand:
-                        _type = "bot_command";
-                        break;
-                    case MessageEntityType.Code:
-                        _type = "code";
-                        break;
-                    case MessageEntityType.Email:
-                        _type = "email";
-                        break;
-                    case MessageEntityType.Hashtag:
-                        _type = "hashtag";
-                        break;
-                    case MessageEntityType.Italic:
-                        _type = "italic";
-                        break;
-                    case MessageEntityType.Mention:
-                        _type = "mention";
-                        break;
-                    case MessageEntityType.PhoneNumber:
-                        _type = "phone_number";
-                        break;
-                    case MessageEntityType.Pre:
-                        _type = "pre";
-                        break;
-                    case MessageEntityType.TextLink:
-                        _type = "text_link";
-                        break;
-                    case MessageEntityType.TextMention:
-                        _type = "text_mention";
-                        break;
-                    case MessageEntityType.Url:
-                        _type = "url";
-                        break;
-                    default:
-                        _type = "unknown";
-                        break;
-                }
+                _type = Enum.GetString(value);
             }
         }
 

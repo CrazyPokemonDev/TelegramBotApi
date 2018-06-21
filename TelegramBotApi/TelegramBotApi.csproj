@@ -64,7 +64,7 @@
     <Compile Include="Types\Contact.cs" />
     <Compile Include="Types\Document.cs" />
     <Compile Include="Types\File.cs" />
-    <Compile Include="Types\GameHighScore.cs" />
+    <Compile Include="Types\Game\GameHighScore.cs" />
     <Compile Include="Types\Game\Animation.cs" />
     <Compile Include="Types\Game\Game.cs" />
     <Compile Include="Types\Inline\ChosenInlineResult.cs" />

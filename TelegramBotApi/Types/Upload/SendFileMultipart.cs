@@ -15,7 +15,7 @@ namespace TelegramBotApi.Types.Upload
         /// <summary>
         /// The file stream associated with this file
         /// </summary>
-        public Stream FileStream;
+        public Stream FileStream { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SendFileMultipart"/> class

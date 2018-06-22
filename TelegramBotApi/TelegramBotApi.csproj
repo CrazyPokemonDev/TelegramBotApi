@@ -58,7 +58,17 @@
     <Compile Include="TelegramBot.cs" />
     <Compile Include="Types\ApiResponse.cs" />
     <Compile Include="Types\Audio.cs" />
+    <Compile Include="Types\ChatId.cs" />
     <Compile Include="Types\ChatMember.cs" />
+    <Compile Include="Types\Events\CallbackQueryEventArgs.cs" />
+    <Compile Include="Types\Events\ChannelPostEventArgs.cs" />
+    <Compile Include="Types\Events\ChosenInlineResultEventArgs.cs" />
+    <Compile Include="Types\Events\EditedChannelPostEventArgs.cs" />
+    <Compile Include="Types\Events\EditedMessageEventArgs.cs" />
+    <Compile Include="Types\Events\InlineQueryEventArgs.cs" />
+    <Compile Include="Types\Events\MessageEventArgs.cs" />
+    <Compile Include="Types\Events\PreCheckoutQueryEventArgs.cs" />
+    <Compile Include="Types\Events\ShippingQueryEventArgs.cs" />
     <Compile Include="Types\Events\UpdateEventArgs.cs" />
     <Compile Include="Types\Exceptions\ApiRequestException.cs" />
     <Compile Include="Types\ChatPhoto.cs" />

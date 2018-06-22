@@ -25,7 +25,13 @@
     /// </summary>
     public abstract class InlineQueryResult
     {
+        /// <summary>
+        /// Type of the inline query result
+        /// </summary>
         public abstract string Type { get; set; }
+        /// <summary>
+        /// Unique ID of this one result to be given back to the bot if this is selected
+        /// </summary>
         public abstract string Id { get; set; }
     }
 }

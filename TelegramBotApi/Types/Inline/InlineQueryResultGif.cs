@@ -67,13 +67,12 @@ namespace TelegramBotApi.Types.Inline
         [JsonProperty(PropertyName = "caption")]
         public string Caption;
 
+        [JsonProperty(PropertyName = "parse_mode")]
+        private string _parseMode = null;
 
         /// <summary>
         /// Optional. Send Markdown or HTML, if you want Telegram apps to show bold, italic, fixed-width text or inline URLs in your bot's message.
         /// </summary>
-        [JsonProperty(PropertyName = "parse_mode")]
-        private string _parseMode = null;
-
         public ParseMode ParseMode
         {
             get

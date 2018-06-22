@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using TelegramBotApi.Enums;
 using TelegramBotApi.Types.Inline;
 using TelegramBotApi.Types.Payment;
 
@@ -70,5 +71,25 @@ namespace TelegramBotApi.Types
         /// </summary>
         [JsonProperty(PropertyName = "pre_checkout_query")]
         public PreCheckoutQuery PreCheckoutQuery;
+
+        /// <summary>
+        /// <see cref="UpdateType"/> of this update. Only the corresponding optional property will be filled.
+        /// </summary>
+        public UpdateType Type
+        {
+            get
+            {
+                if (Message != null) return UpdateType.Message;
+                else if (EditedMessage != null) return UpdateType.EditedMessage;
+                else if (ChannelPost != null) return UpdateType.ChannelPost;
+                else if (EditedChannelPost != null) return UpdateType.EditedChannelPost;
+                else if (InlineQuery != null) return UpdateType.InlineQuery;
+                else if (ChosenInlineResult != null) return UpdateType.ChosenInlineResult;
+                else if (CallbackQuery != null) return UpdateType.CallbackQuery;
+                else if (ShippingQuery != null) return UpdateType.ShippingQuery;
+                else if (PreCheckoutQuery != null) return UpdateType.PreCheckoutQuery;
+                else return UpdateType.Unknown;
+            }
+        }
     }
 }

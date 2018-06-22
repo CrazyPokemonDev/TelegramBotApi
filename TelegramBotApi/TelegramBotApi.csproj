@@ -52,6 +52,7 @@
     <Compile Include="Enums\MaskPositionPointType.cs" />
     <Compile Include="Enums\MessageEntityType.cs" />
     <Compile Include="Enums\ParseMode.cs" />
+    <Compile Include="Enums\UpdateType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelegramBot.cs" />
     <Compile Include="Types\ApiResponse.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="Types\Video.cs" />
     <Compile Include="Types\VideoNote.cs" />
     <Compile Include="Types\Voice.cs" />
+    <Compile Include="Types\WebhookInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

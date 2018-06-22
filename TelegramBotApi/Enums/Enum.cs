@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TelegramBotApi.Enums
+﻿namespace TelegramBotApi.Enums
 {
     internal static class Enum
     {
@@ -208,6 +202,60 @@ namespace TelegramBotApi.Enums
                     return ChatType.Channel;
                 default:
                     return ChatType.Unknown;
+            }
+        }
+
+        public static string GetString(UpdateType ut)
+        {
+            switch (ut)
+            {
+                case UpdateType.CallbackQuery:
+                    return "callback_query";
+                case UpdateType.ChannelPost:
+                    return "channel_post";
+                case UpdateType.ChosenInlineResult:
+                    return "chosen_inline_result";
+                case UpdateType.EditedChannelPost:
+                    return "edited_channel_post";
+                case UpdateType.EditedMessage:
+                    return "edited_message";
+                case UpdateType.InlineQuery:
+                    return "inline_query";
+                case UpdateType.Message:
+                    return "message";
+                case UpdateType.PreCheckoutQuery:
+                    return "pre_checkout_query";
+                case UpdateType.ShippingQuery:
+                    return "shipping_query";
+                default:
+                    return "unknown";
+            }
+        }
+
+        public static UpdateType GetUpdateType(string str)
+        {
+            switch (str)
+            {
+                case "callback_query":
+                    return UpdateType.CallbackQuery;
+                case "channel_post":
+                    return UpdateType.ChannelPost;
+                case "chosen_inline_result":
+                    return UpdateType.ChosenInlineResult;
+                case "edited_channel_post":
+                    return UpdateType.EditedChannelPost;
+                case "edited_message":
+                    return UpdateType.EditedMessage;
+                case "inline_query":
+                    return UpdateType.InlineQuery;
+                case "message":
+                    return UpdateType.Message;
+                case "pre_checkout_query":
+                    return UpdateType.PreCheckoutQuery;
+                case "shipping_query":
+                    return UpdateType.ShippingQuery;
+                default:
+                    return UpdateType.Unknown;
             }
         }
     }

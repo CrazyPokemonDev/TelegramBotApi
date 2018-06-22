@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using TelegramBotApi.Enums;
 using TelegramBotApi.Types.Payment;
 
 namespace TelegramBotApi.Types
@@ -287,13 +288,13 @@ namespace TelegramBotApi.Types
         /// If this is present, this group has been migrated to a supergroup with the specified identifier.
         /// </summary>
         [JsonProperty(PropertyName = "migrate_to_chat_id")]
-        public long MigrateToChatId;
+        public long MigrateToChatId = 0;
 
         /// <summary>
         /// If this is present, this supergroup has been migrated from a group with the specified identifier.
         /// </summary>
         [JsonProperty(PropertyName = "migrate_from_chat_id")]
-        public long MigrateFromChatId;
+        public long MigrateFromChatId = 0;
 
         /// <summary>
         /// Message that is pinned in this chat, if any. Will not contain a ReplyToMessage.
@@ -318,5 +319,40 @@ namespace TelegramBotApi.Types
         /// </summary>
         [JsonProperty(PropertyName = "connected_website")]
         public string ConnectedWebsite;
+
+        /// <summary>
+        /// Type of this message
+        /// </summary>
+        public MessageType Type
+        {
+            get
+            {
+                if (Text != null) return MessageType.Text;
+                else if (Audio != null) return MessageType.Audio;
+                else if (Document != null) return MessageType.Document;
+                else if (Game != null) return MessageType.Game;
+                else if (Photo != null) return MessageType.Photo;
+                else if (Sticker != null) return MessageType.Sticker;
+                else if (Video != null) return MessageType.Video;
+                else if (Voice != null) return MessageType.Voice;
+                else if (VideoNote != null) return MessageType.VideoNote;
+                else if (Contact != null) return MessageType.Contact;
+                else if (Location != null) return MessageType.Location;
+                else if (Venue != null) return MessageType.Venue;
+                else if (NewChatMembers != null) return MessageType.NewChatMembers;
+                else if (LeftChatMember != null) return MessageType.LeftChatMember;
+                else if (NewChatTitle != null) return MessageType.NewChatTitle;
+                else if (NewChatPhoto != null) return MessageType.NewChatPhoto;
+                else if (DeleteChatPhoto) return MessageType.DeleteChatPhoto;
+                else if (GroupChatCreated) return MessageType.GroupChatCreated;
+                else if (SupergroupChatCreated) return MessageType.SupergroupChatCreated;
+                else if (ChannelChatCreated) return MessageType.ChannelChatCreated;
+                else if (MigrateToChatId != 0 || MigrateFromChatId != 0) return MessageType.GroupMigrated;
+                else if (PinnedMessage != null) return MessageType.PinnedMessage;
+                else if (Invoice != null) return MessageType.Invoice;
+                else if (SuccessfulPayment != null) return MessageType.SuccessfulPayment;
+                else return MessageType.Unknown;
+            }
+        }
     }
 }

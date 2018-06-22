@@ -51,6 +51,7 @@
     <Compile Include="Enums\Enum.cs" />
     <Compile Include="Enums\MaskPositionPointType.cs" />
     <Compile Include="Enums\MessageEntityType.cs" />
+    <Compile Include="Enums\MessageType.cs" />
     <Compile Include="Enums\ParseMode.cs" />
     <Compile Include="Enums\UpdateType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

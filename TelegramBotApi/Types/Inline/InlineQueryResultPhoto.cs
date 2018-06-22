@@ -29,43 +29,43 @@ namespace TelegramBotApi.Types.Inline
         /// A valid URL of the photo. Photo must be in jpeg format. Photo size must not exceed 5MB
         /// </summary>
         [JsonProperty(PropertyName = "photo_url", Required = Required.Always)]
-        public string PhotoUrl;
+        public string PhotoUrl { get; set; }
 
         /// <summary>
         /// URL of the thumbnail for the photo
         /// </summary>
         [JsonProperty(PropertyName = "thumb_url", Required = Required.Always)]
-        public string ThumbUrl;
+        public string ThumbUrl { get; set; }
 
         /// <summary>
         /// Optional. Width of the photo
         /// </summary>
         [JsonProperty(PropertyName = "photo_width")]
-        public int PhotoWidth;
+        public int PhotoWidth { get; set; }
 
         /// <summary>
         /// Optional. Height of the photo
         /// </summary>
         [JsonProperty(PropertyName = "photo_height")]
-        public int PhotoHeight;
+        public int PhotoHeight { get; set; }
 
         /// <summary>
         /// Optional. Title for the result
         /// </summary>
         [JsonProperty(PropertyName = "title")]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Optional. Short description of the result
         /// </summary>
         [JsonProperty(PropertyName = "description")]
-        public string Description;
+        public string Description { get; set; }
 
         /// <summary>
         /// Optional. Caption of the photo to be sent, 0-200 characters
         /// </summary>
         [JsonProperty(PropertyName = "caption")]
-        public string Caption;
+        public string Caption { get; set; }
         
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode = null;
@@ -89,12 +89,12 @@ namespace TelegramBotApi.Types.Inline
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Content of the message to be sent
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
     }
 }

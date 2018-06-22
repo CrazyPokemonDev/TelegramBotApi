@@ -32,19 +32,19 @@ namespace TelegramBotApi.Types
         /// For example, choosing -1.0 will place mask just to the left of the default mask position.
         /// </summary>
         [JsonProperty(PropertyName = "x_shift", Required = Required.Always)]
-        public float XShift;
+        public float XShift { get; set; }
 
         /// <summary>
         /// Shift by Y-axis measured in heights of the mask scaled to the face size, from top to bottom. 
         /// For example, 1.0 will place the mask just below the default mask position.
         /// </summary>
         [JsonProperty(PropertyName = "y_shift", Required = Required.Always)]
-        public float YShift;
+        public float YShift { get; set; }
 
         /// <summary>
         /// Mask scaling coefficient. For example, 2.0 means double size.
         /// </summary>
         [JsonProperty(PropertyName = "scale", Required = Required.Always)]
-        public float Scale;
+        public float Scale { get; set; }
     }
 }

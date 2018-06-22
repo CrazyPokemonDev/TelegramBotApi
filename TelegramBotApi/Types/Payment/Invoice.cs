@@ -12,25 +12,25 @@ namespace TelegramBotApi.Types.Payment
         /// Product name
         /// </summary>
         [JsonProperty(PropertyName = "title", Required = Required.Always)]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Product description
         /// </summary>
         [JsonProperty(PropertyName = "description", Required = Required.Always)]
-        public string Description;
+        public string Description { get; set; }
 
         /// <summary>
         /// Unique bot deep-linking parameter that can be used to generate this invoice
         /// </summary>
         [JsonProperty(PropertyName = "start_parameter", Required = Required.Always)]
-        public string StartParameter;
+        public string StartParameter { get; set; }
 
         /// <summary>
         /// Three-letter ISO 4217 currency code
         /// </summary>
         [JsonProperty(PropertyName = "currency", Required = Required.Always)]
-        public string Currency;
+        public string Currency { get; set; }
 
         /// <summary>
         /// Total price in the smallest units of the currency (integer, not float/double). 
@@ -38,6 +38,6 @@ namespace TelegramBotApi.Types.Payment
         /// it shows the number of digits past the decimal point for each currency (2 for the majority of currencies).
         /// </summary>
         [JsonProperty(PropertyName = "total_amount", Required = Required.Always)]
-        public int TotalAmount;
+        public int TotalAmount { get; set; }
     }
 }

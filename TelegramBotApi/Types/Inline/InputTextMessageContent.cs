@@ -13,7 +13,7 @@ namespace TelegramBotApi.Types.Inline
         /// Text of the message to be sent, 1-4096 characters
         /// </summary>
         [JsonProperty(PropertyName = "message_text", Required = Required.Always)]
-        public string MessageText;
+        public string MessageText { get; set; }
 
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode = null;
@@ -37,7 +37,7 @@ namespace TelegramBotApi.Types.Inline
         /// Optional. Disables link previews for links in the sent message
         /// </summary>
         [JsonProperty(PropertyName = "disable_web_page_preview")]
-        public bool DisableWebPagePreview;
+        public bool DisableWebPagePreview { get; set; }
 
     }
 }

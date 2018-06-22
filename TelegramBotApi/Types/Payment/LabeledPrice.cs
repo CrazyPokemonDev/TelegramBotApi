@@ -12,7 +12,7 @@ namespace TelegramBotApi.Types.Payment
         /// Portion label
         /// </summary>
         [JsonProperty(PropertyName = "label", Required = Required.Always)]
-        public string Label;
+        public string Label { get; set; }
 
         /// <summary>
         /// Price of the product in the smallest units of the currency (integer, not float/double). 
@@ -20,6 +20,6 @@ namespace TelegramBotApi.Types.Payment
         /// it shows the number of digits past the decimal point for each currency (2 for the majority of currencies).
         /// </summary>
         [JsonProperty(PropertyName = "amount", Required = Required.Always)]
-        public int Amount;
+        public int Amount { get; set; }
     }
 }

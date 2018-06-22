@@ -13,18 +13,18 @@ namespace TelegramBotApi.Types.Markup
         /// Text of the button. If none of the optional fields are used, it will be sent as a message when the button is pressed
         /// </summary>
         [JsonProperty(PropertyName = "text", Required = Required.Always)]
-        public string Text;
+        public string Text { get; set; }
 
         /// <summary>
         /// Optional. If True, the user's phone number will be sent as a contact when the button is pressed. Available in private chats only
         /// </summary>
         [JsonProperty(PropertyName = "request_contact")]
-        public bool RequestContact;
+        public bool RequestContact { get; set; }
 
         /// <summary>
         /// Optional. If True, the user's current location will be sent when the button is pressed. Available in private chats only
         /// </summary>
         [JsonProperty(PropertyName = "request_location")]
-        public bool RequestLocation;
+        public bool RequestLocation { get; set; }
     }
 }

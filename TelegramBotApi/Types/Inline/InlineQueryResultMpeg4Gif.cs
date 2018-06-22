@@ -30,43 +30,43 @@ namespace TelegramBotApi.Types.Inline
         /// A valid URL for the MP4 file. File size must not exceed 1MB
         /// </summary>
         [JsonProperty(PropertyName = "mpeg4_url", Required = Required.Always)]
-        public string Mpeg4Url;
+        public string Mpeg4Url { get; set; }
 
         /// <summary>
         /// Optional. Video width
         /// </summary>
         [JsonProperty(PropertyName = "mpeg4_width")]
-        public int Mpeg4Width;
+        public int Mpeg4Width { get; set; }
 
         /// <summary>
         /// Optional. Video height
         /// </summary>
         [JsonProperty(PropertyName = "mpeg4_height")]
-        public int Mpeg4Height;
+        public int Mpeg4Height { get; set; }
 
         /// <summary>
         /// Optional. Video duration
         /// </summary>
         [JsonProperty(PropertyName = "mpeg4_duration")]
-        public int Mpeg4Duration;
+        public int Mpeg4Duration { get; set; }
 
         /// <summary>
         /// URL of the static thumbnail (jpeg or gif) for the result
         /// </summary>
         [JsonProperty(PropertyName = "thumb_url", Required = Required.Always)]
-        public string ThumbUrl;
+        public string ThumbUrl { get; set; }
 
         /// <summary>
         /// Optional. Title for the result
         /// </summary>
         [JsonProperty(PropertyName = "title")]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Optional. Caption of the MPEG-4 file to be sent, 0-200 characters
         /// </summary>
         [JsonProperty(PropertyName = "caption")]
-        public string Caption;
+        public string Caption { get; set; }
         
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode = null;
@@ -90,12 +90,12 @@ namespace TelegramBotApi.Types.Inline
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Optional. Content of the message to be sent instead of the video animation
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
     }
 }

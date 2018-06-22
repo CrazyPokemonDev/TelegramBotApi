@@ -14,7 +14,7 @@
         /// <summary>
         /// Telegrams unique identifier of the file to send
         /// </summary>
-        public string FileId;
+        public string FileId { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the SendFileId class

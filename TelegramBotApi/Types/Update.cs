@@ -16,61 +16,61 @@ namespace TelegramBotApi.Types
         /// The update's unique identifier
         /// </summary>
         [JsonProperty(PropertyName = "update_id", Required = Required.Always)]
-        public int Id;
+        public int Id { get; set; }
 
         /// <summary>
         /// Optional. New incoming message of any kind — text, photo, sticker, etc.
         /// </summary>
         [JsonProperty(PropertyName = "message")]
-        public Message Message;
+        public Message Message { get; set; }
 
         /// <summary>
         /// Optional. New version of a message that is known to the bot and was edited
         /// </summary>
         [JsonProperty(PropertyName = "edited_message")]
-        public Message EditedMessage;
+        public Message EditedMessage { get; set; }
 
         /// <summary>
         /// Optional. New incoming channel post of any kind — text, photo, sticker, etc.
         /// </summary>
         [JsonProperty(PropertyName = "channel_post")]
-        public Message ChannelPost;
+        public Message ChannelPost { get; set; }
 
         /// <summary>
         /// Optional. New version of a channel post that is known to the bot and was edited
         /// </summary>
         [JsonProperty(PropertyName = "edited_channel_post")]
-        public Message EditedChannelPost;
+        public Message EditedChannelPost { get; set; }
 
         /// <summary>
         /// Optional. New incoming inline query
         /// </summary>
         [JsonProperty(PropertyName = "inline_query")]
-        public InlineQuery InlineQuery;
+        public InlineQuery InlineQuery { get; set; }
 
         /// <summary>
         /// Optional. The result of an inline query that was chosen by a user and sent to their chat partner
         /// </summary>
         [JsonProperty(PropertyName = "chosen_inline_result")]
-        public ChosenInlineResult ChosenInlineResult;
+        public ChosenInlineResult ChosenInlineResult { get; set; }
 
         /// <summary>
         /// Optional. New incoming callback query
         /// </summary>
         [JsonProperty(PropertyName = "callback_query")]
-        public CallbackQuery CallbackQuery;
+        public CallbackQuery CallbackQuery { get; set; }
 
         /// <summary>
         /// Optional. New incoming shipping query. Only for invoices with flexible price
         /// </summary>
         [JsonProperty(PropertyName = "shipping_query")]
-        public ShippingQuery ShippingQuery;
+        public ShippingQuery ShippingQuery { get; set; }
 
         /// <summary>
         /// Optional. New incoming pre-checkout query. Contains full information about checkout
         /// </summary>
         [JsonProperty(PropertyName = "pre_checkout_query")]
-        public PreCheckoutQuery PreCheckoutQuery;
+        public PreCheckoutQuery PreCheckoutQuery { get; set; }
 
         /// <summary>
         /// <see cref="UpdateType"/> of this update. Only the corresponding optional property will be filled.

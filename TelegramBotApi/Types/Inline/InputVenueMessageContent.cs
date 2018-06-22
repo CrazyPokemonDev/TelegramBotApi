@@ -12,30 +12,30 @@ namespace TelegramBotApi.Types.Inline
         /// Latitude of the location in degrees
         /// </summary>
         [JsonProperty(PropertyName = "latitude", Required = Required.Always)]
-        public float Latitude;
+        public float Latitude { get; set; }
 
         /// <summary>
         /// Longitude of the location in degrees
         /// </summary>
         [JsonProperty(PropertyName = "longitude", Required = Required.Always)]
-        public float Longitude;
+        public float Longitude { get; set; }
 
         /// <summary>
         /// Name of the venue
         /// </summary>
         [JsonProperty(PropertyName = "title", Required = Required.Always)]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Address of the venue
         /// </summary>
         [JsonProperty(PropertyName = "address", Required = Required.Always)]
-        public string Address;
+        public string Address { get; set; }
 
         /// <summary>
         /// Optional. Foursquare identifier of the venue, if known
         /// </summary>
         [JsonProperty(PropertyName = "foursquare_id")]
-        public string FoursquareId;
+        public string FoursquareId { get; set; }
     }
 }

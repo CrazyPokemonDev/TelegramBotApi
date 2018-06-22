@@ -27,54 +27,54 @@ namespace TelegramBotApi.Types.Inline
         /// Title of the result
         /// </summary>
         [JsonProperty(PropertyName = "title", Required = Required.Always)]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Content of the message to be sent
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
 
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Optional. URL of the result
         /// </summary>
         [JsonProperty(PropertyName = "url")]
-        public string Url;
+        public string Url { get; set; }
 
         /// <summary>
         /// Optional. Pass True, if you don't want the URL to be shown in the message
         /// </summary>
         [JsonProperty(PropertyName = "hide_url")]
-        public bool HideUrl;
+        public bool HideUrl { get; set; }
 
         /// <summary>
         /// Optional. Short description of the result
         /// </summary>
         [JsonProperty(PropertyName = "description")]
-        public string Description;
+        public string Description { get; set; }
 
         /// <summary>
         /// Optional. Url of the thumbnail for the result
         /// </summary>
         [JsonProperty(PropertyName = "thumb_url")]
-        public string ThumbUrl;
+        public string ThumbUrl { get; set; }
 
         /// <summary>
         /// Optional. Thumbnail width
         /// </summary>
         [JsonProperty(PropertyName = "thumb_width")]
-        public int ThumbWidth;
+        public int ThumbWidth { get; set; }
 
         /// <summary>
         /// Optional. Thumbnail height
         /// </summary>
         [JsonProperty(PropertyName = "thumb_height")]
-        public int ThumbHeight;
+        public int ThumbHeight { get; set; }
     }
 }

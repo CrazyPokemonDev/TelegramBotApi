@@ -29,43 +29,43 @@ namespace TelegramBotApi.Types.Inline
         /// A valid URL for the GIF file. File size must not exceed 1MB
         /// </summary>
         [JsonProperty(PropertyName = "gif_url", Required = Required.Always)]
-        public string GifUrl;
+        public string GifUrl { get; set; }
 
         /// <summary>
         /// Optional. Width of the GIF
         /// </summary>
         [JsonProperty(PropertyName = "gif_width")]
-        public int GifWidth;
+        public int GifWidth { get; set; }
 
         /// <summary>
         /// Optional. Height of the GIF
         /// </summary>
         [JsonProperty(PropertyName = "gif_height")]
-        public int GifHeight;
+        public int GifHeight { get; set; }
 
         /// <summary>
         /// Optional. Duration of the GIF
         /// </summary>
         [JsonProperty(PropertyName = "gif_duration")]
-        public int GifDuration;
+        public int GifDuration { get; set; }
 
         /// <summary>
         /// URL of the static thumbnail for the result (jpeg or gif)
         /// </summary>
         [JsonProperty(PropertyName = "thumb_url", Required = Required.Always)]
-        public string ThumbUrl;
+        public string ThumbUrl { get; set; }
 
         /// <summary>
         /// Optional. Title for the result
         /// </summary>
         [JsonProperty(PropertyName = "title")]
-        public string Title;
+        public string Title { get; set; }
         
         /// <summary>
         /// Optional. Caption of the GIF file to be sent, 0-200 characters
         /// </summary>
         [JsonProperty(PropertyName = "caption")]
-        public string Caption;
+        public string Caption { get; set; }
 
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode = null;
@@ -89,12 +89,12 @@ namespace TelegramBotApi.Types.Inline
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Optional. Content of the message to be sent instead of the GIF animation
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
     }
 }

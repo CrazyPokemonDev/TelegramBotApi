@@ -12,18 +12,18 @@ namespace TelegramBotApi.Types.Game
         /// Position in high score table for the game
         /// </summary>
         [JsonProperty(PropertyName = "position", Required = Required.Always)]
-        public int Position;
+        public int Position { get; set; }
 
         /// <summary>
         /// User
         /// </summary>
         [JsonProperty(PropertyName = "user", Required = Required.Always)]
-        public User User;
+        public User User { get; set; }
 
         /// <summary>
         /// Score
         /// </summary>
         [JsonProperty(PropertyName = "score", Required = Required.Always)]
-        public int Score;
+        public int Score { get; set; }
     }
 }

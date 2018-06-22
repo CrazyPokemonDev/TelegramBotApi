@@ -30,13 +30,13 @@ namespace TelegramBotApi.Types.Inline
         /// Recording title
         /// </summary>
         [JsonProperty(PropertyName = "title", Required = Required.Always)]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Optional. Caption, 0-200 characters
         /// </summary>
         [JsonProperty(PropertyName = "caption")]
-        public string Caption;
+        public string Caption { get; set; }
         
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode = null;
@@ -60,48 +60,48 @@ namespace TelegramBotApi.Types.Inline
         /// A valid URL for the file
         /// </summary>
         [JsonProperty(PropertyName = "document_url", Required = Required.Always)]
-        public string DocumentUrl;
+        public string DocumentUrl { get; set; }
 
         /// <summary>
         /// Mime type of the content of the file, either “application/pdf” or “application/zip”
         /// </summary>
         [JsonProperty(PropertyName = "mime_type", Required = Required.Always)]
-        public string MimeType;
+        public string MimeType { get; set; }
 
         /// <summary>
         /// Optional. Short description of the result
         /// </summary>
         [JsonProperty(PropertyName = "description")]
-        public string Description;
+        public string Description { get; set; }
 
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Content of the message to be sent instead of the file
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
 
         /// <summary>
         /// Optional. URL of the thumbnail (jpeg only) for the file
         /// </summary>
         [JsonProperty(PropertyName = "thumb_url", Required = Required.Always)]
-        public string ThumbUrl;
+        public string ThumbUrl { get; set; }
 
         /// <summary>
         /// Optional. Thumbnail width
         /// </summary>
         [JsonProperty(PropertyName = "thumb_width")]
-        public int ThumbWidth;
+        public int ThumbWidth { get; set; }
 
         /// <summary>
         /// Optional. Thumbnail height
         /// </summary>
         [JsonProperty(PropertyName = "thumb_height")]
-        public int ThumbHeight;
+        public int ThumbHeight { get; set; }
     }
 }

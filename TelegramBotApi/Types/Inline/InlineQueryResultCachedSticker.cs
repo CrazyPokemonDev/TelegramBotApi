@@ -28,18 +28,18 @@ namespace TelegramBotApi.Types.Inline
         /// A valid file identifier for the sticker
         /// </summary>
         [JsonProperty(PropertyName = "sticker_file_id", Required = Required.Always)]
-        public string StickerFileId;
+        public string StickerFileId { get; set; }
 
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Optional. Content of the message to be sent instead of the sticker
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
     }
 }

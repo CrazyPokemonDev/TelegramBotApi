@@ -27,12 +27,12 @@ namespace TelegramBotApi.Types.Inline
         /// Short name of the game
         /// </summary>
         [JsonProperty(PropertyName = "game_short_name", Required = Required.Always)]
-        public string GameShortName;
+        public string GameShortName { get; set; }
 
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
     }
 }

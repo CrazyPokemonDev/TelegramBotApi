@@ -13,7 +13,7 @@
         /// <summary>
         /// The URL of the file to send
         /// </summary>
-        public string Url;
+        public string Url { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the SendFileUrl class

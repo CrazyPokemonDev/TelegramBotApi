@@ -19,13 +19,13 @@ namespace TelegramBotApi.Types.Upload
         /// File to send. Can be <see cref="SendFileAttach"/>, <see cref="SendFileId"/> or <see cref="SendFileUrl"/>
         /// </summary>
         [JsonProperty(PropertyName = "media")]
-        public SendFile Media;
+        public SendFile Media { get; set; }
 
         /// <summary>
         /// Optional. Caption of the photo or video to be sent, 0-200 characters.
         /// </summary>
         [JsonProperty(PropertyName = "caption", NullValueHandling = NullValueHandling.Ignore)]
-        public string Caption;
+        public string Caption { get; set; }
 
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode;

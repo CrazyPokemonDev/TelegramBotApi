@@ -10,7 +10,7 @@ namespace TelegramBotApi.Types.Exceptions
         /// <summary>
         /// The response parameters to help resolve the error, if there are any
         /// </summary>
-        public ResponseParameters Parameters;
+        public ResponseParameters Parameters { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiRequestException"/> class

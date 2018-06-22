@@ -5,7 +5,9 @@ using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
+using TelegramBotApi.Enums;
 using TelegramBotApi.Types;
 using TelegramBotApi.Types.Exceptions;
 using TelegramBotApi.Types.Upload;
@@ -21,6 +23,58 @@ namespace TelegramBotApi
         private const string BaseUrl = "https://api.telegram.org/bot";
         private readonly string ApiUrl;
         private readonly string _token;
+        #endregion
+        #region Properties
+        /// <summary>
+        /// Timeout in seconds for long polling. Defaults to 100. Set this to 0 if you want to use short polling.
+        /// </summary>
+        public int LongPollingTimeout { get; set; } = 100;
+
+        /// <summary>
+        /// Whether the bot is currently trying to recieve messages
+        /// </summary>
+        public bool IsReceiving { get; set; } = false;
+
+        private Task _receivingTask;
+
+        private int _lastUpdateReceived = 0;
+        #endregion
+
+        #region Events
+
+        #endregion
+        #region Control Methods
+        /// <summary>
+        /// Starts polling to get updates
+        /// </summary>
+        public void StartReceiving(UpdateType[] allowedUpdates = null)
+        {
+            if (IsReceiving) return;
+            IsReceiving = true;
+            _receivingTask = PollAsync(allowedUpdates);
+        }
+
+        private async Task PollAsync(UpdateType[] allowedUpdates)
+        {
+            while (IsReceiving)
+            {
+                string url = ApiUrl + $"getUpdates?timeout={LongPollingTimeout}&offset={_lastUpdateReceived + 1}";
+                if (allowedUpdates != null && allowedUpdates.Length > 0)
+                    url += "&allowed_updates=" + Serialize(allowedUpdates);
+                HttpWebRequest updateRequest = WebRequest.CreateHttp(url);
+                updateRequest.Timeout = LongPollingTimeout + 1;
+                WebResponse response = await updateRequest.GetResponseAsync();
+                Update[] updates = DeserializeResponse<Update[]>(response);
+                foreach (Update update in updates)
+                {
+                    _lastUpdateReceived = update.Id;
+                    switch (update.Type)
+                    {
+                        
+                    }
+                }
+            }
+        }
         #endregion
 
         #region Constructor(s)
@@ -85,15 +139,15 @@ namespace TelegramBotApi
             switch (obj)
             {
                 case SendFileId sfi:
-                    return sfi.FileId;
+                    return WebUtility.HtmlEncode(sfi.FileId);
                 case SendFileUrl sfu:
-                    return sfu.Url;
+                    return WebUtility.HtmlEncode(sfu.Url);
                 case SendFileAttach sfa:
-                    return "attach://" + SendFileAttach.AttachName;
+                    return WebUtility.HtmlEncode("attach://" + SendFileAttach.AttachName);
                 case string s:
-                    return s;
+                    return WebUtility.HtmlEncode(s);
             }
-            return JsonConvert.SerializeObject(obj);
+            return WebUtility.HtmlEncode(JsonConvert.SerializeObject(obj));
         }
 
         private T DeserializeResponse<T>(WebResponse response)

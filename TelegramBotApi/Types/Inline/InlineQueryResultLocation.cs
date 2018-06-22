@@ -28,54 +28,54 @@ namespace TelegramBotApi.Types.Inline
         /// Location latitude in degrees
         /// </summary>
         [JsonProperty(PropertyName = "latitude", Required = Required.Always)]
-        public float Latitude;
+        public float Latitude { get; set; }
 
         /// <summary>
         /// Location longitude in degrees
         /// </summary>
         [JsonProperty(PropertyName = "longitude", Required = Required.Always)]
-        public float Longitude;
+        public float Longitude { get; set; }
 
         /// <summary>
         /// Location title
         /// </summary>
         [JsonProperty(PropertyName = "title", Required = Required.Always)]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Optional. Period in seconds for which the location can be updated, should be between 60 and 86400.
         /// </summary>
         [JsonProperty(PropertyName = "live_period")]
-        public int LivePeriod;
+        public int LivePeriod { get; set; }
 
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Content of the message to be sent instead of the location
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
 
         /// <summary>
         /// Optional. Url of the thumbnail for the result
         /// </summary>
         [JsonProperty(PropertyName = "thumb_url", Required = Required.Always)]
-        public string ThumbUrl;
+        public string ThumbUrl { get; set; }
 
         /// <summary>
         /// Optional. Thumbnail width
         /// </summary>
         [JsonProperty(PropertyName = "thumb_width")]
-        public int ThumbWidth;
+        public int ThumbWidth { get; set; }
 
         /// <summary>
         /// Optional. Thumbnail height
         /// </summary>
         [JsonProperty(PropertyName = "thumb_height")]
-        public int ThumbHeight;
+        public int ThumbHeight { get; set; }
     }
 }

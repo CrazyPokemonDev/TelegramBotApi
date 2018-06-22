@@ -12,12 +12,12 @@ namespace TelegramBotApi.Types
         /// If this isn't 0, the chat has been migrated to this id
         /// </summary>
         [JsonProperty(PropertyName = "migrate_to_chat_id")]
-        public long MigrateToChatId = 0;
+        public long MigrateToChatId { get; set; } = 0;
 
         /// <summary>
         /// If this isn't 0, the number of seconds to wait before the request can be repeated
         /// </summary>
         [JsonProperty(PropertyName = "retry_after")]
-        public int RetryAfter = 0;
+        public int RetryAfter { get; set; } = 0;
     }
 }

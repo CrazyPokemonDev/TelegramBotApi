@@ -12,31 +12,31 @@ namespace TelegramBotApi.Types.Inline
         /// The unique identifier for the result that was chosen
         /// </summary>
         [JsonProperty(PropertyName = "result_id", Required = Required.Always)]
-        public string ResultId;
+        public string ResultId { get; set; }
 
         /// <summary>
         /// The user that chose the result
         /// </summary>
         [JsonProperty(PropertyName = "from", Required = Required.Always)]
-        public User From;
+        public User From { get; set; }
 
         /// <summary>
         /// Optional. Sender location, only for bots that require user location
         /// </summary>
         [JsonProperty(PropertyName = "location")]
-        public Location Location;
+        public Location Location { get; set; }
 
         /// <summary>
         /// Optional. Identifier of the sent inline message. Available only if there is an inline keyboard attached to the message. 
         /// Will be also received in callback queries and can be used to edit the message.
         /// </summary>
         [JsonProperty(PropertyName = "inline_message_id")]
-        public string InlineMessageId;
+        public string InlineMessageId { get; set; }
 
         /// <summary>
         /// The query that was used to obtain the result
         /// </summary>
         [JsonProperty(PropertyName = "query", Required = Required.Always)]
-        public string Query;
+        public string Query { get; set; }
     }
 }

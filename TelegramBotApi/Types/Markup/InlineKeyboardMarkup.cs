@@ -12,6 +12,6 @@ namespace TelegramBotApi.Types.Markup
         /// Array of button rows, each represented by an Array of InlineKeyboardButton objects
         /// </summary>
         [JsonProperty(PropertyName = "inline_keyboard", Required = Required.Always)]
-        public InlineKeyboardButton[][] InlineKeyboard;
+        public InlineKeyboardButton[][] InlineKeyboard { get; set; }
     }
 }

@@ -59,6 +59,7 @@
     <Compile Include="Types\ApiResponse.cs" />
     <Compile Include="Types\Audio.cs" />
     <Compile Include="Types\ChatMember.cs" />
+    <Compile Include="Types\Events\UpdateEventArgs.cs" />
     <Compile Include="Types\Exceptions\ApiRequestException.cs" />
     <Compile Include="Types\ChatPhoto.cs" />
     <Compile Include="Types\Game\CallbackGame.cs" />

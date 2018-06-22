@@ -25,12 +25,12 @@ namespace TelegramBotApi.Types
         /// If the request has failed, information about why it did fail
         /// </summary>
         [JsonProperty(PropertyName = "description")]
-        public string Description;
+        public string Description { get; set; }
 
         /// <summary>
         /// Might help to automatically handle the error
         /// </summary>
         [JsonProperty(PropertyName = "parameters")]
-        public ResponseParameters Parameters;
+        public ResponseParameters Parameters { get; set; }
     }
 }

@@ -18,24 +18,24 @@ namespace TelegramBotApi.Types.Upload
         /// Optional. Video width
         /// </summary>
         [JsonProperty(PropertyName = "width")]
-        public int Width;
+        public int Width { get; set; }
 
         /// <summary>
         /// Optional. Video height
         /// </summary>
         [JsonProperty(PropertyName = "height")]
-        public int Height;
+        public int Height { get; set; }
 
         /// <summary>
         /// Optional. Video duration
         /// </summary>
         [JsonProperty(PropertyName = "duration")]
-        public int Duration;
+        public int Duration { get; set; }
 
         /// <summary>
         /// Optional. Pass true, if the video is suitable for streaming
         /// </summary>
         [JsonProperty(PropertyName = "supports_streaming")]
-        public bool SupportsStreaming;
+        public bool SupportsStreaming { get; set; }
     }
 }

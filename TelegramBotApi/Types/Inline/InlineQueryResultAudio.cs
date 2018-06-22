@@ -29,19 +29,19 @@ namespace TelegramBotApi.Types.Inline
         /// A valid URL for the audio file
         /// </summary>
         [JsonProperty(PropertyName = "audio_url", Required = Required.Always)]
-        public string AudioUrl;
+        public string AudioUrl { get; set; }
 
         /// <summary>
         /// Title
         /// </summary>
         [JsonProperty(PropertyName = "title", Required = Required.Always)]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Optional. Caption, 0-200 characters
         /// </summary>
         [JsonProperty(PropertyName = "caption")]
-        public string Caption;
+        public string Caption { get; set; }
         
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode = null;
@@ -65,25 +65,25 @@ namespace TelegramBotApi.Types.Inline
         /// Optional. Performer
         /// </summary>
         [JsonProperty(PropertyName = "performer")]
-        public string Performer;
+        public string Performer { get; set; }
 
 
         /// <summary>
         /// Optional. Audio duration in seconds
         /// </summary>
         [JsonProperty(PropertyName = "audio_duration")]
-        public int AudioDuration;
+        public int AudioDuration { get; set; }
 
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Content of the message to be sent instead of the audio
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
     }
 }

@@ -12,24 +12,24 @@ namespace TelegramBotApi.Types.Payment
         /// Unique query identifier
         /// </summary>
         [JsonProperty(PropertyName = "id", Required = Required.Always)]
-        public string Id;
+        public string Id { get; set; }
 
         /// <summary>
         /// User who sent the query
         /// </summary>
         [JsonProperty(PropertyName = "from", Required = Required.Always)]
-        public User From;
+        public User From { get; set; }
 
         /// <summary>
         /// Bot specified invoice payload
         /// </summary>
         [JsonProperty(PropertyName = "invoice_payload")]
-        public string InvoicePayload;
+        public string InvoicePayload { get; set; }
 
         /// <summary>
         /// User specified shipping address
         /// </summary>
         [JsonProperty(PropertyName = "shipping_address")]
-        public ShippingAddress ShippingAddress;
+        public ShippingAddress ShippingAddress { get; set; }
     }
 }

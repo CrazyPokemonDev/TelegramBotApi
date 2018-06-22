@@ -29,25 +29,25 @@ namespace TelegramBotApi.Types.Inline
         /// A valid file identifier of the photo
         /// </summary>
         [JsonProperty(PropertyName = "photo_file_id", Required = Required.Always)]
-        public string PhotoFileId;
+        public string PhotoFileId { get; set; }
 
         /// <summary>
         /// Optional. Title for the result
         /// </summary>
         [JsonProperty(PropertyName = "title")]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Optional. Short description of the result
         /// </summary>
         [JsonProperty(PropertyName = "description")]
-        public string Description;
+        public string Description { get; set; }
 
         /// <summary>
         /// Optional. Caption of the photo to be sent, 0-200 characters
         /// </summary>
         [JsonProperty(PropertyName = "caption")]
-        public string Caption;
+        public string Caption { get; set; }
         
         [JsonProperty(PropertyName = "parse_mode")]
         private string _parseMode = null;
@@ -71,12 +71,12 @@ namespace TelegramBotApi.Types.Inline
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Content of the message to be sent
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
     }
 }

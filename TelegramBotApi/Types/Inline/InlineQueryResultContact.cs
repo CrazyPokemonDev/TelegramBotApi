@@ -28,48 +28,48 @@ namespace TelegramBotApi.Types.Inline
         /// Contact's phone number
         /// </summary>
         [JsonProperty(PropertyName = "phone_number", Required = Required.Always)]
-        public string PhoneNumber;
+        public string PhoneNumber { get; set; }
 
         /// <summary>
         /// Contact's first name
         /// </summary>
         [JsonProperty(PropertyName = "first_name", Required = Required.Always)]
-        public string FirstName;
+        public string FirstName { get; set; }
 
         /// <summary>
         /// Optional. Contact's last name
         /// </summary>
         [JsonProperty(PropertyName = "last_name")]
-        public string LastName;
+        public string LastName { get; set; }
         
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Content of the message to be sent instead of the contact
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content", Required = Required.Always)]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
 
         /// <summary>
         /// Optional. Url of the thumbnail for the result
         /// </summary>
         [JsonProperty(PropertyName = "thumb_url", Required = Required.Always)]
-        public string ThumbUrl;
+        public string ThumbUrl { get; set; }
 
         /// <summary>
         /// Optional. Thumbnail width
         /// </summary>
         [JsonProperty(PropertyName = "thumb_width")]
-        public int ThumbWidth;
+        public int ThumbWidth { get; set; }
 
         /// <summary>
         /// Optional. Thumbnail height
         /// </summary>
         [JsonProperty(PropertyName = "thumb_height")]
-        public int ThumbHeight;
+        public int ThumbHeight { get; set; }
     }
 }

@@ -32,32 +32,32 @@ namespace TelegramBotApi.Types.Inline
         /// A valid URL for the embedded video player or video file
         /// </summary>
         [JsonProperty(PropertyName = "video_url", Required = Required.Always)]
-        public string VideoUrl;
+        public string VideoUrl { get; set; }
 
         /// <summary>
         /// Mime type of the content of video url, “text/html” or “video/mp4”
         /// </summary>
         [JsonProperty(PropertyName = "mime_type", Required = Required.Always)]
-        public string MimeType;
+        public string MimeType { get; set; }
 
         /// <summary>
         /// URL of the thumbnail (jpeg only) for the video
         /// </summary>
         [JsonProperty(PropertyName = "thumb_url", Required = Required.Always)]
-        public string ThumbUrl;
+        public string ThumbUrl { get; set; }
 
 
         /// <summary>
         /// Optional. Title for the result
         /// </summary>
         [JsonProperty(PropertyName = "title")]
-        public string Title;
+        public string Title { get; set; }
 
         /// <summary>
         /// Optional. Caption of the GIF file to be sent, 0-200 characters
         /// </summary>
         [JsonProperty(PropertyName = "caption")]
-        public string Caption;
+        public string Caption { get; set; }
 
 
         /// <summary>
@@ -85,37 +85,37 @@ namespace TelegramBotApi.Types.Inline
         /// Optional. Video Width
         /// </summary>
         [JsonProperty(PropertyName = "video_width")]
-        public int VideoWidth;
+        public int VideoWidth { get; set; }
 
         /// <summary>
         /// Optional. Video Height
         /// </summary>
         [JsonProperty(PropertyName = "video_height")]
-        public int VideoHeight;
+        public int VideoHeight { get; set; }
 
         /// <summary>
         /// Optional. Video duration in seconds
         /// </summary>
         [JsonProperty(PropertyName = "video_duration")]
-        public int VideoDuration;
+        public int VideoDuration { get; set; }
 
         /// <summary>
         /// Optional. Short description of the result
         /// </summary>
         [JsonProperty(PropertyName = "description")]
-        public string Description;
+        public string Description { get; set; }
 
         /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]
-        public InlineKeyboardMarkup ReplyMarkup;
+        public InlineKeyboardMarkup ReplyMarkup { get; set; }
 
         /// <summary>
         /// Content of the message to be sent. 
         /// This field is required if InlineQueryResultVideo is used to send an HTML-page as a result (e.g., a YouTube video).
         /// </summary>
         [JsonProperty(PropertyName = "input_message_content")]
-        public InputMessageContent InputMessageContent;
+        public InputMessageContent InputMessageContent { get; set; }
     }
 }

@@ -12,18 +12,18 @@ namespace TelegramBotApi.Types
         /// Unique identifier for this file
         /// </summary>
         [JsonProperty(PropertyName = "file_id")]
-        public string FileId;
+        public string FileId { get; set; }
 
         /// <summary>
         /// File size, if known
         /// </summary>
         [JsonProperty(PropertyName = "file_size")]
-        public int FileSize;
+        public int FileSize { get; set; }
 
         /// <summary>
         /// File path. Use TelegramBot.DownloadFile(<see cref="FilePath"/>) to download the file.
         /// </summary>
         [JsonProperty(PropertyName = "file_path")]
-        public string FilePath;
+        public string FilePath { get; set; }
     }
 }

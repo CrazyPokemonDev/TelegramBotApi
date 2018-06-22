@@ -12,25 +12,25 @@ namespace TelegramBotApi.Types
         /// Unique identifier for this user or bot
         /// </summary>
         [JsonProperty(PropertyName = "id", Required = Required.Always)]
-        public int Id;
+        public int Id { get; set; }
 
         /// <summary>
         /// Whether the user is a bot
         /// </summary>
         [JsonProperty(PropertyName = "is_bot")]
-        public bool IsBot = false;
+        public bool IsBot { get; set; } = false;
 
         /// <summary>
         /// The first name of the user or bot
         /// </summary>
         [JsonProperty(PropertyName = "first_name", Required = Required.Always)]
-        public string FirstName;
+        public string FirstName { get; set; }
 
         /// <summary>
         /// The last name of the user or bot, if any
         /// </summary>
         [JsonProperty(PropertyName = "last_name")]
-        public string LastName;
+        public string LastName { get; set; }
 
         /// <summary>
         /// First and last name (if any) concatenated using a space
@@ -41,12 +41,12 @@ namespace TelegramBotApi.Types
         /// The username of the user or bot, if any. Without the preceding "@".
         /// </summary>
         [JsonProperty(PropertyName = "username")]
-        public string Username;
+        public string Username { get; set; }
 
         /// <summary>
         /// IEFT tag of the users language, if any
         /// </summary>
         [JsonProperty(PropertyName = "language_code")]
-        public string LanguageCode;
+        public string LanguageCode { get; set; }
     }
 }

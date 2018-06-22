@@ -16,7 +16,7 @@ namespace TelegramBotApi.Types.Markup
         /// if you want to hide the keyboard from sight but keep it accessible, use one_time_keyboard in ReplyKeyboardMarkup)
         /// </summary>
         [JsonProperty(PropertyName = "remove_keybord", Required = Required.Always)]
-        public bool RemoveKeyboard = true;
+        public const bool RemoveKeyboard = true;
 
         /// <summary>
         /// Optional. Use this parameter if you want to remove the keyboard for specific users only. 
@@ -27,6 +27,6 @@ namespace TelegramBotApi.Types.Markup
         /// while still showing the keyboard with poll options to users who haven't voted yet.
         /// </summary>
         [JsonProperty(PropertyName = "selective")]
-        public bool Selective;
+        public bool Selective { get; set; }
     }
 }

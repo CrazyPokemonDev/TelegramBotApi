@@ -12,7 +12,7 @@ namespace TelegramBotApi.Types.Markup
         /// Array of button rows, each represented by an Array of KeyboardButton objects
         /// </summary>
         [JsonProperty(PropertyName = "keyboard", Required = Required.Always)]
-        public KeyboardButton[][] Keyboard;
+        public KeyboardButton[][] Keyboard { get; set; }
 
         /// <summary>
         /// Optional. Requests clients to resize the keyboard vertically for optimal fit 
@@ -39,6 +39,6 @@ namespace TelegramBotApi.Types.Markup
         /// Other users in the group don’t see the keyboard.
         /// </summary>
         [JsonProperty(PropertyName = "selective")]
-        public bool Selective;
+        public bool Selective { get; set; }
     }
 }

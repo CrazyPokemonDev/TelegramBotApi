@@ -3,7 +3,7 @@
 namespace TelegramBotApi.Types.Upload
 {
     /// <summary>
-    /// A file to be sent by the bot
+    /// A file to be sent by the bot. Usually one of <see cref="SendFileId"/>, <see cref="SendFileUrl"/> and <see cref="SendFileMultipart"/>
     /// </summary>
     public abstract class SendFile
     {
@@ -11,7 +11,7 @@ namespace TelegramBotApi.Types.Upload
         /// The way to send the file
         /// </summary>
         public abstract SendFileType Type { get; }
-        
+
         /// <summary>
         /// Converts a string into a file to send.
         /// </summary>
@@ -42,7 +42,7 @@ namespace TelegramBotApi.Types.Upload
         /// </summary>
         Url,
         /// <summary>
-        /// Send as attached multipart/form file. Telegram apparently needs two different types of this.
+        /// An attached file (for media groups)
         /// </summary>
         Attach
     }

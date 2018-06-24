@@ -3,9 +3,9 @@
 namespace TelegramBotApi.Types.Upload
 {
     /// <summary>
-    /// Represents a file to be sent via multipart upload
+    /// Represents a file to be sent via multipart upload (a file that is present on your device)
     /// </summary>
-    public class SendFileMultipart : SendFile, ISendFileMultipart
+    public class SendFileMultipart : SendFile
     {
         /// <summary>
         /// This file is to be sent via multipart/form data

@@ -202,9 +202,9 @@ namespace TelegramBotApi
                         args.Remove(kvp.Key);
                         return await ApiMethodMultipartAsync<T>(method, args, kvp.Key, sfm, timeout);
                     }
-                    if (kvp.Value is SendFileAttach sfa)
+                    if (kvp.Value is InputMedia[] ims && ims.Any(x => x.Media.Type == SendFileType.Attach))
                     {
-                        return await ApiMethodMultipartAsync<T>(method, args, SendFileAttach.AttachName, sfa, timeout);
+                        return await ApiMethodManyFileAsync<T>(method, args, timeout);
                     }
                     url += $"{kvp.Key}={Serialize(kvp.Value)}&";
                 }
@@ -215,7 +215,7 @@ namespace TelegramBotApi
         }
 
         private async Task<T> ApiMethodMultipartAsync<T>(string method, Dictionary<string, object> args,
-            string multipartObjectKey, ISendFileMultipart multipartFile, int timeout = 100)
+            string multipartObjectKey, SendFileMultipart multipartFile, int timeout = 100)
         {
             HttpClient httpClient = new HttpClient();
             if (timeout != 0) httpClient.Timeout = TimeSpan.FromSeconds(timeout);
@@ -229,20 +229,44 @@ namespace TelegramBotApi
             return DeserializeResponse<T>(await httpClient.PostAsync(url, form).Result.Content.ReadAsStringAsync());
         }
 
+        private async Task<T> ApiMethodManyFileAsync<T>(string method, Dictionary<string, object> args, int timeout = 100)
+        {
+            HttpClient httpClient = new HttpClient();
+            if (timeout != 0) httpClient.Timeout = TimeSpan.FromSeconds(timeout);
+            MultipartFormDataContent form = new MultipartFormDataContent();
+            foreach (var kvp in args)
+            {
+                if (kvp.Value is InputMedia[] ims)
+                {
+                    foreach (var im in ims)
+                    {
+                        if (im.Media.Type == SendFileType.Attach)
+                        {
+                            var sfa = (SendFileAttach)im.Media;
+                            form.Add(new StreamContent(sfa.FileStream), sfa.AttachName);
+                        }
+                    }
+                }
+                form.Add(new StringContent(Serialize(kvp.Value)), kvp.Key);
+            }
+            string url = ApiUrl + method;
+            return DeserializeResponse<T>(await httpClient.PostAsync(url, form).Result.Content.ReadAsStringAsync());
+        }
+
         private string Serialize(object obj)
         {
             switch (obj)
             {
                 case SendFileId sfi:
-                    return WebUtility.HtmlEncode(sfi.FileId);
+                    return WebUtility.UrlEncode(sfi.FileId);
                 case SendFileUrl sfu:
-                    return WebUtility.HtmlEncode(sfu.Url);
-                case SendFileAttach sfa:
-                    return WebUtility.HtmlEncode("attach://" + SendFileAttach.AttachName);
+                    return WebUtility.UrlEncode(sfu.Url);
+                case ChatId cId:
+                    return WebUtility.UrlEncode(cId.ChannelUsername ?? cId.ChatIdentifier.ToString());
                 case string s:
-                    return WebUtility.HtmlEncode(s);
+                    return WebUtility.UrlEncode(s);
             }
-            return WebUtility.HtmlEncode(JsonConvert.SerializeObject(obj));
+            return WebUtility.UrlEncode(JsonConvert.SerializeObject(obj));
         }
 
         private T DeserializeResponse<T>(WebResponse response)
@@ -286,7 +310,7 @@ namespace TelegramBotApi
             if (allowedUpdates != null && allowedUpdates.Length > 0) args.Add("allowed_updates", 
                 allowedUpdates.Select(x => Enum.GetString(x)).ToArray());
 
-            return await ApiMethodAsync<Update[]>("getUpdates", args, timeout);
+            return await ApiMethodAsync<Update[]>("getUpdates", args, timeout + 1);
         }
 
         /// <summary>
@@ -363,6 +387,82 @@ namespace TelegramBotApi
             if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
 
             return await ApiMethodAsync<Message>("sendMessage", args);
+        }
+
+        /// <summary>
+        /// Use this method to forward messages of any kind. On success, the sent Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel (in the format @channelusername)</param>
+        /// <param name="fromChatId">Unique identifier for the chat where the original message was sent (or channel username in the format @channelusername)</param>
+        /// <param name="messageId">Message identifier in the chat specified in <paramref name="fromChatId"/></param>
+        /// <param name="disableNotification">Sends the message silently. Users will receive a notification with no sound.</param>
+        /// <returns>The sent message</returns>
+        public async Task<Message> ForwardMessageAsync(ChatId chatId, ChatId fromChatId, int messageId, bool disableNotification = false)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>()
+            { { "chat_id", chatId }, { "from_chat_id", fromChatId }, { "message_id", messageId } };
+            if (disableNotification) args.Add("disable_notification", true);
+
+            return await ApiMethodAsync<Message>("forwardMessage", args);
+        }
+
+        /// <summary>
+        /// Use this method to send photos. On success, the sent Message is returned.
+        /// </summary>
+        /// <param name="chatId">The chat id or channel username of the chat to send the photo to</param>
+        /// <param name="photo">The photo to send. Either one of <see cref="SendFileId"/>, 
+        /// <see cref="SendFileUrl"/> or <see cref="SendFileMultipart"/>. An implicit operator from string exists.</param>
+        /// <param name="caption">The caption of the photo, if any</param>
+        /// <param name="parseMode">The parse mode of the caption, if any</param>
+        /// <param name="disableNotification">If this is true, the user will receive a notification with no sound</param>
+        /// <param name="replyToMessageId">The messageId of the message to reply to, if any</param>
+        /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
+        /// <returns></returns>
+        public async Task<Message> SendPhotoAsync(ChatId chatId, SendFile photo, string caption = null,
+            ParseMode parseMode = ParseMode.None, bool disableNotification = false, 
+            int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "photo", photo } };
+            if (!string.IsNullOrWhiteSpace(caption)) args.Add("caption", caption);
+            if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
+            if (disableNotification) args.Add("disable_notification", true);
+            if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("sendPhoto", args);
+        }
+
+        /// <summary>
+        /// Use this method to send audio files, if you want Telegram clients to display them in the music player. 
+        /// Your audio must be in the .mp3 format. On success, the sent Message is returned.
+        /// </summary>
+        /// <param name="chatId">The chat id or channel username of the chat to send the message to</param>
+        /// <param name="audio">The audio file. Either one of <see cref="SendFileId"/>, 
+        /// <see cref="SendFileUrl"/> or <see cref="SendFileMultipart"/></param>
+        /// <param name="caption">The caption of the audio file, if any</param>
+        /// <param name="parseMode">The parse mode of the caption, if any</param>
+        /// <param name="duration">Duration of the audio in seconds</param>
+        /// <param name="performer">Performer</param>
+        /// <param name="title">Track name</param>
+        /// <param name="disableNotification">Sends the message silently. Users will receive a notification with no sound.</param>
+        /// <param name="replyToMessageId">The messageId of the message to reply to, if any</param>
+        /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
+        /// <returns></returns>
+        public async Task<Message> SendAudioAsync(ChatId chatId, SendFile audio, string caption = null,
+            ParseMode parseMode = ParseMode.None, int duration = 0, string performer = null, string title = null,
+            bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "audio", audio } };
+            if (!string.IsNullOrWhiteSpace(caption)) args.Add("caption", caption);
+            if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
+            if (duration != 0) args.Add("duration", duration);
+            if (!string.IsNullOrWhiteSpace(performer)) args.Add("performer", performer);
+            if (!string.IsNullOrWhiteSpace(title)) args.Add("title", title);
+            if (disableNotification) args.Add("disable_notification", true);
+            if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("sendAudio", args);
         }
         #endregion
     }

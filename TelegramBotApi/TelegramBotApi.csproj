@@ -136,7 +136,6 @@
     <Compile Include="Types\Upload\InputMedia.cs" />
     <Compile Include="Types\Upload\InputMediaPhoto.cs" />
     <Compile Include="Types\Upload\InputMediaVideo.cs" />
-    <Compile Include="Types\Upload\ISendFileMultipart.cs" />
     <Compile Include="Types\Upload\SendFile.cs" />
     <Compile Include="Types\Upload\SendFileAttach.cs" />
     <Compile Include="Types\Upload\SendFileId.cs" />

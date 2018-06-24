@@ -5,19 +5,17 @@ namespace TelegramBotApi.Types.Upload
     /// <summary>
     /// A file to send as attached multipart/form data
     /// </summary>
-    public class SendFileAttach : SendFile, ISendFileMultipart
+    public class SendFileAttach : SendFile
     {
-        /// <summary>
-        /// This is an attached file
-        /// </summary>
-        public override SendFileType Type => SendFileType.Attach;
-
-        internal const string AttachName = "attachedfile";
-
         /// <summary>
         /// The file stream of this file
         /// </summary>
         public Stream FileStream { get; }
+
+        /// <summary>
+        /// This is an attached media for media groups.
+        /// </summary>
+        public override SendFileType Type => SendFileType.Attach;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SendFileAttach"/> class
@@ -36,5 +34,7 @@ namespace TelegramBotApi.Types.Upload
         {
             FileStream = fileStream;
         }
+
+        internal string AttachName { get; set; }
     }
 }

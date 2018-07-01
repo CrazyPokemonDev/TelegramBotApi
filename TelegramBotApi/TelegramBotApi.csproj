@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\ChatAction.cs" />
     <Compile Include="Enums\ChatMemberStatus.cs" />
     <Compile Include="Enums\ChatType.cs" />
     <Compile Include="Enums\Enum.cs" />

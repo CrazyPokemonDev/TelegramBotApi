@@ -258,5 +258,62 @@
                     return UpdateType.Unknown;
             }
         }
+
+        public static string GetString(ChatAction ca)
+        {
+            switch (ca)
+            {
+                case ChatAction.FindLocation:
+                    return "find_location";
+                case ChatAction.RecordAudio:
+                    return "record_audio";
+                case ChatAction.RecordVideo:
+                    return "record_video";
+                case ChatAction.RecordVideoNote:
+                    return "record_video_note";
+                case ChatAction.Typing:
+                    return "typing";
+                case ChatAction.UploadAudio:
+                    return "upload_audio";
+                case ChatAction.UploadDocument:
+                    return "upload_document";
+                case ChatAction.UploadPhoto:
+                    return "upload_photo";
+                case ChatAction.UploadVideo:
+                    return "upload_video";
+                case ChatAction.UploadVideoNote:
+                    return "upload_video_note";
+                default:
+                    return null;
+            }
+        }
+
+        public static ChatAction GetChatAction(string str)
+        {
+            switch (str)
+            {
+                case "upload_photo":
+                    return ChatAction.UploadPhoto;
+                case "record_video":
+                    return ChatAction.RecordVideo;
+                case "upload_video":
+                    return ChatAction.UploadVideo;
+                case "record_audio":
+                    return ChatAction.RecordAudio;
+                case "upload_audio":
+                    return ChatAction.UploadAudio;
+                case "upload_document":
+                    return ChatAction.UploadDocument;
+                case "find_location":
+                    return ChatAction.FindLocation;
+                case "record_video_note":
+                    return ChatAction.RecordVideoNote;
+                case "upload_video_note":
+                    return ChatAction.UploadVideoNote;
+                case "typing":
+                default:
+                    return ChatAction.Typing;
+            }
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace TelegramBotApi.Types
         /// <param name="channelName">The username of the target public channel</param>
         public static implicit operator ChatId(string channelName)
         {
-            return new ChatId() { ChannelUsername = channelName };
+            return new ChatId() { ChannelUsername = channelName.StartsWith("@") ? channelName : "@" + channelName };
         }
 
         /// <summary>

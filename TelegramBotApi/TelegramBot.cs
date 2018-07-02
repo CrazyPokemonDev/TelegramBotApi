@@ -1107,6 +1107,89 @@ namespace TelegramBotApi
             Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId } };
             return await ApiMethodAsync<Chat>("getChat", args);
         }
+
+        /// <summary>
+        /// Use this method to get a list of administrators in a chat. On success, returns an Array of ChatMember 
+        /// objects that contains information about all chat administrators except other bots. 
+        /// If the chat is a group or a supergroup and no administrators were appointed, only the creator will be returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target supergroup or channel 
+        /// (in the format @channelusername)</param>
+        /// <returns>The chat administrators</returns>
+        public async Task<ChatMember[]> GetChatAdministratorsAsync(ChatId chatId)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId } };
+            return await ApiMethodAsync<ChatMember[]>("getChatAdministrators", args);
+        }
+
+        /// <summary>
+        /// Whether an user is an admin of the specified group.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target supergroup or channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="userId">Telegram identifier of target user</param>
+        /// <returns>True if the user is an admin</returns>
+        public async Task<bool> IsChatAdministratorAsync(ChatId chatId, int userId)
+        {
+            ChatMember[] admins = await GetChatAdministratorsAsync(chatId);
+            return admins.Any(x => x.User.Id == userId);
+        }
+
+        /// <summary>
+        /// Use this method to get the number of members in a chat.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target supergroup or channel 
+        /// (in the format @channelusername)</param>
+        /// <returns>The number of chat members</returns>
+        public async Task<int> GetChatMembersCount(ChatId chatId)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId } };
+            return await ApiMethodAsync<int>("getChatMembersCount", args);
+        }
+
+        /// <summary>
+        /// Use this method to get information about a member of a chat.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target supergroup or channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="userId">Telegram identifier of target user</param>
+        /// <returns>The specified chat member</returns>
+        public async Task<ChatMember> GetChatMemberAsync(ChatId chatId, int userId)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "user_id", userId } };
+            return await ApiMethodAsync<ChatMember>("getChatMember", args);
+        }
+
+        /// <summary>
+        /// Use this method to set a new group sticker set for a supergroup. 
+        /// The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. 
+        /// Use the field can_set_sticker_set optionally returned in getChat requests to check if the bot can use this method. 
+        /// Returns True on success.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target supergroup or channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="stickerSetName">Name of the sticker set to be set as the group sticker set</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> SetChatStickerSetAsync(ChatId chatId, string stickerSetName)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "sticker_set_name", stickerSetName } };
+            return await ApiMethodAsync<bool>("setChatStickerSet", args);
+        }
+
+        /// <summary>
+        /// Use this method to delete a group sticker set from a supergroup. 
+        /// The bot must be an administrator in the chat for this to work and must have the appropriate admin rights. 
+        /// Use the field can_set_sticker_set optionally returned in getChat requests to check if the bot can use this method. 
+        /// Returns True on success.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target supergroup or channel 
+        /// (in the format @channelusername)</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> DeleteChatStickerSetAsync(ChatId chatId)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId } };
+            return await ApiMethodAsync<bool>("deleteChatStickerSet", args);
+        }
         #endregion
         #endregion
     }

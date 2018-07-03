@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>Crazypokemondev.TelegramBotApi</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>TelegramBotApi</title>
-    <authors>Olfi01, Olgabrezel, jefffc</authors>
-    <owners>Olfi01, Olgabrezel, jefffc</owners>
+    <authors>Olfi01, Olgabrezel, jeffffc</authors>
+    <owners>Olfi01, Olgabrezel, jeffffc</owners>
     <iconUrl>https://www.dropbox.com/s/rc8i5qnfv3etm9d/flomsbottestgruppe.jpg?dl=1</iconUrl>
     <description>A wrapper for the telegram bot API. Keeping backwards- and forwardscompatibility</description>
-    <releaseNotes>First release with content</releaseNotes>
+    <releaseNotes>An installable release</releaseNotes>
     <copyright></copyright>
     <tags>Telegram Bot TelegramBot Telegram.Bot API BotApi TelegramBotApi</tags>
 	<dependencies>

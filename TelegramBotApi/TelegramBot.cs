@@ -1191,6 +1191,306 @@ namespace TelegramBotApi
             return await ApiMethodAsync<bool>("deleteChatStickerSet", args);
         }
         #endregion
+        #region Callback query
+        /// <summary>
+        /// Use this method to send answers to callback queries sent from inline keyboards. 
+        /// The answer will be displayed to the user as a notification at the top of the chat screen or as an alert. 
+        /// On success, True is returned.
+        /// </summary>
+        /// <param name="callbackQueryId">Unique identifier for the query to be answered</param>
+        /// <param name="text">Text of the notification. If not specified, nothing will be shown to the user, 0-200 characters</param>
+        /// <param name="showAlert">If true, an alert will be shown by the client instead of a notification at the top of the chat screen. 
+        /// Defaults to false.</param>
+        /// <param name="url">URL that will be opened by the user's client. 
+        /// If you have created a Game and accepted the conditions via @Botfather, specify the URL that opens your game – 
+        /// note that this will only work if the query comes from a callback_game button. Otherwise, you may use links like t.me/your_bot? 
+        /// start = XXXX that open your bot with a parameter.</param>
+        /// <param name="cacheTime">The maximum amount of time in seconds that the result of the callback query may be cached client-side. 
+        /// Telegram apps will support caching starting in version 3.14. Defaults to 0.</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> AnswerCallbackQueryAsync(string callbackQueryId, string text = null, bool showAlert = false,
+            string url = null, int cacheTime = 0)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "callback_query_id", callbackQueryId } };
+            if (!string.IsNullOrWhiteSpace(text)) args.Add("text", text);
+            if (showAlert) args.Add("show_alert", true);
+            if (!string.IsNullOrWhiteSpace(url)) args.Add("url", url);
+            if (cacheTime != 0) args.Add("cache_time", cacheTime);
+
+            return await ApiMethodAsync<bool>("answerCallbackQuery", args);
+        }
+        #endregion
+        #endregion
+        #region Updating Messages
+        /// <summary>
+        /// Use this method to edit text and game messages sent by the bot. 
+        /// On success, the edited Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="messageId">Identifier of the message sent by the bot</param>
+        /// <param name="text">New text of the message</param>
+        /// <param name="parseMode">Send Markdown or HTML, if you want Telegram apps to show bold, 
+        /// italic, fixed-width text or inline URLs in your bot's message.</param>
+        /// <param name="disableWebPagePreview">Disables link previews for links in this message</param>
+        /// <param name="replyMarkup">An inline keyboard.</param>
+        /// <returns>The edited message</returns>
+        public async Task<Message> EditMessageTextAsync(ChatId chatId, int messageId, string text, ParseMode parseMode = ParseMode.None,
+            bool disableWebPagePreview = false, InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId },
+                { "message_id", messageId }, { "text", text } };
+            if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
+            if (disableWebPagePreview) args.Add("disable_web_page_preview", true);
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("editMessageText", args);
+        }
+
+        /// <summary>
+        /// Use this method to edit text and game messages sent via the bot (for inline bots).
+        /// On success, True is returned.
+        /// </summary>
+        /// <param name="inlineMessageId">Identifier of the inline message</param>
+        /// <param name="text">New text of the message</param>
+        /// <param name="parseMode">Send Markdown or HTML, if you want Telegram apps to show bold, 
+        /// italic, fixed-width text or inline URLs in your bot's message.</param>
+        /// <param name="disableWebPagePreview">Disables link previews for links in this message</param>
+        /// <param name="replyMarkup">An inline keyboard, if you want any</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> EditMessageTextAsync(string inlineMessageId, string text, ParseMode parseMode = ParseMode.None,
+            bool disableWebPagePreview = false, InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "inline_message_id", inlineMessageId },
+                { "text", text } };
+            if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
+            if (disableWebPagePreview) args.Add("disable_web_page_preview", true);
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<bool>("editMessageText", args);
+        }
+
+        /// <summary>
+        /// Use this method to edit captions of messages sent by the bot. 
+        /// On success, the edited Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="messageId">Identifier of the message sent by the bot</param>
+        /// <param name="caption">New caption of the message</param>
+        /// <param name="parseMode">Send Markdown or HTML, if you want Telegram apps to show bold, 
+        /// italic, fixed-width text or inline URLs in your bot's message.</param>
+        /// <param name="replyMarkup">An inline keyboard.</param>
+        /// <returns>The edited message</returns>
+        public async Task<Message> EditMessageCaptionAsync(ChatId chatId, int messageId, string caption, ParseMode parseMode = ParseMode.None,
+            InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId },
+                { "message_id", messageId }, { "caption", caption } };
+            if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("editMessageCaption", args);
+        }
+
+        /// <summary>
+        /// Use this method to edit captions of messages sent via the bot (for inline bots). 
+        /// On success, True is returned.
+        /// </summary>
+        /// <param name="inlineMessageId">Identifier of the inline message</param>
+        /// <param name="caption">New caption of the message</param>
+        /// <param name="parseMode">Send Markdown or HTML, if you want Telegram apps to show bold, 
+        /// italic, fixed-width text or inline URLs in your bot's message.</param>
+        /// <param name="replyMarkup">An inline keyboard, if you want any</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> EditMessageCaptionAsync(string inlineMessageId, string caption, ParseMode parseMode = ParseMode.None,
+            InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "inline_message_id", inlineMessageId },
+                { "caption", caption } };
+            if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<bool>("editMessageCaption", args);
+        }
+
+        /// <summary>
+        /// Use this method to edit only the reply markups of messages sent by the bot. 
+        /// On success, the edited Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="messageId">Identifier of the message sent by the bot</param>
+        /// <param name="replyMarkup">An inline keyboard.</param>
+        /// <returns>The edited message</returns>
+        public async Task<Message> EditMessageReplyMarkupAsync(ChatId chatId, int messageId, InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId },
+                { "message_id", messageId } };
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("editMessageReplyMarkup", args);
+        }
+
+        /// <summary>
+        /// Use this method to edit only the reply markups of messages sent via the bot (for inline bots). 
+        /// On success, True is returned.
+        /// </summary>
+        /// <param name="inlineMessageId">Identifier of the inline message</param>
+        /// <param name="replyMarkup">An inline keyboard, if you want any</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> EditMessageReplyMarkupAsync(string inlineMessageId, InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "inline_message_id", inlineMessageId } };
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<bool>("editMessageReplyMarkup", args);
+        }
+
+        /// <summary>
+        /// Use this method to delete a message, including service messages, with the following limitations:
+        /// <para>- A message can only be deleted if it was sent less than 48 hours ago.</para>
+        /// <para>- Bots can delete outgoing messages in groups and supergroups.</para>
+        /// <para>- Bots granted can_post_messages permissions can delete outgoing messages in channels.</para>
+        /// <para>- If the bot is an administrator of a group, it can delete any message there.</para>
+        /// <para>- If the bot has can_delete_messages permission in a supergroup or a channel, it can delete any message there.</para>
+        /// <para>Returns True on success.</para>
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="messageId">Identifier of the message to delete</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> DeleteMessageAsync(ChatId chatId, int messageId)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "message_id", messageId } };
+            return await ApiMethodAsync<bool>("deleteMessage", args);
+        }
+        #endregion
+        #region Stickers
+        /// <summary>
+        /// Use this method to send .webp stickers. On success, the sent Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="sticker">Sticker to send. A .webp file an one of either <see cref="SendFileId"/>, <see cref="SendFileUrl"/>
+        /// or <see cref="SendFileMultipart"/></param>
+        /// <param name="disableNotification">Sends the message silently. Users will receive a notification with no sound.</param>
+        /// <param name="replyToMessageId">If the message is a reply, ID of the original message</param>
+        /// <param name="replyMarkup">Additional interface options.</param>
+        /// <returns>The sent message</returns>
+        public async Task<Message> SendStickerAsync(ChatId chatId, SendFile sticker, bool disableNotification = false,
+            int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "sticker", sticker } };
+            if (disableNotification) args.Add("disable_notification", true);
+            if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("sendSticker", args);
+        }
+
+        /// <summary>
+        /// Use this method to get a sticker set. On success, a StickerSet object is returned.
+        /// </summary>
+        /// <param name="name">Name of the sticker set</param>
+        /// <returns>The sticker set, of course</returns>
+        public async Task<StickerSet> GetStickerSetAsync(string name)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "name", name } };
+            return await ApiMethodAsync<StickerSet>("getStickerSet", args);
+        }
+
+        /// <summary>
+        /// Use this method to upload a .png file with a sticker for later use in createNewStickerSet 
+        /// and addStickerToSet methods (can be used multiple times). Returns the uploaded File on success.
+        /// </summary>
+        /// <param name="userId">User identifier of sticker file owner</param>
+        /// <param name="pngSticker">Png image with the sticker, must be up to 512 kilobytes in size, 
+        /// dimensions must not exceed 512px, and either width or height must be exactly 512px.</param>
+        /// <returns>The uploaded file (containing only the fileId)</returns>
+        public async Task<File> UploadStickerFileAsync(int userId, SendFile pngSticker)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "user_id", userId }, { "png_sticker", pngSticker } };
+            return await ApiMethodAsync<File>("uploadStickerFile", args);
+        }
+
+        /// <summary>
+        /// Use this method to create new sticker set owned by a user. 
+        /// The bot will be able to edit the created sticker set. Returns True on success.
+        /// </summary>
+        /// <param name="userId">User identifier of created sticker set owner</param>
+        /// <param name="name">Short name of sticker set, to be used in t.me/addstickers/ URLs (e.g., animals). 
+        /// Can contain only english letters, digits and underscores. 
+        /// Must begin with a letter, can't contain consecutive underscores and must end in “_by_&lt;bot username&gt;”. 
+        /// &lt;bot_username&gt; is case insensitive. 1-64 characters.</param>
+        /// <param name="title">Sticker set title, 1-64 characters</param>
+        /// <param name="pngSticker">Png image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, 
+        /// and either width or height must be exactly 512px. One of either <see cref="SendFileId"/>, <see cref="SendFileUrl"/>
+        ///  or <see cref="SendFileMultipart"/></param>
+        /// <param name="emojis">One or more emoji corresponding to the sticker</param>
+        /// <param name="containsMasks">Pass True, if a set of mask stickers should be created</param>
+        /// <param name="maskPosition">An object for position where the mask should be placed on faces</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> CreateNewStickerSetAsync(int userId, string name, string title, SendFile pngSticker,
+            string emojis, bool containsMasks = false, MaskPosition maskPosition = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>()
+            {
+                { "user_id", userId }, { "name", name }, { "title", title },
+                { "png_sticker", pngSticker }, { "emojis", emojis }
+            };
+            if (containsMasks) args.Add("contains_masks", true);
+            if (maskPosition != null) args.Add("mask_position", maskPosition);
+
+            return await ApiMethodAsync<bool>("createNewStickerSet", args);
+        }
+
+        /// <summary>
+        /// Use this method to add a new sticker to a set created by the bot. Returns True on success.
+        /// </summary>
+        /// <param name="userId">User identifier of sticker set owner</param>
+        /// <param name="name">Sticker set name</param>
+        /// <param name="pngSticker">Png image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, 
+        /// and either width or height must be exactly 512px. One of either <see cref="SendFileId"/>, <see cref="SendFileUrl"/> 
+        /// or <see cref="SendFileMultipart"/></param>
+        /// <param name="emojis">One or more emoji corresponding to the sticker</param>
+        /// <param name="maskPosition">An object for where the mask should be placed on faces, if the sticker is one</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> AddStickerToSetAsync(int userId, string name, SendFile pngSticker, string emojis, 
+            MaskPosition maskPosition = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>()
+            {
+                { "user_id", userId }, { "name", name },
+                { "png_sticker", pngSticker }, { "emojis", emojis }
+            };
+            if (maskPosition != null) args.Add("mask_position", maskPosition);
+
+            return await ApiMethodAsync<bool>("addStickerToSet", args);
+        }
+
+        /// <summary>
+        /// Use this method to move a sticker in a set created by the bot to a specific position . Returns True on success.
+        /// </summary>
+        /// <param name="sticker">File identifier of the sticker</param>
+        /// <param name="position">New position in the set, zero-based</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> SetStickerPositionInSetAsync(string sticker, int position)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "sticker", sticker }, { "position", position } };
+            return await ApiMethodAsync<bool>("setStickerPositionInSet", args);
+        }
+
+        /// <summary>
+        /// Use this method to delete a sticker from a set created by the bot. Returns True on success.
+        /// </summary>
+        /// <param name="sticker">File identifier of the sticker</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> DeleteStickerFromSetAsync(string sticker)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "sticker", sticker } };
+            return await ApiMethodAsync<bool>("deleteStickerFromSet", args);
+        }
         #endregion
     }
 }

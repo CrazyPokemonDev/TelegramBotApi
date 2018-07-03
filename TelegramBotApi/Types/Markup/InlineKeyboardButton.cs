@@ -59,5 +59,13 @@ namespace TelegramBotApi.Types.Markup
         /// </summary>
         [JsonProperty(PropertyName = "pay")]
         public bool Pay { get; set; }
+
+        /// <summary>
+        /// Initializes a new object of the <see cref="InlineKeyboardButton"/> class. Has to be filled with data.
+        /// </summary>
+        public InlineKeyboardButton()
+        {
+
+        }
     }
 }

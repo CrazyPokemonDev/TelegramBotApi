@@ -8,7 +8,7 @@
     <owners>Olfi01, Olgabrezel, jeffffc</owners>
     <iconUrl>https://www.dropbox.com/s/i40o5izfkbcjzub/flomsbottestgruppe.png?dl=1</iconUrl>
     <description>A wrapper for the telegram bot API. Keeping backwards- and forwardscompatibility</description>
-    <releaseNotes>Targetting multiple frameworks</releaseNotes>
+    <releaseNotes>Updated nuspec</releaseNotes>
     <copyright></copyright>
     <tags>Telegram Bot TelegramBot Telegram.Bot API BotApi TelegramBotApi</tags>
 	<dependencies>

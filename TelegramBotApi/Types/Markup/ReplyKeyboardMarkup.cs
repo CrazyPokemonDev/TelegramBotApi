@@ -2,6 +2,7 @@
 
 namespace TelegramBotApi.Types.Markup
 {
+    //TODO: Add ReplyMarkupMaker
     /// <summary>
     /// This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).
     /// </summary>
@@ -40,5 +41,61 @@ namespace TelegramBotApi.Types.Markup
         /// </summary>
         [JsonProperty(PropertyName = "selective")]
         public bool Selective { get; set; }
+
+        /// <summary>
+        /// Initializes a new, empty instance of the <see cref="ReplyKeyboardMarkup"/> class
+        /// </summary>
+        public ReplyKeyboardMarkup()
+        {
+
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ReplyKeyboardMarkup"/> class with only one button
+        /// </summary>
+        /// <param name="button">The one button</param>
+        public ReplyKeyboardMarkup(KeyboardButton button)
+        {
+            Keyboard = new[] { new[] { button } };
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ReplyKeyboardMarkup"/> class with only one row
+        /// </summary>
+        /// <param name="row">The row of KeyboardButtons</param>
+        public ReplyKeyboardMarkup(KeyboardButton[] row)
+        {
+            Keyboard = new[] { row };
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ReplyKeyboardMarkup"/> class with multiple rows
+        /// </summary>
+        /// <param name="rows">The rows of KeyboardButtons</param>
+        public ReplyKeyboardMarkup(KeyboardButton[][] rows)
+        {
+            Keyboard = rows;
+        }
+
+        /// <summary>
+        /// Converts an InlineKeyboardButton to a markup
+        /// </summary>
+        /// <param name="button">The button</param>
+        public static implicit operator ReplyKeyboardMarkup(KeyboardButton button)
+            => new ReplyKeyboardMarkup(button);
+
+        /// <summary>
+        /// Converts an InlineKeyboardButton row to a markup
+        /// </summary>
+        /// <param name="row">The button row</param>
+        public static implicit operator ReplyKeyboardMarkup(KeyboardButton[] row)
+            => new ReplyKeyboardMarkup(row);
+
+        /// <summary>
+        /// Converts InlineKeyboardButton rows to a markup
+        /// </summary>
+        /// <param name="rows">The button rows</param>
+        public static implicit operator ReplyKeyboardMarkup(KeyboardButton[][] rows)
+            => new ReplyKeyboardMarkup(rows);
     }
 }

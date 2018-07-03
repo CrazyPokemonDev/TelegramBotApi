@@ -26,5 +26,13 @@ namespace TelegramBotApi.Types.Markup
         /// </summary>
         [JsonProperty(PropertyName = "request_location")]
         public bool RequestLocation { get; set; }
+
+        /// <summary>
+        /// Initializes a new, empty instance of the <see cref="KeyboardButton"/> class. Has to be filled with data.
+        /// </summary>
+        public KeyboardButton()
+        {
+
+        }
     }
 }

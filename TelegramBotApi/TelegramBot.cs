@@ -14,6 +14,7 @@ using TelegramBotApi.Types.Events;
 using TelegramBotApi.Types.Exceptions;
 using TelegramBotApi.Types.Inline;
 using TelegramBotApi.Types.Markup;
+using TelegramBotApi.Types.Payment;
 using TelegramBotApi.Types.Upload;
 using Enum = TelegramBotApi.Enums.Enum;
 using File = TelegramBotApi.Types.File;
@@ -1524,6 +1525,115 @@ namespace TelegramBotApi
             if (!string.IsNullOrWhiteSpace(switchPmParameter)) args.Add("switch_pm_parameter", switchPmParameter);
 
             return await ApiMethodAsync<bool>("answerInlineQuery", args);
+        }
+        #endregion
+        #region Payment
+        /// <summary>
+        /// Use this method to send invoices. On success, the sent Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target private chat</param>
+        /// <param name="title">Product name, 1-32 characters</param>
+        /// <param name="description">Product description, 1-255 characters</param>
+        /// <param name="payload">Bot-defined invoice payload, 1-128 bytes. 
+        /// This will not be displayed to the user, use for your internal processes.</param>
+        /// <param name="providerToken">Payments provider token, obtained via Botfather</param>
+        /// <param name="startParameter">Unique deep-linking parameter that can be used to generate 
+        /// this invoice when used as a start parameter</param>
+        /// <param name="currency">Three-letter ISO 4217 currency code</param>
+        /// <param name="prices">Price breakdown, a list of components 
+        /// (e.g. product price, tax, discount, delivery cost, delivery tax, bonus, etc.)</param>
+        /// <param name="providerData">JSON-encoded data about the invoice, which will be shared with the payment provider. 
+        /// A detailed description of required fields should be provided by the payment provider.</param>
+        /// <param name="photoUrl">URL of the product photo for the invoice. Can be a photo of the goods or a marketing image for a service. 
+        /// People like it better when they see what they are paying for.</param>
+        /// <param name="photoSize">Photo size</param>
+        /// <param name="photoWidth">Photo width</param>
+        /// <param name="photoHeight">Photo height</param>
+        /// <param name="needName">Pass True, if you require the user's full name to complete the order</param>
+        /// <param name="needPhoneNumber">Pass True, if you require the user's phone number to complete the order</param>
+        /// <param name="needEmail">Pass True, if you require the user's email address to complete the order</param>
+        /// <param name="needShippingAddress">Pass True, if you require the user's shipping address to complete the order</param>
+        /// <param name="sendPhoneNumberToProvider">Pass True, if user's phone number should be sent to provider</param>
+        /// <param name="sendEmailToProvider">Pass True, if user's email address should be sent to provider</param>
+        /// <param name="isFlexible">Pass True, if the final price depends on the shipping method</param>
+        /// <param name="disableNotification">Sends the message silently. Users will receive a notification with no sound.</param>
+        /// <param name="replyToMessageId">If the message is a reply, ID of the original message</param>
+        /// <param name="replyMarkup">An object for an inline keyboard. If empty, one 'Pay total price' button will be shown. 
+        /// If not empty, the first button must be a Pay button.</param>
+        /// <returns>The sent message</returns>
+        public async Task<Message> SendInvoiceAsync(int chatId, string title, string description, string payload, string providerToken,
+            string startParameter, string currency, LabeledPrice[] prices, string providerData = null, string photoUrl = null,
+            int photoSize = 0, int photoWidth = 0, int photoHeight = 0, bool needName = false, bool needPhoneNumber = false,
+            bool needEmail = false, bool needShippingAddress = false, bool sendPhoneNumberToProvider = false, bool sendEmailToProvider = false,
+            bool isFlexible = false, bool disableNotification = false, int replyToMessageId = -1, InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>()
+            {
+                { "chat_id", chatId }, { "title", title }, { "description", description }, { "payload", payload },
+                { "provider_token", providerToken }, { "startParameter", startParameter }, { "currency", currency },
+                { "prices", prices }
+            };
+            if (!string.IsNullOrWhiteSpace(providerData)) args.Add("provider_data", providerData);
+            if (!string.IsNullOrWhiteSpace(photoUrl)) args.Add("photo_url", photoUrl);
+            if (photoSize != 0) args.Add("photo_size", photoSize);
+            if (photoWidth != 0) args.Add("photo_width", photoWidth);
+            if (photoHeight != 0) args.Add("photo_height", photoHeight);
+            if (needName) args.Add("need_name", true);
+            if (needPhoneNumber) args.Add("need_phone_number", true);
+            if (needEmail) args.Add("need_email", true);
+            if (needShippingAddress) args.Add("need_shipping_address", true);
+            if (sendPhoneNumberToProvider) args.Add("send_phone_number_to_provider", true);
+            if (sendEmailToProvider) args.Add("send_email_to_provider", true);
+            if (isFlexible) args.Add("is_flexible", true);
+            if (disableNotification) args.Add("disable_notification", true);
+            if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+            
+            return await ApiMethodAsync<Message>("sendInvoice", args);
+        }
+
+        /// <summary>
+        /// If you sent an invoice requesting a shipping address and the parameter is_flexible was specified, 
+        /// the Bot API will send an Update with a shipping_query field to the bot. 
+        /// Use this method to reply to shipping queries. On success, True is returned.
+        /// </summary>
+        /// <param name="shippingQueryId">Unique identifier for the query to be answered</param>
+        /// <param name="ok">Specify True if delivery to the specified address is possible and False if there are any problems 
+        /// (for example, if delivery to the specified address is not possible)</param>
+        /// <param name="shippingOptions">Required if ok is True. An array of available shipping options.</param>
+        /// <param name="errorMessage">Required if ok is False. Error message in human readable form that explains why 
+        /// it is impossible to complete the order (e.g. "Sorry, delivery to your desired address is unavailable'). 
+        /// Telegram will display this message to the user.</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> AnswerShippingQueryAsync(string shippingQueryId, bool ok, ShippingOption[] shippingOptions = null,
+            string errorMessage = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "shipping_query_id", shippingQueryId }, { "ok", ok } };
+            if (ok) args.Add("shipping_options", shippingOptions);
+            else args.Add("error_message", errorMessage);
+
+            return await ApiMethodAsync<bool>("answerShippingQuery", args);
+        }
+
+        /// <summary>
+        /// Once the user has confirmed their payment and shipping details, the Bot API sends the final confirmation 
+        /// in the form of an Update with the field pre_checkout_query. Use this method to respond to such pre-checkout queries. 
+        /// On success, True is returned. Note: The Bot API must receive an answer within 10 seconds after the pre-checkout query was sent.
+        /// </summary>
+        /// <param name="preCheckoutQueryId">Unique identifier for the query to be answered</param>
+        /// <param name="ok">Specify True if everything is alright (goods are available, etc.) and the bot is ready to proceed with the order. 
+        /// Use False if there are any problems.</param>
+        /// <param name="errorMessage">Required if ok is False. 
+        /// Error message in human readable form that explains the reason for failure to proceed with the checkout 
+        /// (e.g. "Sorry, somebody just bought the last of our amazing black T-shirts while you were busy filling out your payment details. 
+        /// Please choose a different color or garment!"). Telegram will display this message to the user.</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> AnswerPreCheckoutQueryAsync(string preCheckoutQueryId, bool ok, string errorMessage = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "pre_checkout_query_id", preCheckoutQueryId }, { "ok", ok } };
+            if (!ok) args.Add("error_message", errorMessage);
+
+            return await ApiMethodAsync<bool>("answerPreCheckoutQuery", args);
         }
         #endregion
     }

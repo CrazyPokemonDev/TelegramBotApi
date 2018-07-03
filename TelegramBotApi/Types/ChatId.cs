@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TelegramBotApi.Enums;
 
 namespace TelegramBotApi.Types
 {
@@ -37,6 +38,16 @@ namespace TelegramBotApi.Types
         public static implicit operator ChatId(string channelName)
         {
             return new ChatId() { ChannelUsername = channelName.StartsWith("@") ? channelName : "@" + channelName };
+        }
+
+        /// <summary>
+        /// Automatically converts a <see cref="Chat"/> object into a <see cref="ChatId"/>
+        /// </summary>
+        /// <param name="chat">The <see cref="Chat"/> to which the desired id belongs</param>
+        public static implicit operator ChatId(Chat chat)
+        {
+            if (chat.Type == ChatType.Channel && chat.Username != null) return new ChatId() { ChannelUsername = chat.Username };
+            else return new ChatId() { ChatIdentifier = chat.Id };
         }
 
         /// <summary>

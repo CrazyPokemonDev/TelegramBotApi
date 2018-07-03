@@ -12,6 +12,7 @@ using TelegramBotApi.Enums;
 using TelegramBotApi.Types;
 using TelegramBotApi.Types.Events;
 using TelegramBotApi.Types.Exceptions;
+using TelegramBotApi.Types.Game;
 using TelegramBotApi.Types.Inline;
 using TelegramBotApi.Types.Markup;
 using TelegramBotApi.Types.Payment;
@@ -1634,6 +1635,109 @@ namespace TelegramBotApi
             if (!ok) args.Add("error_message", errorMessage);
 
             return await ApiMethodAsync<bool>("answerPreCheckoutQuery", args);
+        }
+        #endregion
+        #region Games
+        /// <summary>
+        /// Use this method to send a game. On success, the sent Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat</param>
+        /// <param name="gameShortName">Short name of the game, serves as the unique identifier for the game. 
+        /// Set up your games via Botfather.</param>
+        /// <param name="disableNotification">Sends the message silently. Users will receive a notification with no sound.</param>
+        /// <param name="replyToMessageId">If the message is a reply, ID of the original message</param>
+        /// <param name="replyMarkup">An object for an inline keyboard. If empty, one ‘Play game_title’ button will be shown. 
+        /// If not empty, the first button must launch the game.</param>
+        /// <returns>The sent Message</returns>
+        public async Task<Message> SendGameAsync(long chatId, string gameShortName, bool disableNotification = false, 
+            int replyToMessageId = -1, InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "gameShortName", gameShortName } };
+            if (disableNotification) args.Add("disable_notification", true);
+            if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("sendGame", args);
+        }
+
+        /// <summary>
+        /// Use this method to set the score of the specified user in a game. 
+        /// On success, returns the edited Message. 
+        /// Returns an error, if the new score is not greater than the user's current score in the chat and force is False.
+        /// </summary>
+        /// <param name="userId">User identifier</param>
+        /// <param name="score">New score, must be non-negative</param>
+        /// <param name="chatId">Unique identifier for the target chat</param>
+        /// <param name="messageId">Identifier of the sent message</param>
+        /// <param name="force">Pass True, if the high score is allowed to decrease. This can be useful when fixing mistakes or banning cheaters</param>
+        /// <param name="disableEditMessage">Pass True, if the game message should not be automatically edited to include the current scoreboard</param>
+        /// <returns>The edited message</returns>
+        public async Task<Message> SetGameScoreAsync(int userId, int score, long chatId, int messageId, bool force = false, 
+            bool disableEditMessage = false)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "user_id", userId }, { "score", score },
+                { "chat_id", chatId }, { "message_id", messageId } };
+            if (force) args.Add("force", true);
+            if (disableEditMessage) args.Add("disable_edit_message", true);
+
+            return await ApiMethodAsync<Message>("setGameScore", args);
+        }
+
+        /// <summary>
+        /// Use this method to set the score of the specified user in a game. 
+        /// On success, returns True. 
+        /// Returns an error, if the new score is not greater than the user's current score in the chat and force is False.
+        /// </summary>
+        /// <param name="userId">User identifier</param>
+        /// <param name="score">New score, must be non-negative</param>
+        /// <param name="inlineMessageId">Identifier of the inline message</param>
+        /// <param name="force">Pass True, if the high score is allowed to decrease. This can be useful when fixing mistakes or banning cheaters</param>
+        /// <param name="disableEditMessage">Pass True, if the game message should not be automatically edited to include the current scoreboard</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> SetGameScoreAsync(int userId, int score, string inlineMessageId, bool force = false,
+            bool disableEditMessage = false)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "user_id", userId }, { "score", score },
+                { "inline_message_id", inlineMessageId } };
+            if (force) args.Add("force", true);
+            if (disableEditMessage) args.Add("disable_edit_message", true);
+
+            return await ApiMethodAsync<bool>("setGameScore", args);
+        }
+
+        /// <summary>
+        /// Use this method to get data for high score tables. 
+        /// Will return the score of the specified user and several of his neighbors in a game. 
+        /// On success, returns an Array of GameHighScore objects.
+        /// </summary>
+        /// <param name="userId">Target user id</param>
+        /// <param name="chatId">Unique identifier for the target chat</param>
+        /// <param name="messageId">Identifier of the sent message</param>
+        /// <returns>An array of GameHighScore</returns>
+        public async Task<GameHighScore[]> GetGameHighScoresAsync(int userId, long chatId, int messageId)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>()
+            {
+                { "user_id", userId }, { "chat_id", chatId }, { "message_id", messageId }
+            };
+            return await ApiMethodAsync<GameHighScore[]>("getGameHighScores", args);
+        }
+
+        /// <summary>
+        /// Use this method to get data for high score tables. 
+        /// Will return the score of the specified user and several of his neighbors in a game. 
+        /// On success, returns an Array of GameHighScore objects.
+        /// </summary>
+        /// <param name="userId">Target user id</param>
+        /// <param name="inlineMessageId">Identifier of the inline message</param>
+        /// <returns>An array of GameHighScore</returns>
+        public async Task<GameHighScore[]> GetGameHighScoresAsync(int userId, string inlineMessageId)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>()
+            {
+                { "user_id", userId }, { "inline_message_id", inlineMessageId }
+            };
+            return await ApiMethodAsync<GameHighScore[]>("getGameHighScores", args);
         }
         #endregion
     }

@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types
     /// <summary>
     /// This object represents a Telegram user or bot.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class User
     {
         /// <summary>

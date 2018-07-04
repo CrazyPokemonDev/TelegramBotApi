@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Payment
     /// <summary>
     /// This object represents a portion of the price for goods or services.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class LabeledPrice
     {
         /// <summary>

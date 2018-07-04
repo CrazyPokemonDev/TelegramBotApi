@@ -9,7 +9,7 @@ namespace TelegramBotApi.Types
     /// <summary>
     /// Contains information about the current status of a webhook
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class WebhookInfo
     {
         /// <summary>

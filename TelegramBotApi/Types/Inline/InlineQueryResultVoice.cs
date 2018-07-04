@@ -9,7 +9,7 @@ namespace TelegramBotApi.Types.Inline
     /// By default, this voice recording will be sent by the user. 
     /// Alternatively, you can use input_message_content to send a message with the specified content instead of the the voice message.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineQueryResultVoice : InlineQueryResult
     {
         private string _type = "voice";

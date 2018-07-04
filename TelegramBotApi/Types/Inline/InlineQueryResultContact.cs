@@ -7,7 +7,7 @@ namespace TelegramBotApi.Types.Inline
     /// Represents a contact with a phone number. By default, this contact will be sent by the user. 
     /// Alternatively, you can use input_message_content to send a message with the specified content instead of the contact.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineQueryResultContact : InlineQueryResult
     {
         private string _type = "contact";

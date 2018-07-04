@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Inline
     /// <summary>
     /// Represents the content of a location message to be sent as the result of an inline query.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InputLocationMessageContent : InputMessageContent
     {
         /// <summary>

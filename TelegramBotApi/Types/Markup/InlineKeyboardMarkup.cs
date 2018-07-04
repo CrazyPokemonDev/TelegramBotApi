@@ -3,9 +3,10 @@
 namespace TelegramBotApi.Types.Markup
 {
     /// <summary>
-    /// This object represents an inline keyboard that appears right next to the message it belongs to.
+    /// This object represents an inline keyboard that appears right next to the message it belongs to. 
+    /// See <see cref="ReplyMarkupMaker"/> for an easy way to create one of these
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineKeyboardMarkup : ReplyMarkupBase
     {
         /// <summary>

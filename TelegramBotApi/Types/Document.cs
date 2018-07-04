@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types
     /// <summary>
     /// Represents a general file
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Document
     {
         /// <summary>

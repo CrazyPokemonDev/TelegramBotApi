@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Game
     /// <summary>
     /// This object represents a game. Use BotFather to create and edit games, their short names will act as unique identifiers.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Game
     {
         /// <summary>

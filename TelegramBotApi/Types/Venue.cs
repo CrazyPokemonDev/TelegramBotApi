@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types
     /// <summary>
     /// Represents a venue
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Venue
     {
         /// <summary>

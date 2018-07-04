@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Payment
     /// <summary>
     /// This object contains information about an incoming shipping query.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class ShippingQuery
     {
         /// <summary>

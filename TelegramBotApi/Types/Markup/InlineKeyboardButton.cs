@@ -6,7 +6,7 @@ namespace TelegramBotApi.Types.Markup
     /// <summary>
     /// This object represents one button of an inline keyboard. You must use exactly one of the optional fields.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineKeyboardButton
     {
         /// <summary>
@@ -61,11 +61,20 @@ namespace TelegramBotApi.Types.Markup
         public bool Pay { get; set; }
 
         /// <summary>
-        /// Initializes a new object of the <see cref="InlineKeyboardButton"/> class. Has to be filled with data.
+        /// Initializes a new instance of the <see cref="InlineKeyboardButton"/> class. Has to be filled with data.
         /// </summary>
         public InlineKeyboardButton()
         {
 
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="InlineKeyboardButton"/> class. Has to be filled with data.
+        /// </summary>
+        /// <param name="text">The text to show on the button</param>
+        public InlineKeyboardButton(string text)
+        {
+            Text = text;
         }
     }
 }

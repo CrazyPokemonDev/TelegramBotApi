@@ -6,7 +6,7 @@ namespace TelegramBotApi.Types
     /// Represents a response from the telegram bot API
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class ApiResponse<T>
     {
         /// <summary>

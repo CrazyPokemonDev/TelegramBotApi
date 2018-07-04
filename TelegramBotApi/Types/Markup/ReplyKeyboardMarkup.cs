@@ -2,11 +2,11 @@
 
 namespace TelegramBotApi.Types.Markup
 {
-    //TODO: Add ReplyMarkupMaker
     /// <summary>
-    /// This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).
+    /// This object represents a custom keyboard with reply options (see Introduction to bots for details and examples). 
+    /// See <see cref="ReplyMarkupMaker"/> for an easy way to create one of these
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class ReplyKeyboardMarkup : ReplyMarkupBase
     {
         /// <summary>
@@ -21,7 +21,7 @@ namespace TelegramBotApi.Types.Markup
         /// Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard.
         /// </summary>
         [JsonProperty(PropertyName = "resize_keyboard")]
-        public bool ResizeKeyboard = false;
+        public bool ResizeKeyboard { get; set; } = false;
 
         /// <summary>
         /// Optional. Requests clients to hide the keyboard as soon as it's been used. 
@@ -29,7 +29,7 @@ namespace TelegramBotApi.Types.Markup
         /// the user can press a special button in the input field to see the custom keyboard again. Defaults to false.
         /// </summary>
         [JsonProperty(PropertyName = "one_time_keyboard")]
-        public bool OneTimeKeyboard = false;
+        public bool OneTimeKeyboard { get; set; } = false;
 
         /// <summary>
         /// Optional. Use this parameter if you want to show the keyboard to specific users only. 

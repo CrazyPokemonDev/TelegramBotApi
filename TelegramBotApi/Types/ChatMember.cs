@@ -8,7 +8,7 @@ namespace TelegramBotApi.Types
     /// <summary>
     /// Represents a member of a chat
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class ChatMember
     {
         /// <summary>

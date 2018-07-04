@@ -11,7 +11,7 @@ namespace TelegramBotApi.Types.Inline
     /// 
     /// If an InlineQueryResultVideo message contains an embedded video (e.g., YouTube), you must replace its content using input_message_content.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineQueryResultVideo : InlineQueryResult
     {
         private string _type = "gif";

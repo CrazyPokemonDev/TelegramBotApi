@@ -8,7 +8,7 @@ namespace TelegramBotApi.Types.Upload
     /// <summary>
     /// Represents a photo or video to be sent
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public abstract class InputMedia
     {
         /// <summary>

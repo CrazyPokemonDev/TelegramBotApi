@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Payment
     /// <summary>
     /// This object contains information about an incoming pre-checkout query.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class PreCheckoutQuery
     {
         /// <summary>

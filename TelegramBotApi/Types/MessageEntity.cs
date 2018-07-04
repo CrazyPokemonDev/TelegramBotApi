@@ -6,7 +6,7 @@ namespace TelegramBotApi.Types
     /// <summary>
     /// Represents a special entity in a text message
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class MessageEntity
     {
         [JsonProperty(PropertyName = "type", Required = Required.Always)]

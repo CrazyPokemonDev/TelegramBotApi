@@ -8,7 +8,7 @@ namespace TelegramBotApi.Types.Markup
     /// custom keyboards are displayed until a new keyboard is sent by a bot. 
     /// An exception is made for one-time keyboards that are hidden immediately after the user presses a button (see ReplyKeyboardMarkup).
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class ReplyKeyboardRemove : ReplyMarkupBase
     {
         /// <summary>

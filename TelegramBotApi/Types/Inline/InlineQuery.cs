@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Inline
     /// <summary>
     /// This object represents an incoming inline query. When the user sends an empty query, your bot could return some default or trending results.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineQuery
     {
         /// <summary>

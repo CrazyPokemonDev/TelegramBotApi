@@ -8,7 +8,7 @@ namespace TelegramBotApi.Types.Inline
     /// Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with optional caption. 
     /// Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineQueryResultGif : InlineQueryResult
     {
         private string _type = "gif";

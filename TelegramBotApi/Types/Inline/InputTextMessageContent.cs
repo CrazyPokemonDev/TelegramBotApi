@@ -6,7 +6,7 @@ namespace TelegramBotApi.Types.Inline
     /// <summary>
     /// Represents a link to an article or web page.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InputTextMessageContent : InputMessageContent
     {
         /// <summary>

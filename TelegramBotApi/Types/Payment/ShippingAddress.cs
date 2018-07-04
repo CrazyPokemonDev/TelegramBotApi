@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Payment
     /// <summary>
     /// This object represents a shipping address.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class ShippingAddress
     {
         /// <summary>

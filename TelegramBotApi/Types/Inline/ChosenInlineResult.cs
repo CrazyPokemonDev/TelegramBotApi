@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Inline
     /// <summary>
     /// Represents a result of an inline query that was chosen by the user and sent to their chat partner.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class ChosenInlineResult
     {
         /// <summary>

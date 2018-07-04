@@ -6,7 +6,7 @@ namespace TelegramBotApi.Types.Inline
     /// <summary>
     /// Represents a Game.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineQueryResultGame : InlineQueryResult
     {
         private string _type = "game";

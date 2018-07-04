@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Game
     /// <summary>
     /// This object represents one row of the high scores table for a game.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class GameHighScore
     {
         /// <summary>

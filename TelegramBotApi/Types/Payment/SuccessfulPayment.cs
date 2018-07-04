@@ -5,7 +5,7 @@ namespace TelegramBotApi.Types.Payment
     /// <summary>
     /// This object contains basic information about a successful payment.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class SuccessfulPayment
     {
         /// <summary>

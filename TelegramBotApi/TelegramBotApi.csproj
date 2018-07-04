@@ -118,6 +118,7 @@
     <Compile Include="Types\Markup\ReplyKeyboardMarkup.cs" />
     <Compile Include="Types\Markup\ReplyKeyboardRemove.cs" />
     <Compile Include="Types\Markup\ReplyMarkupBase.cs" />
+    <Compile Include="Types\Markup\ReplyMarkupMaker.cs" />
     <Compile Include="Types\MaskPosition.cs" />
     <Compile Include="Types\Message.cs" />
     <Compile Include="Types\MessageEntity.cs" />

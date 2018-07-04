@@ -9,7 +9,7 @@ namespace TelegramBotApi.Types.Inline
     /// Alternatively, you can use input_message_content to send a message with the specified content instead of the file. 
     /// Currently, only .PDF and .ZIP files can be sent using this method
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class InlineQueryResultDocument : InlineQueryResult
     {
         private string _type = "document";

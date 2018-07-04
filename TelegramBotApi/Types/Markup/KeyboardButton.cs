@@ -6,7 +6,7 @@ namespace TelegramBotApi.Types.Markup
     /// This object represents one button of the reply keyboard. 
     /// For simple text buttons String can be used instead of this object to specify text of the button. Optional fields are mutually exclusive.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class KeyboardButton
     {
         /// <summary>
@@ -33,6 +33,15 @@ namespace TelegramBotApi.Types.Markup
         public KeyboardButton()
         {
 
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="KeyboardButton"/> class
+        /// </summary>
+        /// <param name="text">The text on the button (will be sent when it is clicked)</param>
+        public KeyboardButton(string text)
+        {
+            Text = text;
         }
     }
 }

@@ -7,7 +7,7 @@ namespace TelegramBotApi.Types.Markup
     /// (act as if the user has selected the bot‘s message and tapped ’Reply'). 
     /// This can be extremely useful if you want to create user-friendly step-by-step interfaces without having to sacrifice privacy mode.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class ForceReplyMarkup : ReplyMarkupBase
     {
         /// <summary>

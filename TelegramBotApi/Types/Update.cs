@@ -9,7 +9,7 @@ namespace TelegramBotApi.Types
     /// This object represents an incoming update.
     /// At most one of the optional parameters can be present in any given update.
     /// </summary>
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Update
     {
         /// <summary>

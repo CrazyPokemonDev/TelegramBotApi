@@ -135,9 +135,10 @@ namespace TelegramBotApi.Types
         /// </summary>
         public MessageEntity[] Entities
         {
-            get { return _entities; }
+            get { return _entities ?? new MessageEntity[0]; }
             set
             {
+                if (value == null) value = new MessageEntity[0];
                 for (int i = 0; i < value.Length; i++)
                 {
                     value[i].Value = Text.Substring(value[i].Offset, value[i].Length);
@@ -153,9 +154,10 @@ namespace TelegramBotApi.Types
         /// </summary>
         public MessageEntity[] CaptionEntities
         {
-            get { return _captionEntities; }
+            get { return _captionEntities ?? new MessageEntity[0]; }
             set
             {
+                if (value == null) value = new MessageEntity[0];
                 for (int i = 0; i < value.Length; i++)
                 {
                     value[i].Value = Caption.Substring(value[i].Offset, value[i].Length);

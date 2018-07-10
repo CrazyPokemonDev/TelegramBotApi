@@ -2,13 +2,13 @@
 <package >
   <metadata>
     <id>Crazypokemondev.TelegramBotApi</id>
-    <version>1.0.5</version>
+    <version>1.0.7</version>
     <title>TelegramBotApi</title>
     <authors>Olfi01, Olgabrezel, jeffffc</authors>
     <owners>Olfi01, Olgabrezel, jeffffc</owners>
     <iconUrl>https://www.dropbox.com/s/i40o5izfkbcjzub/flomsbottestgruppe.png?dl=1</iconUrl>
     <description>A wrapper for the telegram bot API. Keeping backwards- and forwardscompatibility</description>
-    <releaseNotes>Easier ReplyMarkups (added ReplyMarkupMaker class)</releaseNotes>
+    <releaseNotes>Fixed error for empty entities</releaseNotes>
     <copyright></copyright>
     <tags>Telegram Bot TelegramBot Telegram.Bot API BotApi TelegramBotApi</tags>
 	<dependencies>

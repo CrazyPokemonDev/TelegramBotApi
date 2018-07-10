@@ -1,0 +1,1485 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/telegrambotapi-1yyga/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.ChatAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.ChatAction.html",
+          "hash": "Pl3m+fWWFnfNwgU92ukYqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.ChatMemberStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.ChatMemberStatus.html",
+          "hash": "wc0KUAWbkXjBI3sh3ILIlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.ChatType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.ChatType.html",
+          "hash": "7CwpjbBX1TYjYuc8bXrrRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.MaskPositionPointType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.MaskPositionPointType.html",
+          "hash": "+2I5jhW9WKr1TrmBbTjWJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.MessageEntityType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.MessageEntityType.html",
+          "hash": "WthAIhR/RRGjsNvA5/km6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.MessageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.MessageType.html",
+          "hash": "9KoLSNVUEAShYkXDyYt/EA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.ParseMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.ParseMode.html",
+          "hash": "A37NEBD5VfXA0eLXGGuO5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.UpdateType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.UpdateType.html",
+          "hash": "G1q/W8U7KDnKn1PAcROSvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Enums.html",
+          "hash": "Ahe3C4gh2gU+/A0x8/Y12g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.TelegramBot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.TelegramBot.html",
+          "hash": "y1QucMZGwaaRnDWjtYmnNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.ApiResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.ApiResponse-1.html",
+          "hash": "68BbEOS5KRG8I5rnq9fjDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Audio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Audio.html",
+          "hash": "aVk0xuEKIwp+V4wNhoC/ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.CallbackQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.CallbackQuery.html",
+          "hash": "imYWNri78jNUwvgSq1Fxtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Chat.html",
+          "hash": "z4uXv7OHQpm7+Mp9X1Ct2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.ChatId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.ChatId.html",
+          "hash": "1OchgaTrHmamS7n1eCct7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.ChatMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.ChatMember.html",
+          "hash": "sBOIp7BqQzuzl4p+TzF3Jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.ChatPhoto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.ChatPhoto.html",
+          "hash": "DI1UCyop7Ok+1RUTi9oZXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Contact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Contact.html",
+          "hash": "IRdCO5xgZoof2sSaehNVaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Document.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Document.html",
+          "hash": "EsWO6lX0WWNES40c58PCuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.CallbackQueryEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.CallbackQueryEventArgs.html",
+          "hash": "zjgJ7soHZgGao1OUstYDzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.ChannelPostEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.ChannelPostEventArgs.html",
+          "hash": "bxE5ysRtCzVHZ2xFg7kpww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.ChosenInlineResultEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.ChosenInlineResultEventArgs.html",
+          "hash": "XhCw2JP3EBJPNXc1LHZgxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.EditedChannelPostEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.EditedChannelPostEventArgs.html",
+          "hash": "SDWRz+tAJ7zggBYJs7Se/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.EditedMessageEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.EditedMessageEventArgs.html",
+          "hash": "IRwR4ZVWvdySV/nOQ49esg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.InlineQueryEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.InlineQueryEventArgs.html",
+          "hash": "fFH4LG0ryk14YkpknjlwyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.MessageEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.MessageEventArgs.html",
+          "hash": "Rl3pS/PBVhXnKkzP8rmY8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.PreCheckoutQueryEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.PreCheckoutQueryEventArgs.html",
+          "hash": "wTK5i60z9vx4FKghpGXTSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.ShippingQueryEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.ShippingQueryEventArgs.html",
+          "hash": "GYwddtNtYquFphw9Vbj8rA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.UpdateEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.UpdateEventArgs.html",
+          "hash": "JaThweVGBLw6cmBteRXLOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Events.html",
+          "hash": "q1AECbpOO6fU04xlDnjPJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Exceptions.ApiRequestException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Exceptions.ApiRequestException.html",
+          "hash": "Q+6nvCmneuHvXCEvVaYQTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Exceptions.html",
+          "hash": "yFIsWWX04fzr8c/kX76KhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.File.html",
+          "hash": "XWjZEv9s1o1o8yKmK7oCqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Game.Animation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Game.Animation.html",
+          "hash": "+og8HnWBhFIQxtHK5tel4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Game.CallbackGame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Game.CallbackGame.html",
+          "hash": "JciHUgKiW1jb7BJHiMAp2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Game.Game.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Game.Game.html",
+          "hash": "y/GCzN0Uoh3ziXLHdGQZ7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Game.GameHighScore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Game.GameHighScore.html",
+          "hash": "fa8sNZf4TRIBSbXtt/rQEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Game.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Game.html",
+          "hash": "p9mra4VN8QAMw0ky6lEpgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.ChosenInlineResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.ChosenInlineResult.html",
+          "hash": "JzNopZ3ryO3KnkAHwwQLYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQuery.html",
+          "hash": "mVlpUogKvz03Z0Jz855NeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResult.html",
+          "hash": "bwi8oD1SZ3XKoAQmJDVysg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultArticle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultArticle.html",
+          "hash": "wfatxU4mByi2gYR2erfRNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultAudio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultAudio.html",
+          "hash": "+lZqpTlPzjl/7TcQAlSKfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedAudio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedAudio.html",
+          "hash": "6iy/e4/EiKid7KrrzBUp6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedDocument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedDocument.html",
+          "hash": "opVSys02xnQooCLoN8vUxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedGif.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedGif.html",
+          "hash": "1GY1B0taI71f8Kl4pRUgtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedMpeg4Gif.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedMpeg4Gif.html",
+          "hash": "15My32MsEBTZWVp8DSBn2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedPhoto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedPhoto.html",
+          "hash": "aoGR+eE2rERkvKCMfU2k3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedSticker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedSticker.html",
+          "hash": "s+MXNgLVpgb4eo+yx0349g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedVideo.html",
+          "hash": "8Eo70L+yWZ/47i7ub8JGXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedVoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedVoice.html",
+          "hash": "8SfH7z6fc6Gl543eH+nccQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultContact.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultContact.html",
+          "hash": "udbx9DkLlZs5g+nLo4r1ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultDocument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultDocument.html",
+          "hash": "UE4N+s9wXeRyAztUfRAdFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultGame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultGame.html",
+          "hash": "qWImdemRCJaNYfcVJ0vFSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultGif.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultGif.html",
+          "hash": "b0dKWOzjRhJW9VLS6DhIWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultLocation.html",
+          "hash": "E9Tq+/WvJR/wA0z0hAqEVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultMpeg4Gif.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultMpeg4Gif.html",
+          "hash": "bi/toWq3c5ItHrhAFA4CTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultPhoto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultPhoto.html",
+          "hash": "r9tfeowiIdgA1g2E68exoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVenue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVenue.html",
+          "hash": "E3A40txVCqC0pEnj/IOcTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVideo.html",
+          "hash": "IMkWl4AyCDrcgo06qvVLAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVoice.html",
+          "hash": "YQ/U6h1fcdAJPbcz95jC6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InputContactMessageContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InputContactMessageContent.html",
+          "hash": "vBPAYguNsu1inOnGLxk59A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InputLocationMessageContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InputLocationMessageContent.html",
+          "hash": "4tXW5xZ7pK9VX6QWtve4Iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InputMessageContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InputMessageContent.html",
+          "hash": "xyQX4hg2/RTVBHuH/Ld2IQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InputTextMessageContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InputTextMessageContent.html",
+          "hash": "4JVLKXLjk3TyospwGt1GNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.InputVenueMessageContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.InputVenueMessageContent.html",
+          "hash": "ikBweD8jqGknLqYgTztRtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Inline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Inline.html",
+          "hash": "iJb2Wnam7Y2rm1MHdO46cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Location.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Location.html",
+          "hash": "/SILqhYD25K751Bv1IZD1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.ForceReplyMarkup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.ForceReplyMarkup.html",
+          "hash": "TEpu/zvmAi8NcT+tA0RIRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.InlineKeyboardButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.InlineKeyboardButton.html",
+          "hash": "HSqlsd5wzN4Y+HbHXH4wKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.InlineKeyboardMarkup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.InlineKeyboardMarkup.html",
+          "hash": "gQhW0yiKzgBx0S0oSpM4OQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.KeyboardButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.KeyboardButton.html",
+          "hash": "gWsxS+YV/uKBNLM+ZblavQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.ReplyKeyboardMarkup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.ReplyKeyboardMarkup.html",
+          "hash": "c87hcg455/jgFpGfqXo3lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.ReplyKeyboardRemove.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.ReplyKeyboardRemove.html",
+          "hash": "yHOOdpqfX+Iv9Iapt+DUNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupBase.html",
+          "hash": "iEZiG7J0kf8fU6TQKklqWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupMaker.ReplyMarkupType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupMaker.ReplyMarkupType.html",
+          "hash": "+eJdjGTsdcOp0AUi5q+ICg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupMaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupMaker.html",
+          "hash": "s/cwRgWBhnMQVuLb6xuGTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Markup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Markup.html",
+          "hash": "wrfXKoC1xiBwLrbGT0qssw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.MaskPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.MaskPosition.html",
+          "hash": "F6TrClohH4wYKBrLzCcFnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Message.html",
+          "hash": "AGsFzZMViOvaj1fjisHlVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.MessageEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.MessageEntity.html",
+          "hash": "ERtQRQ3i3f+ygEqf3eeqHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.Invoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.Invoice.html",
+          "hash": "8XVTsA1/+nty4mWQiX2LqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.LabeledPrice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.LabeledPrice.html",
+          "hash": "3hxsJRUdVK67sO7SjloVmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.OrderInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.OrderInfo.html",
+          "hash": "MaL/kC3avX9I3F29eDAiEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.PreCheckoutQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.PreCheckoutQuery.html",
+          "hash": "KC/rEBnyyuQZNmAw25YVgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.ShippingAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.ShippingAddress.html",
+          "hash": "KN/pqOxcOJneOnx+s/vgHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.ShippingOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.ShippingOption.html",
+          "hash": "Xywz0W8kZ5VFwXuNhKai5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.ShippingQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.ShippingQuery.html",
+          "hash": "V4qPrkgzXRXzn0HAhIy4vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.SuccessfulPayment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.SuccessfulPayment.html",
+          "hash": "aowvJ+CY9AwYgrd6aOOdlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Payment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Payment.html",
+          "hash": "B0tiB0/s6z9u+iypwR3Zjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.PhotoSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.PhotoSize.html",
+          "hash": "vwpS6IlHoucoA/b+GOFNbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.ResponseParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.ResponseParameters.html",
+          "hash": "FI52227Lclzrd9Nqq1dr/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Sticker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Sticker.html",
+          "hash": "oiRh998Lr5zTEqIsrtbNig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.StickerSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.StickerSet.html",
+          "hash": "S317QKdJdu5GN7du2fCpIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Update.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Update.html",
+          "hash": "6jFLQa5ZSHVsFiB+Nd0ZNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.InputMedia.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.InputMedia.html",
+          "hash": "g1I9RG+MrKcZg5X7r5nZgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.InputMediaPhoto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.InputMediaPhoto.html",
+          "hash": "rTaLDaoqj2qUEUUzM+RTcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.InputMediaVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.InputMediaVideo.html",
+          "hash": "jCHhbTPe7t/geVXLSyHcXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.SendFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.SendFile.html",
+          "hash": "Aq2fnZxwlTIW3mQfFUg7Ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.SendFileAttach.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.SendFileAttach.html",
+          "hash": "IZG8246fZOj1OVtOVeH+Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.SendFileId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.SendFileId.html",
+          "hash": "sG2TyOA6PXHGNUwXqIaSDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.SendFileMultipart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.SendFileMultipart.html",
+          "hash": "/9iNesnr6sGxdWtfvk+Nrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.SendFileType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.SendFileType.html",
+          "hash": "TWY/aTWF3BT5+LXHrRJiRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.SendFileUrl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.SendFileUrl.html",
+          "hash": "eD6RVjH2620kpK/qvum/Xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Upload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Upload.html",
+          "hash": "KdlwS+ksFAFu4jbhV7SUIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.User.html",
+          "hash": "bxLICjrEe267bTkOofvWoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.UserProfilePictures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.UserProfilePictures.html",
+          "hash": "z0GFaPUkz3DuNmeox8vEpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Venue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Venue.html",
+          "hash": "4qsbVJwIvHV8BQiCgqB2Rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Video.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Video.html",
+          "hash": "E1516pr5VYM2JiWDTvmiqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.VideoNote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.VideoNote.html",
+          "hash": "l4qzoy9SqIwc4ehfGWOeHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.Voice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.Voice.html",
+          "hash": "1RgLsEoKz6/cbk/XL/26RQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.WebhookInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.WebhookInfo.html",
+          "hash": "HqaVat8QduMkJsb27enVJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.html",
+          "hash": "SWpg3TZDMWCNQnn43o0miQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.html",
+          "hash": "is3ONLt/B23RPS/9Od8gqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "iULB/J70v+SN9jLiKT6mRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "y1Rxzv1rpZ3P9nujkTnz2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "5VK+cKWpsprodlfj8Gh+Kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "xVlQaX7Tk85omoiWv3O+Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "aKPy1HIgrl16KyQi/dJNuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "ob7LqWp4kTNLz+9W4omdTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

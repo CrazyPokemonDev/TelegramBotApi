@@ -25,5 +25,11 @@ namespace TelegramBotApi.Types.Inline
         /// </summary>
         [JsonProperty(PropertyName = "last_name")]
         public string LastName { get; set; }
+
+        /// <summary>
+        /// Optional. Additional data about the contact in the form of a vCard, 0-2048 bytes
+        /// </summary>
+        [JsonProperty(PropertyName = "vcard")]
+        public string VCard { get; set; }
     }
 }

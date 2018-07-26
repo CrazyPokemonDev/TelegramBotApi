@@ -31,5 +31,11 @@ namespace TelegramBotApi.Types
         /// </summary>
         [JsonProperty(PropertyName = "user_id")]
         public int UserId { get; set; }
+
+        /// <summary>
+        /// Optional. Additional data about the contact in the form of a vCard
+        /// </summary>
+        [JsonProperty(PropertyName = "vcard")]
+        public string VCard { get; set; }
     }
 }

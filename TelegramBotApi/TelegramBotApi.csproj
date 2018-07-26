@@ -57,6 +57,7 @@
     <Compile Include="Enums\UpdateType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelegramBot.cs" />
+    <Compile Include="Types\Animation.cs" />
     <Compile Include="Types\ApiResponse.cs" />
     <Compile Include="Types\Audio.cs" />
     <Compile Include="Types\ChatId.cs" />
@@ -137,6 +138,8 @@
     <Compile Include="Types\Update.cs" />
     <Compile Include="Types\Upload\InputMedia.cs" />
     <Compile Include="Types\Upload\InputMediaAnimation.cs" />
+    <Compile Include="Types\Upload\InputMediaAudio.cs" />
+    <Compile Include="Types\Upload\InputMediaDocument.cs" />
     <Compile Include="Types\Upload\InputMediaPhoto.cs" />
     <Compile Include="Types\Upload\InputMediaVideo.cs" />
     <Compile Include="Types\Upload\SendFile.cs" />

@@ -333,7 +333,7 @@ namespace TelegramBotApi
             if (timeout != 0) args.Add("timeout", timeout);
             if (offset != 0) args.Add("offset", offset);
             if (limit != 100) args.Add("limit", limit);
-            if (allowedUpdates != null && allowedUpdates.Length > 0) args.Add("allowed_updates", 
+            if (allowedUpdates != null && allowedUpdates.Length > 0) args.Add("allowed_updates",
                 allowedUpdates.Select(x => Enum.GetString(x)).ToArray());
 
             return await ApiMethodAsync<Update[]>("getUpdates", args, timeout + 1);
@@ -365,7 +365,7 @@ namespace TelegramBotApi
             Dictionary<string, object> args = new Dictionary<string, object>() { { "url", url } };
             if (certificate != null) args.Add("certificate", certificate);
             if (maxConnections != 40) args.Add("max_connections", maxConnections);
-            if (allowedUpdates != null && allowedUpdates.Length > 0) args.Add("allowed_updates", 
+            if (allowedUpdates != null && allowedUpdates.Length > 0) args.Add("allowed_updates",
                 allowedUpdates.Select(x => Enum.GetString(x)).ToArray());
 
             return await ApiMethodAsync<bool>("setWebhook", args);
@@ -434,7 +434,7 @@ namespace TelegramBotApi
         public Message SendTextMessage(ChatId chatId, string text, ParseMode parseMode = ParseMode.None,
             bool disableWebPagePreview = false, bool disableNotification = false, int replyToMessageId = -1,
             ReplyMarkupBase replyMarkup = null)
-            => SendTextMessageAsync(chatId, text, parseMode, disableWebPagePreview, 
+            => SendTextMessageAsync(chatId, text, parseMode, disableWebPagePreview,
                 disableNotification, replyToMessageId, replyMarkup).Result;
         /// <summary>
         /// Use this method to send text messages. On success, the sent Message is returned.
@@ -517,7 +517,7 @@ namespace TelegramBotApi
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
         public async Task<Message> SendPhotoAsync(ChatId chatId, SendFile photo, string caption = null,
-            ParseMode parseMode = ParseMode.None, bool disableNotification = false, 
+            ParseMode parseMode = ParseMode.None, bool disableNotification = false,
             int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "photo", photo } };
@@ -542,14 +542,18 @@ namespace TelegramBotApi
         /// <param name="duration">Duration of the audio in seconds</param>
         /// <param name="performer">Performer</param>
         /// <param name="title">Track name</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="disableNotification">Sends the message silently. Users will receive a notification with no sound.</param>
         /// <param name="replyToMessageId">The messageId of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
         public Message SendAudio(ChatId chatId, SendFile audio, string caption = null,
-            ParseMode parseMode = ParseMode.None, int duration = 0, string performer = null, string title = null,
+            ParseMode parseMode = ParseMode.None, int duration = 0, string performer = null, string title = null, SendFile thumb = null,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
-            => SendAudioAsync(chatId, audio, caption, parseMode, duration, performer, title, disableNotification, replyToMessageId,
+            => SendAudioAsync(chatId, audio, caption, parseMode, duration, performer, title, thumb, disableNotification, replyToMessageId,
                 replyMarkup).Result;
         /// <summary>
         /// Use this method to send audio files, if you want Telegram clients to display them in the music player. 
@@ -563,12 +567,16 @@ namespace TelegramBotApi
         /// <param name="duration">Duration of the audio in seconds</param>
         /// <param name="performer">Performer</param>
         /// <param name="title">Track name</param>
+        /// /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="disableNotification">Sends the message silently. Users will receive a notification with no sound.</param>
         /// <param name="replyToMessageId">The messageId of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
         public async Task<Message> SendAudioAsync(ChatId chatId, SendFile audio, string caption = null,
-            ParseMode parseMode = ParseMode.None, int duration = 0, string performer = null, string title = null,
+            ParseMode parseMode = ParseMode.None, int duration = 0, string performer = null, string title = null, SendFile thumb = null,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "audio", audio } };
@@ -577,6 +585,7 @@ namespace TelegramBotApi
             if (duration != 0) args.Add("duration", duration);
             if (!string.IsNullOrWhiteSpace(performer)) args.Add("performer", performer);
             if (!string.IsNullOrWhiteSpace(title)) args.Add("title", title);
+            if (thumb != null) args.Add("thumb", thumb);
             if (disableNotification) args.Add("disable_notification", true);
             if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
             if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
@@ -591,16 +600,20 @@ namespace TelegramBotApi
         /// <param name="chatId">The chat id or channel username of the chat to send the message to</param>
         /// <param name="document">The document to send. One of <see cref="SendFileId"/>, <see cref="SendFileUrl"/>
         ///  or <see cref="SendFileMultipart"/></param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="caption">The caption of the document, if any</param>
         /// <param name="parseMode">The parse mode of the message, if any</param>
         /// <param name="disableNotification">If this is true, the user will receive a notification without sound</param>
         /// <param name="replyToMessageId">The message id of the message to reply to in the target chat, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public Message SendDocument(ChatId chatId, SendFile document, string caption = null,
+        public Message SendDocument(ChatId chatId, SendFile document, SendFile thumb = null, string caption = null,
             ParseMode parseMode = ParseMode.None, bool disableNotification = false, int replyToMessageId = -1,
             ReplyMarkupBase replyMarkup = null)
-            => SendDocumentAsync(chatId, document, caption, parseMode, disableNotification, replyToMessageId, replyMarkup).Result;
+            => SendDocumentAsync(chatId, document, thumb, caption, parseMode, disableNotification, replyToMessageId, replyMarkup).Result;
         /// <summary>
         /// Use this method to send general files. On success, the sent Message is returned. 
         /// Bots can currently send files of any type of up to 50 MB in size, this limit may be changed in the future.
@@ -608,17 +621,22 @@ namespace TelegramBotApi
         /// <param name="chatId">The chat id or channel username of the chat to send the message to</param>
         /// <param name="document">The document to send. One of <see cref="SendFileId"/>, <see cref="SendFileUrl"/>
         ///  or <see cref="SendFileMultipart"/></param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="caption">The caption of the document, if any</param>
         /// <param name="parseMode">The parse mode of the message, if any</param>
         /// <param name="disableNotification">If this is true, the user will receive a notification without sound</param>
         /// <param name="replyToMessageId">The message id of the message to reply to in the target chat, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public async Task<Message> SendDocumentAsync(ChatId chatId, SendFile document, string caption = null, 
+        public async Task<Message> SendDocumentAsync(ChatId chatId, SendFile document, SendFile thumb = null, string caption = null,
             ParseMode parseMode = ParseMode.None, bool disableNotification = false, int replyToMessageId = -1,
             ReplyMarkupBase replyMarkup = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "document", document } };
+            if (thumb != null) args.Add("thumb", thumb);
             if (!string.IsNullOrWhiteSpace(caption)) args.Add("caption", caption);
             if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
             if (disableNotification) args.Add("disable_notification", true);
@@ -639,6 +657,10 @@ namespace TelegramBotApi
         /// <param name="duration">Optional. The duration of the video in seconds</param>
         /// <param name="width">Optional. Width of the video</param>
         /// <param name="height">Optional. Height of the video</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="caption">Optional. Caption for the video message</param>
         /// <param name="parseMode">Optional. Parse mode for the message caption</param>
         /// <param name="supportsStreaming">Pass true if the uploaded video is suitable for streaming</param>
@@ -646,10 +668,10 @@ namespace TelegramBotApi
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public Message SendVideo(ChatId chatId, SendFile video, int duration = 0, int width = 0, int height = 0,
+        public Message SendVideo(ChatId chatId, SendFile video, int duration = 0, int width = 0, int height = 0, SendFile thumb = null,
             string caption = null, ParseMode parseMode = ParseMode.None, bool supportsStreaming = false,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
-            => SendVideoAsync(chatId, video, duration, width, height, caption, parseMode, supportsStreaming, disableNotification,
+            => SendVideoAsync(chatId, video, duration, width, height, thumb, caption, parseMode, supportsStreaming, disableNotification,
                 replyToMessageId, replyMarkup).Result;
         /// <summary>
         /// Use this method to send video files, Telegram clients support mp4 videos (other formats may be sent as Document). On success, the sent Message is returned. 
@@ -669,7 +691,7 @@ namespace TelegramBotApi
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public async Task<Message> SendVideoAsync(ChatId chatId, SendFile video, int duration = 0, int width = 0, int height = 0,
+        public async Task<Message> SendVideoAsync(ChatId chatId, SendFile video, int duration = 0, int width = 0, int height = 0, SendFile thumb = null,
             string caption = null, ParseMode parseMode = ParseMode.None, bool supportsStreaming = false,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
         {
@@ -677,6 +699,7 @@ namespace TelegramBotApi
             if (duration != 0) args.Add("duration", duration);
             if (width != 0) args.Add("width", width);
             if (height != 0) args.Add("height", height);
+            if (thumb != null) args.Add("thumb", thumb);
             if (!string.IsNullOrWhiteSpace(caption)) args.Add("caption", caption);
             if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
             if (supportsStreaming) args.Add("supports_streaming", true);
@@ -685,6 +708,71 @@ namespace TelegramBotApi
             if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
 
             return await ApiMethodAsync<Message>("sendVideo", args);
+        }
+
+        /// <summary>
+        /// Use this method to send animation files (GIF or H.264/MPEG-4 AVC video without sound). On success, the sent Message is returned. 
+        /// Bots can currently send animation files of up to 50 MB in size, this limit may be changed in the future.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="animation">The animation to send. One of <see cref="SendFileId"/>, <see cref="SendFileUrl"/>
+        ///  or <see cref="SendFileMultipart"/></param>
+        /// <param name="duration">Optional. The duration of the animation in seconds</param>
+        /// <param name="width">Optional. Width of the animation</param>
+        /// <param name="height">Optional. Height of the animation</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
+        /// <param name="caption">Optional. Caption for the animation message</param>
+        /// <param name="parseMode">Optional. Parse mode for the animation caption</param>
+        /// <param name="disableNotification">If this is true, users will receive a silent notification</param>
+        /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
+        /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
+        /// <returns>The sent message on success</returns>
+        public Message SendAnimation(ChatId chatId, SendFile animation, int duration = 0, int width = 0, int height = 0, SendFile thumb = null,
+            string caption = null, ParseMode parseMode = ParseMode.None, bool disableNotification = false,
+            int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
+            => SendAnimationAsync(chatId, animation, duration, width, height, thumb, caption, parseMode, disableNotification,
+                replyToMessageId, replyMarkup).Result;
+        /// <summary>
+        /// Use this method to send animation files (GIF or H.264/MPEG-4 AVC video without sound). On success, the sent Message is returned. 
+        /// Bots can currently send animation files of up to 50 MB in size, this limit may be changed in the future.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="animation">The animation to send. One of <see cref="SendFileId"/>, <see cref="SendFileUrl"/>
+        ///  or <see cref="SendFileMultipart"/></param>
+        /// <param name="duration">Optional. The duration of the animation in seconds</param>
+        /// <param name="width">Optional. Width of the animation</param>
+        /// <param name="height">Optional. Height of the animation</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
+        /// <param name="caption">Optional. Caption for the animation message</param>
+        /// <param name="parseMode">Optional. Parse mode for the animation caption</param>
+        /// <param name="disableNotification">If this is true, users will receive a silent notification</param>
+        /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
+        /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
+        /// <returns>The sent message on success</returns>
+        public async Task<Message> SendAnimationAsync(ChatId chatId, SendFile animation, int duration = 0, int width = 0, int height = 0, SendFile thumb = null,
+            string caption = null, ParseMode parseMode = ParseMode.None, bool disableNotification = false,
+            int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "animation", animation } };
+            if (duration != 0) args.Add("duration", duration);
+            if (width != 0) args.Add("width", width);
+            if (height != 0) args.Add("height", height);
+            if (thumb != null) args.Add("thumb", thumb);
+            if (!string.IsNullOrWhiteSpace(caption)) args.Add("caption", caption);
+            if (parseMode != ParseMode.None) args.Add("parse_mode", Enum.GetString(parseMode));
+            if (disableNotification) args.Add("disable_notification", true);
+            if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("sendAnimation", args);
         }
 
         /// <summary>
@@ -725,7 +813,7 @@ namespace TelegramBotApi
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public async Task<Message> SendVoiceAsync(ChatId chatId, SendFile voice, string caption = null, 
+        public async Task<Message> SendVoiceAsync(ChatId chatId, SendFile voice, string caption = null,
             ParseMode parseMode = ParseMode.None, int duration = 0, bool disableNotification = false,
             int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
         {
@@ -750,13 +838,17 @@ namespace TelegramBotApi
         /// <see cref="SendFileUrl"/> is currently unsupported for video notes.</param>
         /// <param name="duration">Optional. Duration of the video note in seconds</param>
         /// <param name="length">Optional. Height and width of the video</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="disableNotification">If this is true, users will receive a silent notification</param>
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public Message SendVideoNote(ChatId chatId, SendFile videoNote, int duration = 0, int length = 0,
+        public Message SendVideoNote(ChatId chatId, SendFile videoNote, int duration = 0, int length = 0, SendFile thumb = null,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
-            => SendVideoNoteAsync(chatId, videoNote, duration, length, disableNotification, replyToMessageId, replyMarkup).Result;
+            => SendVideoNoteAsync(chatId, videoNote, duration, length, thumb, disableNotification, replyToMessageId, replyMarkup).Result;
         /// <summary>
         /// As of v.4.0, Telegram clients support rounded square mp4 videos of up to 1 minute long. 
         /// Use this method to send video messages. On success, the sent Message is returned.
@@ -767,16 +859,21 @@ namespace TelegramBotApi
         /// <see cref="SendFileUrl"/> is currently unsupported for video notes.</param>
         /// <param name="duration">Optional. Duration of the video note in seconds</param>
         /// <param name="length">Optional. Height and width of the video</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="disableNotification">If this is true, users will receive a silent notification</param>
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public async Task<Message> SendVideoNoteAsync(ChatId chatId, SendFile videoNote, int duration = 0, int length = 0,
+        public async Task<Message> SendVideoNoteAsync(ChatId chatId, SendFile videoNote, int duration = 0, int length = 0, SendFile thumb = null,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "video_note", videoNote } };
             if (duration != 0) args.Add("duration", duration);
             if (length != 0) args.Add("length", length);
+            if (thumb != null) args.Add("thumb", thumb);
             if (disableNotification) args.Add("disable_notification", true);
             if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
             if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
@@ -866,14 +963,16 @@ namespace TelegramBotApi
         /// <param name="title">Name of the venue</param>
         /// <param name="address">Address of the venue</param>
         /// <param name="foursquareId">Foursquare identifier of the venue</param>
+        /// <param name="foursquareType">Foursquare type of the venue, if known. 
+        /// (For example, “arts_entertainment/default”, “arts_entertainment/aquarium” or “food/icecream”.)</param>
         /// <param name="disableNotification">If this is true, users will receive a silent notification</param>
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
         public Message SendVenue(ChatId chatId, double latitude, double longitude, string title,
-            string address, string foursquareId = null, bool disableNotification = false, int replyToMessageId = -1,
-            ReplyMarkupBase replyMarkup = null)
-            => SendVenueAsync(chatId, latitude, longitude, title, address, foursquareId, disableNotification, replyToMessageId,
+            string address, string foursquareId = null, string foursquareType = null, bool disableNotification = false, 
+            int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
+            => SendVenueAsync(chatId, latitude, longitude, title, address, foursquareId, foursquareType, disableNotification, replyToMessageId,
                 replyMarkup).Result;
         /// <summary>
         /// Use this method to send information about a venue. On success, the sent Message is returned.
@@ -884,19 +983,23 @@ namespace TelegramBotApi
         /// <param name="title">Name of the venue</param>
         /// <param name="address">Address of the venue</param>
         /// <param name="foursquareId">Foursquare identifier of the venue</param>
+        /// <param name="foursquareType">Foursquare type of the venue, if known. 
+        /// (For example, “arts_entertainment/default”, “arts_entertainment/aquarium” or “food/icecream”.)</param>
         /// <param name="disableNotification">If this is true, users will receive a silent notification</param>
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
         public async Task<Message> SendVenueAsync(ChatId chatId, double latitude, double longitude, string title,
-            string address, string foursquareId = null, bool disableNotification = false, int replyToMessageId = -1,
-            ReplyMarkupBase replyMarkup = null)
+            string address, string foursquareId = null, string foursquareType = null, bool disableNotification = false, 
+            int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>()
             {
                 { "chat_id", chatId }, { "latitude", latitude },
                 { "longitude", longitude }, { "title", title }, { "address", address }
             };
+            if (!string.IsNullOrWhiteSpace(foursquareId)) args.Add("foursquare_id", foursquareId);
+            if (!string.IsNullOrWhiteSpace(foursquareType)) args.Add("foursquare_type", foursquareType);
             if (disableNotification) args.Add("disable_notification", true);
             if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
             if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
@@ -912,13 +1015,14 @@ namespace TelegramBotApi
         /// <param name="phoneNumber">Contact's phone number</param>
         /// <param name="firstName">Contact's first name</param>
         /// <param name="lastName">Contact's last name</param>
+        /// <param name="vCard">Additional data about the contact in the form of a vCard, 0-2048 bytes</param>
         /// <param name="disableNotification">If this is true, users will receive a silent notification</param>
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public Message SendContact(ChatId chatId, string phoneNumber, string firstName, string lastName = null,
+        public Message SendContact(ChatId chatId, string phoneNumber, string firstName, string lastName = null, string vCard = null,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
-            => SendContactAsync(chatId, phoneNumber, firstName, lastName, disableNotification, replyToMessageId, replyMarkup).Result;
+            => SendContactAsync(chatId, phoneNumber, firstName, lastName, vCard, disableNotification, replyToMessageId, replyMarkup).Result;
         /// <summary>
         /// Use this method to send phone contacts. On success, the sent Message is returned.
         /// </summary>
@@ -927,16 +1031,18 @@ namespace TelegramBotApi
         /// <param name="phoneNumber">Contact's phone number</param>
         /// <param name="firstName">Contact's first name</param>
         /// <param name="lastName">Contact's last name</param>
+        /// <param name="vCard">Additional data about the contact in the form of a vCard, 0-2048 bytes</param>
         /// <param name="disableNotification">If this is true, users will receive a silent notification</param>
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public async Task<Message> SendContactAsync(ChatId chatId, string phoneNumber, string firstName, string lastName = null,
+        public async Task<Message> SendContactAsync(ChatId chatId, string phoneNumber, string firstName, string lastName = null, string vCard = null,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "phoneNumber", phoneNumber },
                 { "first_name", firstName }};
             if (!string.IsNullOrWhiteSpace(lastName)) args.Add("last_name", lastName);
+            if (!string.IsNullOrWhiteSpace(vCard)) args.Add("vcard", vCard);
             if (disableNotification) args.Add("disable_notification", true);
             if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
             if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
@@ -2249,7 +2355,7 @@ namespace TelegramBotApi
         /// <param name="emojis">One or more emoji corresponding to the sticker</param>
         /// <param name="maskPosition">An object for where the mask should be placed on faces, if the sticker is one</param>
         /// <returns>True on success</returns>
-        public async Task<bool> AddStickerToSetAsync(int userId, string name, SendFile pngSticker, string emojis, 
+        public async Task<bool> AddStickerToSetAsync(int userId, string name, SendFile pngSticker, string emojis,
             MaskPosition maskPosition = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>()
@@ -2393,7 +2499,7 @@ namespace TelegramBotApi
             bool needEmail = false, bool needShippingAddress = false, bool sendPhoneNumberToProvider = false, bool sendEmailToProvider = false,
             bool isFlexible = false, bool disableNotification = false, int replyToMessageId = -1, InlineKeyboardMarkup replyMarkup = null)
             => SendInvoiceAsync(chatId, title, description, payload, providerToken, startParameter, currency, prices, providerData,
-                photoUrl, photoSize, photoWidth, photoHeight, needName, needPhoneNumber, needEmail, needShippingAddress, 
+                photoUrl, photoSize, photoWidth, photoHeight, needName, needPhoneNumber, needEmail, needShippingAddress,
                 sendPhoneNumberToProvider, sendEmailToProvider, isFlexible, disableNotification, replyToMessageId, replyMarkup).Result;
         /// <summary>
         /// Use this method to send invoices. On success, the sent Message is returned.
@@ -2455,7 +2561,7 @@ namespace TelegramBotApi
             if (disableNotification) args.Add("disable_notification", true);
             if (replyToMessageId != -1) args.Add("reply_to_message_id", replyToMessageId);
             if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
-            
+
             return await ApiMethodAsync<Message>("sendInvoice", args);
         }
 
@@ -2560,7 +2666,7 @@ namespace TelegramBotApi
         /// <param name="replyMarkup">An object for an inline keyboard. If empty, one ‘Play game_title’ button will be shown. 
         /// If not empty, the first button must launch the game.</param>
         /// <returns>The sent Message</returns>
-        public async Task<Message> SendGameAsync(long chatId, string gameShortName, bool disableNotification = false, 
+        public async Task<Message> SendGameAsync(long chatId, string gameShortName, bool disableNotification = false,
             int replyToMessageId = -1, InlineKeyboardMarkup replyMarkup = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "gameShortName", gameShortName } };
@@ -2598,7 +2704,7 @@ namespace TelegramBotApi
         /// <param name="force">Pass True, if the high score is allowed to decrease. This can be useful when fixing mistakes or banning cheaters</param>
         /// <param name="disableEditMessage">Pass True, if the game message should not be automatically edited to include the current scoreboard</param>
         /// <returns>The edited message</returns>
-        public async Task<Message> SetGameScoreAsync(int userId, int score, long chatId, int messageId, bool force = false, 
+        public async Task<Message> SetGameScoreAsync(int userId, int score, long chatId, int messageId, bool force = false,
             bool disableEditMessage = false)
         {
             Dictionary<string, object> args = new Dictionary<string, object>() { { "user_id", userId }, { "score", score },

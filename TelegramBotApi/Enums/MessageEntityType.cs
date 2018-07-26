@@ -61,6 +61,10 @@
         /// </summary>
         PhoneNumber,
         /// <summary>
+        /// A cashtag
+        /// </summary>
+        Cashtag,
+        /// <summary>
         /// A message entity type that isn't implemented yet
         /// </summary>
         Unknown

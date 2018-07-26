@@ -179,6 +179,12 @@ namespace TelegramBotApi.Types
         public Document Document { get; set; }
 
         /// <summary>
+        /// Information about the animation, if this is one
+        /// </summary>
+        [JsonProperty(PropertyName = "animation")]
+        public Animation Animation { get; set; }
+
+        /// <summary>
         /// Information about the game, if this is a game message
         /// </summary>
         [JsonProperty(PropertyName = "game")]

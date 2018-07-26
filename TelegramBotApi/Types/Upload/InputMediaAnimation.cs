@@ -15,6 +15,12 @@ namespace TelegramBotApi.Types.Upload
         public override string Type { get => "animation"; }
 
         /// <summary>
+        /// Optional. Animation thumbnail
+        /// </summary>
+        [JsonProperty(PropertyName = "thumb")]
+        public SendFile Thumb { get; set; }
+
+        /// <summary>
         /// Optional. Animation width
         /// </summary>
         [JsonProperty(PropertyName = "width")]

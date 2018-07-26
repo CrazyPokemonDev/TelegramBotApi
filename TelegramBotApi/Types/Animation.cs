@@ -6,7 +6,7 @@ namespace TelegramBotApi.Types
     /// Represents an audio file to be treated like music
     /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
-    public class Audio
+    public class Animation
     {
         /// <summary>
         /// Unique identifier for this file
@@ -15,22 +15,34 @@ namespace TelegramBotApi.Types
         public string FileId { get; set; }
 
         /// <summary>
-        /// Duration of the audio in seconds as defined by sender
+        /// Video width as defined by sender
+        /// </summary>
+        [JsonProperty(PropertyName = "width")]
+        public int Width { get; set; }
+
+        /// <summary>
+        /// Video height as defined by sender
+        /// </summary>
+        [JsonProperty(PropertyName = "height")]
+        public int Height { get; set; }
+
+        /// <summary>
+        /// Duration of the video in seconds as defined by sender
         /// </summary>
         [JsonProperty(PropertyName = "duration")]
         public int Duration { get; set; }
 
         /// <summary>
-        /// Optional. Performer of the audio as defined by sender or by audio tags
+        /// Optional. Animation thumbnail as defined by sender
         /// </summary>
-        [JsonProperty(PropertyName = "performer")]
-        public string Performer { get; set; }
+        [JsonProperty(PropertyName = "thumb")]
+        public PhotoSize Thumb { get; set; }
 
         /// <summary>
-        /// Optional. Title of the audio as defined by sender or by audio tags
+        /// Optional. Original animation filename as defined by sender
         /// </summary>
-        [JsonProperty(PropertyName = "title")]
-        public string Title { get; set; }
+        [JsonProperty(PropertyName = "file_name")]
+        public string FileName { get; set; }
 
         /// <summary>
         /// Optional. MIME type of the file as defined by sender
@@ -43,11 +55,5 @@ namespace TelegramBotApi.Types
         /// </summary>
         [JsonProperty(PropertyName = "file_size")]
         public int FileSize { get; set; }
-
-        /// <summary>
-        /// Optional. Thumbnail of the album cover to which the music file belongs
-        /// </summary>
-        [JsonProperty(PropertyName = "thumb")]
-        public PhotoSize Thumb { get; set; }
     }
 }

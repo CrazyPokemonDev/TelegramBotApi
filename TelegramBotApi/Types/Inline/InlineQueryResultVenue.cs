@@ -55,6 +55,12 @@ namespace TelegramBotApi.Types.Inline
         public string FoursquareId { get; set; }
 
         /// <summary>
+        /// Optional. Foursquare type of the venue. (For example, “arts_entertainment/default”, “arts_entertainment/aquarium” or “food/icecream”.)
+        /// </summary>
+        [JsonProperty(PropertyName = "foursquare_type")]
+        public string FoursquareType { get; set; }
+
+        /// <summary>
         /// Optional. Inline keyboard attached to the message
         /// </summary>
         [JsonProperty(PropertyName = "reply_markup")]

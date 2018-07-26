@@ -113,6 +113,8 @@
                     return "bold";
                 case MessageEntityType.BotCommand:
                     return "bot_command";
+                case MessageEntityType.Cashtag:
+                    return "cashtag";
                 case MessageEntityType.Code:
                     return "code";
                 case MessageEntityType.Email:
@@ -166,6 +168,8 @@
                     return MessageEntityType.TextMention;
                 case "phone_number":
                     return MessageEntityType.PhoneNumber;
+                case "cashtag":
+                    return MessageEntityType.Cashtag;
                 default:
                     return MessageEntityType.Unknown;
             }

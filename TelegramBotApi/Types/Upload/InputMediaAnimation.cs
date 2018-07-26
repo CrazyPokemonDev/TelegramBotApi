@@ -3,39 +3,33 @@
 namespace TelegramBotApi.Types.Upload
 {
     /// <summary>
-    /// Represents a video to be sent
+    /// Represents an animation to be sent
     /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
-    public class InputMediaVideo : InputMedia
+    public class InputMediaAnimation : InputMedia
     {
         /// <summary>
-        /// This is a video.
+        /// This is an animation.
         /// </summary>
         [JsonProperty(PropertyName = "type")]
-        public override string Type { get => "video"; }
+        public override string Type { get => "animation"; }
 
         /// <summary>
-        /// Optional. Video width
+        /// Optional. Animation width
         /// </summary>
         [JsonProperty(PropertyName = "width")]
         public int Width { get; set; }
 
         /// <summary>
-        /// Optional. Video height
+        /// Optional. Animation height
         /// </summary>
         [JsonProperty(PropertyName = "height")]
         public int Height { get; set; }
 
         /// <summary>
-        /// Optional. Video duration
+        /// Optional. Animation duration
         /// </summary>
         [JsonProperty(PropertyName = "duration")]
         public int Duration { get; set; }
-
-        /// <summary>
-        /// Optional. Pass true, if the video is suitable for streaming
-        /// </summary>
-        [JsonProperty(PropertyName = "supports_streaming")]
-        public bool SupportsStreaming { get; set; }
     }
 }

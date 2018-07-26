@@ -136,6 +136,7 @@
     <Compile Include="Types\StickerSet.cs" />
     <Compile Include="Types\Update.cs" />
     <Compile Include="Types\Upload\InputMedia.cs" />
+    <Compile Include="Types\Upload\InputMediaAnimation.cs" />
     <Compile Include="Types\Upload\InputMediaPhoto.cs" />
     <Compile Include="Types\Upload\InputMediaVideo.cs" />
     <Compile Include="Types\Upload\SendFile.cs" />

@@ -1953,6 +1953,64 @@ namespace TelegramBotApi
         }
 
         /// <summary>
+        /// Use this method to replace a media the bot sent with another one.
+        /// On success, the edited Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="messageId">Identifier of the message sent by the bot</param>
+        /// <param name="media">The new media of the message</param>
+        /// <param name="replyMarkup">An inline keyboard, if you want any</param>
+        /// <returns>The edited message</returns>
+        public Message EditMessageMedia(ChatId chatId, int messageId, SendFile media, InlineKeyboardMarkup replyMarkup = null)
+            => EditMessageMediaAsync(chatId, messageId, media, replyMarkup).Result;
+        /// <summary>
+        /// Use this method to replace a media the bot sent with another one.
+        /// On success, the edited Message is returned.
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel 
+        /// (in the format @channelusername)</param>
+        /// <param name="messageId">Identifier of the message sent by the bot</param>
+        /// <param name="media">The new media of the message</param>
+        /// <param name="replyMarkup">An inline keyboard, if you want any</param>
+        /// <returns>The edited message</returns>
+        public async Task<Message> EditMessageMediaAsync(ChatId chatId, int messageId, SendFile media, InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId },
+                { "message_id", messageId }, { "media", media } };
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("editMessageMedia", args);
+        }
+
+        /// <summary>
+        /// Use this method to replace a media the bot sent with another one (for inline bots).
+        /// On success, the edited Message is returned.
+        /// </summary>
+        /// <param name="inlineMessageId">Identifier of the inline message</param>
+        /// <param name="media">The new media of the message</param>
+        /// <param name="replyMarkup">An inline keyboard, if you want any</param>
+        /// <returns>The edited message</returns>
+        public Message EditMessageMedia(string inlineMessageId, SendFile media, InlineKeyboardMarkup replyMarkup = null)
+            => EditMessageMediaAsync(inlineMessageId, media, replyMarkup).Result;
+        /// <summary>
+        /// Use this method to replace a media the bot sent with another one (for inline bots).
+        /// On success, the edited Message is returned.
+        /// </summary>
+        /// <param name="inlineMessageId">Identifier of the inline message</param>
+        /// <param name="media">The new media of the message</param>
+        /// <param name="replyMarkup">An inline keyboard, if you want any</param>
+        /// <returns>The edited message</returns>
+        public async Task<Message> EditMessageMediaAsync(string inlineMessageId, SendFile media, InlineKeyboardMarkup replyMarkup = null)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "inline_message_id", inlineMessageId },
+                { "media", media } };
+            if (replyMarkup != null) args.Add("reply_markup", replyMarkup);
+
+            return await ApiMethodAsync<Message>("editMessageMedia", args);
+        }
+
+        /// <summary>
         /// Use this method to edit only the reply markups of messages sent by the bot. 
         /// On success, the edited Message is returned.
         /// </summary>

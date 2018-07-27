@@ -163,6 +163,96 @@ references:
   commentId: F:TelegramBotApi.Enums.ChatType.Unknown
   fullName: TelegramBotApi.Enums.ChatType.Unknown
   nameWithType: ChatType.Unknown
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType
+  name: EncryptedPassportElementType
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html
+  commentId: T:TelegramBotApi.Enums.EncryptedPassportElementType
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType
+  nameWithType: EncryptedPassportElementType
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.Address
+  name: Address
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_Address
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.Address
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.Address
+  nameWithType: EncryptedPassportElementType.Address
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.BankStatement
+  name: BankStatement
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_BankStatement
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.BankStatement
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.BankStatement
+  nameWithType: EncryptedPassportElementType.BankStatement
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.DriverLicense
+  name: DriverLicense
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_DriverLicense
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.DriverLicense
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.DriverLicense
+  nameWithType: EncryptedPassportElementType.DriverLicense
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.Email
+  name: Email
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_Email
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.Email
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.Email
+  nameWithType: EncryptedPassportElementType.Email
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.IdentityCard
+  name: IdentityCard
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_IdentityCard
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.IdentityCard
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.IdentityCard
+  nameWithType: EncryptedPassportElementType.IdentityCard
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.InternalPassport
+  name: InternalPassport
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_InternalPassport
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.InternalPassport
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.InternalPassport
+  nameWithType: EncryptedPassportElementType.InternalPassport
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.Passport
+  name: Passport
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_Passport
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.Passport
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.Passport
+  nameWithType: EncryptedPassportElementType.Passport
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.PassportRegistration
+  name: PassportRegistration
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_PassportRegistration
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.PassportRegistration
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.PassportRegistration
+  nameWithType: EncryptedPassportElementType.PassportRegistration
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.PersonalDetails
+  name: PersonalDetails
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_PersonalDetails
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.PersonalDetails
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.PersonalDetails
+  nameWithType: EncryptedPassportElementType.PersonalDetails
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.PhoneNumber
+  name: PhoneNumber
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_PhoneNumber
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.PhoneNumber
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.PhoneNumber
+  nameWithType: EncryptedPassportElementType.PhoneNumber
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.RentalAgreement
+  name: RentalAgreement
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_RentalAgreement
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.RentalAgreement
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.RentalAgreement
+  nameWithType: EncryptedPassportElementType.RentalAgreement
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.TemporaryRegistration
+  name: TemporaryRegistration
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_TemporaryRegistration
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.TemporaryRegistration
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.TemporaryRegistration
+  nameWithType: EncryptedPassportElementType.TemporaryRegistration
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.Unknown
+  name: Unknown
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_Unknown
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.Unknown
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.Unknown
+  nameWithType: EncryptedPassportElementType.Unknown
+- uid: TelegramBotApi.Enums.EncryptedPassportElementType.UtilityBill
+  name: UtilityBill
+  href: api/TelegramBotApi.Enums.EncryptedPassportElementType.html#TelegramBotApi_Enums_EncryptedPassportElementType_UtilityBill
+  commentId: F:TelegramBotApi.Enums.EncryptedPassportElementType.UtilityBill
+  fullName: TelegramBotApi.Enums.EncryptedPassportElementType.UtilityBill
+  nameWithType: EncryptedPassportElementType.UtilityBill
 - uid: TelegramBotApi.Enums.MaskPositionPointType
   name: MaskPositionPointType
   href: api/TelegramBotApi.Enums.MaskPositionPointType.html
@@ -217,6 +307,12 @@ references:
   commentId: F:TelegramBotApi.Enums.MessageEntityType.BotCommand
   fullName: TelegramBotApi.Enums.MessageEntityType.BotCommand
   nameWithType: MessageEntityType.BotCommand
+- uid: TelegramBotApi.Enums.MessageEntityType.Cashtag
+  name: Cashtag
+  href: api/TelegramBotApi.Enums.MessageEntityType.html#TelegramBotApi_Enums_MessageEntityType_Cashtag
+  commentId: F:TelegramBotApi.Enums.MessageEntityType.Cashtag
+  fullName: TelegramBotApi.Enums.MessageEntityType.Cashtag
+  nameWithType: MessageEntityType.Cashtag
 - uid: TelegramBotApi.Enums.MessageEntityType.Code
   name: Code
   href: api/TelegramBotApi.Enums.MessageEntityType.html#TelegramBotApi_Enums_MessageEntityType_Code
@@ -1055,6 +1151,44 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.EditMessageLiveLocationAsync
   nameWithType: TelegramBot.EditMessageLiveLocationAsync
+- uid: TelegramBotApi.TelegramBot.EditMessageMedia(System.String,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  name: EditMessageMedia(String, SendFile, InlineKeyboardMarkup)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_EditMessageMedia_System_String_TelegramBotApi_Types_Upload_SendFile_TelegramBotApi_Types_Markup_InlineKeyboardMarkup_
+  commentId: M:TelegramBotApi.TelegramBot.EditMessageMedia(System.String,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  fullName: TelegramBotApi.TelegramBot.EditMessageMedia(System.String, TelegramBotApi.Types.Upload.SendFile, TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  nameWithType: TelegramBot.EditMessageMedia(String, SendFile, InlineKeyboardMarkup)
+- uid: TelegramBotApi.TelegramBot.EditMessageMedia(TelegramBotApi.Types.ChatId,System.Int32,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  name: EditMessageMedia(ChatId, Int32, SendFile, InlineKeyboardMarkup)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_EditMessageMedia_TelegramBotApi_Types_ChatId_System_Int32_TelegramBotApi_Types_Upload_SendFile_TelegramBotApi_Types_Markup_InlineKeyboardMarkup_
+  commentId: M:TelegramBotApi.TelegramBot.EditMessageMedia(TelegramBotApi.Types.ChatId,System.Int32,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  fullName: TelegramBotApi.TelegramBot.EditMessageMedia(TelegramBotApi.Types.ChatId, System.Int32, TelegramBotApi.Types.Upload.SendFile, TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  nameWithType: TelegramBot.EditMessageMedia(ChatId, Int32, SendFile, InlineKeyboardMarkup)
+- uid: TelegramBotApi.TelegramBot.EditMessageMedia*
+  name: EditMessageMedia
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_EditMessageMedia_
+  commentId: Overload:TelegramBotApi.TelegramBot.EditMessageMedia
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.EditMessageMedia
+  nameWithType: TelegramBot.EditMessageMedia
+- uid: TelegramBotApi.TelegramBot.EditMessageMediaAsync(System.String,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  name: EditMessageMediaAsync(String, SendFile, InlineKeyboardMarkup)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_EditMessageMediaAsync_System_String_TelegramBotApi_Types_Upload_SendFile_TelegramBotApi_Types_Markup_InlineKeyboardMarkup_
+  commentId: M:TelegramBotApi.TelegramBot.EditMessageMediaAsync(System.String,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  fullName: TelegramBotApi.TelegramBot.EditMessageMediaAsync(System.String, TelegramBotApi.Types.Upload.SendFile, TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  nameWithType: TelegramBot.EditMessageMediaAsync(String, SendFile, InlineKeyboardMarkup)
+- uid: TelegramBotApi.TelegramBot.EditMessageMediaAsync(TelegramBotApi.Types.ChatId,System.Int32,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  name: EditMessageMediaAsync(ChatId, Int32, SendFile, InlineKeyboardMarkup)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_EditMessageMediaAsync_TelegramBotApi_Types_ChatId_System_Int32_TelegramBotApi_Types_Upload_SendFile_TelegramBotApi_Types_Markup_InlineKeyboardMarkup_
+  commentId: M:TelegramBotApi.TelegramBot.EditMessageMediaAsync(TelegramBotApi.Types.ChatId,System.Int32,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  fullName: TelegramBotApi.TelegramBot.EditMessageMediaAsync(TelegramBotApi.Types.ChatId, System.Int32, TelegramBotApi.Types.Upload.SendFile, TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
+  nameWithType: TelegramBot.EditMessageMediaAsync(ChatId, Int32, SendFile, InlineKeyboardMarkup)
+- uid: TelegramBotApi.TelegramBot.EditMessageMediaAsync*
+  name: EditMessageMediaAsync
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_EditMessageMediaAsync_
+  commentId: Overload:TelegramBotApi.TelegramBot.EditMessageMediaAsync
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.EditMessageMediaAsync
+  nameWithType: TelegramBot.EditMessageMediaAsync
 - uid: TelegramBotApi.TelegramBot.EditMessageReplyMarkup(System.String,TelegramBotApi.Types.Markup.InlineKeyboardMarkup)
   name: EditMessageReplyMarkup(String, InlineKeyboardMarkup)
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_EditMessageReplyMarkup_System_String_TelegramBotApi_Types_Markup_InlineKeyboardMarkup_
@@ -1729,12 +1863,38 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.RestrictChatMemberAsync
   nameWithType: TelegramBot.RestrictChatMemberAsync
-- uid: TelegramBotApi.TelegramBot.SendAudio(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Int32,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendAudio(ChatId, SendFile, String, ParseMode, Int32, String, String, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAudio_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Int32_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendAudio(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Int32,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendAudio(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Int32, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendAudio(ChatId, SendFile, String, ParseMode, Int32, String, String, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendAnimation(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendAnimation(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAnimation_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendAnimation(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendAnimation(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendAnimation(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendAnimation*
+  name: SendAnimation
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAnimation_
+  commentId: Overload:TelegramBotApi.TelegramBot.SendAnimation
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SendAnimation
+  nameWithType: TelegramBot.SendAnimation
+- uid: TelegramBotApi.TelegramBot.SendAnimationAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendAnimationAsync(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAnimationAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendAnimationAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendAnimationAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendAnimationAsync(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendAnimationAsync*
+  name: SendAnimationAsync
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAnimationAsync_
+  commentId: Overload:TelegramBotApi.TelegramBot.SendAnimationAsync
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SendAnimationAsync
+  nameWithType: TelegramBot.SendAnimationAsync
+- uid: TelegramBotApi.TelegramBot.SendAudio(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Int32,System.String,System.String,TelegramBotApi.Types.Upload.SendFile,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendAudio(ChatId, SendFile, String, ParseMode, Int32, String, String, SendFile, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAudio_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Int32_System_String_System_String_TelegramBotApi_Types_Upload_SendFile_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendAudio(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Int32,System.String,System.String,TelegramBotApi.Types.Upload.SendFile,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendAudio(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Int32, System.String, System.String, TelegramBotApi.Types.Upload.SendFile, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendAudio(ChatId, SendFile, String, ParseMode, Int32, String, String, SendFile, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendAudio*
   name: SendAudio
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAudio_
@@ -1742,12 +1902,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendAudio
   nameWithType: TelegramBot.SendAudio
-- uid: TelegramBotApi.TelegramBot.SendAudioAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Int32,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendAudioAsync(ChatId, SendFile, String, ParseMode, Int32, String, String, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAudioAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Int32_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendAudioAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Int32,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendAudioAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Int32, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendAudioAsync(ChatId, SendFile, String, ParseMode, Int32, String, String, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendAudioAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Int32,System.String,System.String,TelegramBotApi.Types.Upload.SendFile,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendAudioAsync(ChatId, SendFile, String, ParseMode, Int32, String, String, SendFile, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAudioAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Int32_System_String_System_String_TelegramBotApi_Types_Upload_SendFile_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendAudioAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Int32,System.String,System.String,TelegramBotApi.Types.Upload.SendFile,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendAudioAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Int32, System.String, System.String, TelegramBotApi.Types.Upload.SendFile, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendAudioAsync(ChatId, SendFile, String, ParseMode, Int32, String, String, SendFile, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendAudioAsync*
   name: SendAudioAsync
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendAudioAsync_
@@ -1755,12 +1915,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendAudioAsync
   nameWithType: TelegramBot.SendAudioAsync
-- uid: TelegramBotApi.TelegramBot.SendContact(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendContact(ChatId, String, String, String, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendContact_TelegramBotApi_Types_ChatId_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendContact(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendContact(TelegramBotApi.Types.ChatId, System.String, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendContact(ChatId, String, String, String, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendContact(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendContact(ChatId, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendContact_TelegramBotApi_Types_ChatId_System_String_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendContact(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendContact(TelegramBotApi.Types.ChatId, System.String, System.String, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendContact(ChatId, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendContact*
   name: SendContact
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendContact_
@@ -1768,12 +1928,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendContact
   nameWithType: TelegramBot.SendContact
-- uid: TelegramBotApi.TelegramBot.SendContactAsync(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendContactAsync(ChatId, String, String, String, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendContactAsync_TelegramBotApi_Types_ChatId_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendContactAsync(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendContactAsync(TelegramBotApi.Types.ChatId, System.String, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendContactAsync(ChatId, String, String, String, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendContactAsync(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendContactAsync(ChatId, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendContactAsync_TelegramBotApi_Types_ChatId_System_String_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendContactAsync(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendContactAsync(TelegramBotApi.Types.ChatId, System.String, System.String, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendContactAsync(ChatId, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendContactAsync*
   name: SendContactAsync
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendContactAsync_
@@ -1781,12 +1941,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendContactAsync
   nameWithType: TelegramBot.SendContactAsync
-- uid: TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendDocument(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocument_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendDocument(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendDocument(ChatId, SendFile, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocument_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendDocument(ChatId, SendFile, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendDocument*
   name: SendDocument
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocument_
@@ -1794,12 +1954,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendDocument
   nameWithType: TelegramBot.SendDocument
-- uid: TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendDocumentAsync(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocumentAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendDocumentAsync(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendDocumentAsync(ChatId, SendFile, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocumentAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendDocumentAsync(ChatId, SendFile, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendDocumentAsync*
   name: SendDocumentAsync
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocumentAsync_
@@ -2001,12 +2161,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendTextMessageAsync
   nameWithType: TelegramBot.SendTextMessageAsync
-- uid: TelegramBotApi.TelegramBot.SendVenue(TelegramBotApi.Types.ChatId,System.Double,System.Double,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendVenue(ChatId, Double, Double, String, String, String, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVenue_TelegramBotApi_Types_ChatId_System_Double_System_Double_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendVenue(TelegramBotApi.Types.ChatId,System.Double,System.Double,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendVenue(TelegramBotApi.Types.ChatId, System.Double, System.Double, System.String, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendVenue(ChatId, Double, Double, String, String, String, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendVenue(TelegramBotApi.Types.ChatId,System.Double,System.Double,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendVenue(ChatId, Double, Double, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVenue_TelegramBotApi_Types_ChatId_System_Double_System_Double_System_String_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendVenue(TelegramBotApi.Types.ChatId,System.Double,System.Double,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendVenue(TelegramBotApi.Types.ChatId, System.Double, System.Double, System.String, System.String, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendVenue(ChatId, Double, Double, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendVenue*
   name: SendVenue
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVenue_
@@ -2014,12 +2174,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendVenue
   nameWithType: TelegramBot.SendVenue
-- uid: TelegramBotApi.TelegramBot.SendVenueAsync(TelegramBotApi.Types.ChatId,System.Double,System.Double,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendVenueAsync(ChatId, Double, Double, String, String, String, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVenueAsync_TelegramBotApi_Types_ChatId_System_Double_System_Double_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendVenueAsync(TelegramBotApi.Types.ChatId,System.Double,System.Double,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendVenueAsync(TelegramBotApi.Types.ChatId, System.Double, System.Double, System.String, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendVenueAsync(ChatId, Double, Double, String, String, String, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendVenueAsync(TelegramBotApi.Types.ChatId,System.Double,System.Double,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendVenueAsync(ChatId, Double, Double, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVenueAsync_TelegramBotApi_Types_ChatId_System_Double_System_Double_System_String_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendVenueAsync(TelegramBotApi.Types.ChatId,System.Double,System.Double,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendVenueAsync(TelegramBotApi.Types.ChatId, System.Double, System.Double, System.String, System.String, System.String, System.String, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendVenueAsync(ChatId, Double, Double, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendVenueAsync*
   name: SendVenueAsync
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVenueAsync_
@@ -2027,12 +2187,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendVenueAsync
   nameWithType: TelegramBot.SendVenueAsync
-- uid: TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendVideo(ChatId, SendFile, Int32, Int32, Int32, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideo_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendVideo(ChatId, SendFile, Int32, Int32, Int32, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendVideo(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideo_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendVideo(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendVideo*
   name: SendVideo
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideo_
@@ -2040,12 +2200,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendVideo
   nameWithType: TelegramBot.SendVideo
-- uid: TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendVideoAsync(ChatId, SendFile, Int32, Int32, Int32, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendVideoAsync(ChatId, SendFile, Int32, Int32, Int32, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendVideoAsync(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendVideoAsync(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendVideoAsync*
   name: SendVideoAsync
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoAsync_
@@ -2053,12 +2213,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendVideoAsync
   nameWithType: TelegramBot.SendVideoAsync
-- uid: TelegramBotApi.TelegramBot.SendVideoNote(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendVideoNote(ChatId, SendFile, Int32, Int32, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoNote_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendVideoNote(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendVideoNote(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendVideoNote(ChatId, SendFile, Int32, Int32, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendVideoNote(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendVideoNote(ChatId, SendFile, Int32, Int32, SendFile, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoNote_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFile_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendVideoNote(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendVideoNote(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFile, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendVideoNote(ChatId, SendFile, Int32, Int32, SendFile, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendVideoNote*
   name: SendVideoNote
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoNote_
@@ -2066,12 +2226,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendVideoNote
   nameWithType: TelegramBot.SendVideoNote
-- uid: TelegramBotApi.TelegramBot.SendVideoNoteAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendVideoNoteAsync(ChatId, SendFile, Int32, Int32, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoNoteAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendVideoNoteAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendVideoNoteAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendVideoNoteAsync(ChatId, SendFile, Int32, Int32, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendVideoNoteAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendVideoNoteAsync(ChatId, SendFile, Int32, Int32, SendFile, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoNoteAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFile_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendVideoNoteAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendVideoNoteAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFile, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendVideoNoteAsync(ChatId, SendFile, Int32, Int32, SendFile, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendVideoNoteAsync*
   name: SendVideoNoteAsync
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoNoteAsync_
@@ -2247,6 +2407,38 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SetGameScoreAsync
   nameWithType: TelegramBot.SetGameScoreAsync
+- uid: TelegramBotApi.TelegramBot.SetPassportDataErrors(System.Int32,TelegramBotApi.Types.TelegramPassport.PassportElementError[])
+  name: SetPassportDataErrors(Int32, PassportElementError[])
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SetPassportDataErrors_System_Int32_TelegramBotApi_Types_TelegramPassport_PassportElementError___
+  commentId: M:TelegramBotApi.TelegramBot.SetPassportDataErrors(System.Int32,TelegramBotApi.Types.TelegramPassport.PassportElementError[])
+  name.vb: SetPassportDataErrors(Int32, PassportElementError())
+  fullName: TelegramBotApi.TelegramBot.SetPassportDataErrors(System.Int32, TelegramBotApi.Types.TelegramPassport.PassportElementError[])
+  fullName.vb: TelegramBotApi.TelegramBot.SetPassportDataErrors(System.Int32, TelegramBotApi.Types.TelegramPassport.PassportElementError())
+  nameWithType: TelegramBot.SetPassportDataErrors(Int32, PassportElementError[])
+  nameWithType.vb: TelegramBot.SetPassportDataErrors(Int32, PassportElementError())
+- uid: TelegramBotApi.TelegramBot.SetPassportDataErrors*
+  name: SetPassportDataErrors
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SetPassportDataErrors_
+  commentId: Overload:TelegramBotApi.TelegramBot.SetPassportDataErrors
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SetPassportDataErrors
+  nameWithType: TelegramBot.SetPassportDataErrors
+- uid: TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync(System.Int32,TelegramBotApi.Types.TelegramPassport.PassportElementError[])
+  name: SetPassportDataErrorsAsync(Int32, PassportElementError[])
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SetPassportDataErrorsAsync_System_Int32_TelegramBotApi_Types_TelegramPassport_PassportElementError___
+  commentId: M:TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync(System.Int32,TelegramBotApi.Types.TelegramPassport.PassportElementError[])
+  name.vb: SetPassportDataErrorsAsync(Int32, PassportElementError())
+  fullName: TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync(System.Int32, TelegramBotApi.Types.TelegramPassport.PassportElementError[])
+  fullName.vb: TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync(System.Int32, TelegramBotApi.Types.TelegramPassport.PassportElementError())
+  nameWithType: TelegramBot.SetPassportDataErrorsAsync(Int32, PassportElementError[])
+  nameWithType.vb: TelegramBot.SetPassportDataErrorsAsync(Int32, PassportElementError())
+- uid: TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync*
+  name: SetPassportDataErrorsAsync
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SetPassportDataErrorsAsync_
+  commentId: Overload:TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync
+  nameWithType: TelegramBot.SetPassportDataErrorsAsync
 - uid: TelegramBotApi.TelegramBot.SetStickerPositionInSet(System.String,System.Int32)
   name: SetStickerPositionInSet(String, Int32)
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SetStickerPositionInSet_System_String_System_Int32_
@@ -2456,6 +2648,116 @@ references:
   commentId: N:TelegramBotApi.Types
   fullName: TelegramBotApi.Types
   nameWithType: TelegramBotApi.Types
+- uid: TelegramBotApi.Types.Animation
+  name: Animation
+  href: api/TelegramBotApi.Types.Animation.html
+  commentId: T:TelegramBotApi.Types.Animation
+  fullName: TelegramBotApi.Types.Animation
+  nameWithType: Animation
+- uid: TelegramBotApi.Types.Animation.Duration
+  name: Duration
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_Duration
+  commentId: P:TelegramBotApi.Types.Animation.Duration
+  fullName: TelegramBotApi.Types.Animation.Duration
+  nameWithType: Animation.Duration
+- uid: TelegramBotApi.Types.Animation.Duration*
+  name: Duration
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_Duration_
+  commentId: Overload:TelegramBotApi.Types.Animation.Duration
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Animation.Duration
+  nameWithType: Animation.Duration
+- uid: TelegramBotApi.Types.Animation.FileId
+  name: FileId
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_FileId
+  commentId: P:TelegramBotApi.Types.Animation.FileId
+  fullName: TelegramBotApi.Types.Animation.FileId
+  nameWithType: Animation.FileId
+- uid: TelegramBotApi.Types.Animation.FileId*
+  name: FileId
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_FileId_
+  commentId: Overload:TelegramBotApi.Types.Animation.FileId
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Animation.FileId
+  nameWithType: Animation.FileId
+- uid: TelegramBotApi.Types.Animation.FileName
+  name: FileName
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_FileName
+  commentId: P:TelegramBotApi.Types.Animation.FileName
+  fullName: TelegramBotApi.Types.Animation.FileName
+  nameWithType: Animation.FileName
+- uid: TelegramBotApi.Types.Animation.FileName*
+  name: FileName
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_FileName_
+  commentId: Overload:TelegramBotApi.Types.Animation.FileName
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Animation.FileName
+  nameWithType: Animation.FileName
+- uid: TelegramBotApi.Types.Animation.FileSize
+  name: FileSize
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_FileSize
+  commentId: P:TelegramBotApi.Types.Animation.FileSize
+  fullName: TelegramBotApi.Types.Animation.FileSize
+  nameWithType: Animation.FileSize
+- uid: TelegramBotApi.Types.Animation.FileSize*
+  name: FileSize
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_FileSize_
+  commentId: Overload:TelegramBotApi.Types.Animation.FileSize
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Animation.FileSize
+  nameWithType: Animation.FileSize
+- uid: TelegramBotApi.Types.Animation.Height
+  name: Height
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_Height
+  commentId: P:TelegramBotApi.Types.Animation.Height
+  fullName: TelegramBotApi.Types.Animation.Height
+  nameWithType: Animation.Height
+- uid: TelegramBotApi.Types.Animation.Height*
+  name: Height
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_Height_
+  commentId: Overload:TelegramBotApi.Types.Animation.Height
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Animation.Height
+  nameWithType: Animation.Height
+- uid: TelegramBotApi.Types.Animation.MimeType
+  name: MimeType
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_MimeType
+  commentId: P:TelegramBotApi.Types.Animation.MimeType
+  fullName: TelegramBotApi.Types.Animation.MimeType
+  nameWithType: Animation.MimeType
+- uid: TelegramBotApi.Types.Animation.MimeType*
+  name: MimeType
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_MimeType_
+  commentId: Overload:TelegramBotApi.Types.Animation.MimeType
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Animation.MimeType
+  nameWithType: Animation.MimeType
+- uid: TelegramBotApi.Types.Animation.Thumb
+  name: Thumb
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_Thumb
+  commentId: P:TelegramBotApi.Types.Animation.Thumb
+  fullName: TelegramBotApi.Types.Animation.Thumb
+  nameWithType: Animation.Thumb
+- uid: TelegramBotApi.Types.Animation.Thumb*
+  name: Thumb
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_Thumb_
+  commentId: Overload:TelegramBotApi.Types.Animation.Thumb
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Animation.Thumb
+  nameWithType: Animation.Thumb
+- uid: TelegramBotApi.Types.Animation.Width
+  name: Width
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_Width
+  commentId: P:TelegramBotApi.Types.Animation.Width
+  fullName: TelegramBotApi.Types.Animation.Width
+  nameWithType: Animation.Width
+- uid: TelegramBotApi.Types.Animation.Width*
+  name: Width
+  href: api/TelegramBotApi.Types.Animation.html#TelegramBotApi_Types_Animation_Width_
+  commentId: Overload:TelegramBotApi.Types.Animation.Width
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Animation.Width
+  nameWithType: Animation.Width
 - uid: TelegramBotApi.Types.ApiResponse`1
   name: ApiResponse<T>
   href: api/TelegramBotApi.Types.ApiResponse-1.html
@@ -2604,6 +2906,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Audio.Performer
   nameWithType: Audio.Performer
+- uid: TelegramBotApi.Types.Audio.Thumb
+  name: Thumb
+  href: api/TelegramBotApi.Types.Audio.html#TelegramBotApi_Types_Audio_Thumb
+  commentId: P:TelegramBotApi.Types.Audio.Thumb
+  fullName: TelegramBotApi.Types.Audio.Thumb
+  nameWithType: Audio.Thumb
+- uid: TelegramBotApi.Types.Audio.Thumb*
+  name: Thumb
+  href: api/TelegramBotApi.Types.Audio.html#TelegramBotApi_Types_Audio_Thumb_
+  commentId: Overload:TelegramBotApi.Types.Audio.Thumb
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Audio.Thumb
+  nameWithType: Audio.Thumb
 - uid: TelegramBotApi.Types.Audio.Title
   name: Title
   href: api/TelegramBotApi.Types.Audio.html#TelegramBotApi_Types_Audio_Title
@@ -3290,6 +3605,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Contact.UserId
   nameWithType: Contact.UserId
+- uid: TelegramBotApi.Types.Contact.VCard
+  name: VCard
+  href: api/TelegramBotApi.Types.Contact.html#TelegramBotApi_Types_Contact_VCard
+  commentId: P:TelegramBotApi.Types.Contact.VCard
+  fullName: TelegramBotApi.Types.Contact.VCard
+  nameWithType: Contact.VCard
+- uid: TelegramBotApi.Types.Contact.VCard*
+  name: VCard
+  href: api/TelegramBotApi.Types.Contact.html#TelegramBotApi_Types_Contact_VCard_
+  commentId: Overload:TelegramBotApi.Types.Contact.VCard
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Contact.VCard
+  nameWithType: Contact.VCard
 - uid: TelegramBotApi.Types.Document
   name: Document
   href: api/TelegramBotApi.Types.Document.html
@@ -5424,6 +5752,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Inline.InlineQueryResultContact.Type
   nameWithType: InlineQueryResultContact.Type
+- uid: TelegramBotApi.Types.Inline.InlineQueryResultContact.VCard
+  name: VCard
+  href: api/TelegramBotApi.Types.Inline.InlineQueryResultContact.html#TelegramBotApi_Types_Inline_InlineQueryResultContact_VCard
+  commentId: P:TelegramBotApi.Types.Inline.InlineQueryResultContact.VCard
+  fullName: TelegramBotApi.Types.Inline.InlineQueryResultContact.VCard
+  nameWithType: InlineQueryResultContact.VCard
+- uid: TelegramBotApi.Types.Inline.InlineQueryResultContact.VCard*
+  name: VCard
+  href: api/TelegramBotApi.Types.Inline.InlineQueryResultContact.html#TelegramBotApi_Types_Inline_InlineQueryResultContact_VCard_
+  commentId: Overload:TelegramBotApi.Types.Inline.InlineQueryResultContact.VCard
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Inline.InlineQueryResultContact.VCard
+  nameWithType: InlineQueryResultContact.VCard
 - uid: TelegramBotApi.Types.Inline.InlineQueryResultDocument
   name: InlineQueryResultDocument
   href: api/TelegramBotApi.Types.Inline.InlineQueryResultDocument.html
@@ -6324,6 +6665,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Inline.InlineQueryResultVenue.FoursquareId
   nameWithType: InlineQueryResultVenue.FoursquareId
+- uid: TelegramBotApi.Types.Inline.InlineQueryResultVenue.FoursquareType
+  name: FoursquareType
+  href: api/TelegramBotApi.Types.Inline.InlineQueryResultVenue.html#TelegramBotApi_Types_Inline_InlineQueryResultVenue_FoursquareType
+  commentId: P:TelegramBotApi.Types.Inline.InlineQueryResultVenue.FoursquareType
+  fullName: TelegramBotApi.Types.Inline.InlineQueryResultVenue.FoursquareType
+  nameWithType: InlineQueryResultVenue.FoursquareType
+- uid: TelegramBotApi.Types.Inline.InlineQueryResultVenue.FoursquareType*
+  name: FoursquareType
+  href: api/TelegramBotApi.Types.Inline.InlineQueryResultVenue.html#TelegramBotApi_Types_Inline_InlineQueryResultVenue_FoursquareType_
+  commentId: Overload:TelegramBotApi.Types.Inline.InlineQueryResultVenue.FoursquareType
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Inline.InlineQueryResultVenue.FoursquareType
+  nameWithType: InlineQueryResultVenue.FoursquareType
 - uid: TelegramBotApi.Types.Inline.InlineQueryResultVenue.Id
   name: Id
   href: api/TelegramBotApi.Types.Inline.InlineQueryResultVenue.html#TelegramBotApi_Types_Inline_InlineQueryResultVenue_Id
@@ -6810,6 +7164,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Inline.InputContactMessageContent.PhoneNumber
   nameWithType: InputContactMessageContent.PhoneNumber
+- uid: TelegramBotApi.Types.Inline.InputContactMessageContent.VCard
+  name: VCard
+  href: api/TelegramBotApi.Types.Inline.InputContactMessageContent.html#TelegramBotApi_Types_Inline_InputContactMessageContent_VCard
+  commentId: P:TelegramBotApi.Types.Inline.InputContactMessageContent.VCard
+  fullName: TelegramBotApi.Types.Inline.InputContactMessageContent.VCard
+  nameWithType: InputContactMessageContent.VCard
+- uid: TelegramBotApi.Types.Inline.InputContactMessageContent.VCard*
+  name: VCard
+  href: api/TelegramBotApi.Types.Inline.InputContactMessageContent.html#TelegramBotApi_Types_Inline_InputContactMessageContent_VCard_
+  commentId: Overload:TelegramBotApi.Types.Inline.InputContactMessageContent.VCard
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Inline.InputContactMessageContent.VCard
+  nameWithType: InputContactMessageContent.VCard
 - uid: TelegramBotApi.Types.Inline.InputLocationMessageContent
   name: InputLocationMessageContent
   href: api/TelegramBotApi.Types.Inline.InputLocationMessageContent.html
@@ -6938,6 +7305,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Inline.InputVenueMessageContent.FoursquareId
   nameWithType: InputVenueMessageContent.FoursquareId
+- uid: TelegramBotApi.Types.Inline.InputVenueMessageContent.FoursquareType
+  name: FoursquareType
+  href: api/TelegramBotApi.Types.Inline.InputVenueMessageContent.html#TelegramBotApi_Types_Inline_InputVenueMessageContent_FoursquareType
+  commentId: P:TelegramBotApi.Types.Inline.InputVenueMessageContent.FoursquareType
+  fullName: TelegramBotApi.Types.Inline.InputVenueMessageContent.FoursquareType
+  nameWithType: InputVenueMessageContent.FoursquareType
+- uid: TelegramBotApi.Types.Inline.InputVenueMessageContent.FoursquareType*
+  name: FoursquareType
+  href: api/TelegramBotApi.Types.Inline.InputVenueMessageContent.html#TelegramBotApi_Types_Inline_InputVenueMessageContent_FoursquareType_
+  commentId: Overload:TelegramBotApi.Types.Inline.InputVenueMessageContent.FoursquareType
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Inline.InputVenueMessageContent.FoursquareType
+  nameWithType: InputVenueMessageContent.FoursquareType
 - uid: TelegramBotApi.Types.Inline.InputVenueMessageContent.Latitude
   name: Latitude
   href: api/TelegramBotApi.Types.Inline.InputVenueMessageContent.html#TelegramBotApi_Types_Inline_InputVenueMessageContent_Latitude
@@ -7777,6 +8157,19 @@ references:
   commentId: T:TelegramBotApi.Types.Message
   fullName: TelegramBotApi.Types.Message
   nameWithType: Message
+- uid: TelegramBotApi.Types.Message.Animation
+  name: Animation
+  href: api/TelegramBotApi.Types.Message.html#TelegramBotApi_Types_Message_Animation
+  commentId: P:TelegramBotApi.Types.Message.Animation
+  fullName: TelegramBotApi.Types.Message.Animation
+  nameWithType: Message.Animation
+- uid: TelegramBotApi.Types.Message.Animation*
+  name: Animation
+  href: api/TelegramBotApi.Types.Message.html#TelegramBotApi_Types_Message_Animation_
+  commentId: Overload:TelegramBotApi.Types.Message.Animation
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Message.Animation
+  nameWithType: Message.Animation
 - uid: TelegramBotApi.Types.Message.Audio
   name: Audio
   href: api/TelegramBotApi.Types.Message.html#TelegramBotApi_Types_Message_Audio
@@ -8180,6 +8573,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Message.NewChatTitle
   nameWithType: Message.NewChatTitle
+- uid: TelegramBotApi.Types.Message.PassportData
+  name: PassportData
+  href: api/TelegramBotApi.Types.Message.html#TelegramBotApi_Types_Message_PassportData
+  commentId: P:TelegramBotApi.Types.Message.PassportData
+  fullName: TelegramBotApi.Types.Message.PassportData
+  nameWithType: Message.PassportData
+- uid: TelegramBotApi.Types.Message.PassportData*
+  name: PassportData
+  href: api/TelegramBotApi.Types.Message.html#TelegramBotApi_Types_Message_PassportData_
+  commentId: Overload:TelegramBotApi.Types.Message.PassportData
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Message.PassportData
+  nameWithType: Message.PassportData
 - uid: TelegramBotApi.Types.Message.Photo
   name: Photo
   href: api/TelegramBotApi.Types.Message.html#TelegramBotApi_Types_Message_Photo
@@ -9226,6 +9632,650 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.StickerSet.Title
   nameWithType: StickerSet.Title
+- uid: TelegramBotApi.Types.TelegramPassport
+  name: TelegramBotApi.Types.TelegramPassport
+  href: api/TelegramBotApi.Types.TelegramPassport.html
+  commentId: N:TelegramBotApi.Types.TelegramPassport
+  fullName: TelegramBotApi.Types.TelegramPassport
+  nameWithType: TelegramBotApi.Types.TelegramPassport
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials
+  name: EncryptedCredentials
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.EncryptedCredentials
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials
+  nameWithType: EncryptedCredentials
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Data
+  name: Data
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html#TelegramBotApi_Types_TelegramPassport_EncryptedCredentials_Data
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Data
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Data
+  nameWithType: EncryptedCredentials.Data
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Data*
+  name: Data
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html#TelegramBotApi_Types_TelegramPassport_EncryptedCredentials_Data_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Data
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Data
+  nameWithType: EncryptedCredentials.Data
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Hash
+  name: Hash
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html#TelegramBotApi_Types_TelegramPassport_EncryptedCredentials_Hash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Hash
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Hash
+  nameWithType: EncryptedCredentials.Hash
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Hash*
+  name: Hash
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html#TelegramBotApi_Types_TelegramPassport_EncryptedCredentials_Hash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Hash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Hash
+  nameWithType: EncryptedCredentials.Hash
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Secret
+  name: Secret
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html#TelegramBotApi_Types_TelegramPassport_EncryptedCredentials_Secret
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Secret
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Secret
+  nameWithType: EncryptedCredentials.Secret
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Secret*
+  name: Secret
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html#TelegramBotApi_Types_TelegramPassport_EncryptedCredentials_Secret_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Secret
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.Secret
+  nameWithType: EncryptedCredentials.Secret
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement
+  name: EncryptedPassportElement
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement
+  nameWithType: EncryptedPassportElement
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Data
+  name: Data
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Data
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Data
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Data
+  nameWithType: EncryptedPassportElement.Data
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Data*
+  name: Data
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Data_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Data
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Data
+  nameWithType: EncryptedPassportElement.Data
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Email
+  name: Email
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Email
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Email
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Email
+  nameWithType: EncryptedPassportElement.Email
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Email*
+  name: Email
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Email_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Email
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Email
+  nameWithType: EncryptedPassportElement.Email
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Files
+  name: Files
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Files
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Files
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Files
+  nameWithType: EncryptedPassportElement.Files
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Files*
+  name: Files
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Files_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Files
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Files
+  nameWithType: EncryptedPassportElement.Files
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.FrontSide
+  name: FrontSide
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_FrontSide
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.FrontSide
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.FrontSide
+  nameWithType: EncryptedPassportElement.FrontSide
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.FrontSide*
+  name: FrontSide
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_FrontSide_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.FrontSide
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.FrontSide
+  nameWithType: EncryptedPassportElement.FrontSide
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.PhoneNumber
+  name: PhoneNumber
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_PhoneNumber
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.PhoneNumber
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.PhoneNumber
+  nameWithType: EncryptedPassportElement.PhoneNumber
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.PhoneNumber*
+  name: PhoneNumber
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_PhoneNumber_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.PhoneNumber
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.PhoneNumber
+  nameWithType: EncryptedPassportElement.PhoneNumber
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.ReverseSide
+  name: ReverseSide
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_ReverseSide
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.ReverseSide
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.ReverseSide
+  nameWithType: EncryptedPassportElement.ReverseSide
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.ReverseSide*
+  name: ReverseSide
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_ReverseSide_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.ReverseSide
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.ReverseSide
+  nameWithType: EncryptedPassportElement.ReverseSide
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie
+  name: Selfie
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Selfie
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie
+  nameWithType: EncryptedPassportElement.Selfie
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie*
+  name: Selfie
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Selfie_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie
+  nameWithType: EncryptedPassportElement.Selfie
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Type
+  nameWithType: EncryptedPassportElement.Type
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Type
+  nameWithType: EncryptedPassportElement.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportData
+  name: PassportData
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportData.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportData
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportData
+  nameWithType: PassportData
+- uid: TelegramBotApi.Types.TelegramPassport.PassportData.Credentials
+  name: Credentials
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportData.html#TelegramBotApi_Types_TelegramPassport_PassportData_Credentials
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportData.Credentials
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportData.Credentials
+  nameWithType: PassportData.Credentials
+- uid: TelegramBotApi.Types.TelegramPassport.PassportData.Credentials*
+  name: Credentials
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportData.html#TelegramBotApi_Types_TelegramPassport_PassportData_Credentials_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportData.Credentials
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportData.Credentials
+  nameWithType: PassportData.Credentials
+- uid: TelegramBotApi.Types.TelegramPassport.PassportData.Data
+  name: Data
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportData.html#TelegramBotApi_Types_TelegramPassport_PassportData_Data
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportData.Data
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportData.Data
+  nameWithType: PassportData.Data
+- uid: TelegramBotApi.Types.TelegramPassport.PassportData.Data*
+  name: Data
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportData.html#TelegramBotApi_Types_TelegramPassport_PassportData_Data_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportData.Data
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportData.Data
+  nameWithType: PassportData.Data
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementError
+  name: PassportElementError
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementError
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementError
+  nameWithType: PassportElementError
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementError.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html#TelegramBotApi_Types_TelegramPassport_PassportElementError_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementError.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementError.Message
+  nameWithType: PassportElementError.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementError.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html#TelegramBotApi_Types_TelegramPassport_PassportElementError_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementError.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementError.Message
+  nameWithType: PassportElementError.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementError.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html#TelegramBotApi_Types_TelegramPassport_PassportElementError_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementError.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementError.Source
+  nameWithType: PassportElementError.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementError.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html#TelegramBotApi_Types_TelegramPassport_PassportElementError_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementError.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementError.Source
+  nameWithType: PassportElementError.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementError.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html#TelegramBotApi_Types_TelegramPassport_PassportElementError_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementError.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementError.Type
+  nameWithType: PassportElementError.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementError.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html#TelegramBotApi_Types_TelegramPassport_PassportElementError_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementError.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementError.Type
+  nameWithType: PassportElementError.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField
+  name: PassportElementErrorDataField
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField
+  nameWithType: PassportElementErrorDataField
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.DataHash
+  name: DataHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_DataHash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.DataHash
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.DataHash
+  nameWithType: PassportElementErrorDataField.DataHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.DataHash*
+  name: DataHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_DataHash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.DataHash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.DataHash
+  nameWithType: PassportElementErrorDataField.DataHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.FieldName
+  name: FieldName
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_FieldName
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.FieldName
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.FieldName
+  nameWithType: PassportElementErrorDataField.FieldName
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.FieldName*
+  name: FieldName
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_FieldName_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.FieldName
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.FieldName
+  nameWithType: PassportElementErrorDataField.FieldName
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Message
+  nameWithType: PassportElementErrorDataField.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Message
+  nameWithType: PassportElementErrorDataField.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Source
+  nameWithType: PassportElementErrorDataField.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Source
+  nameWithType: PassportElementErrorDataField.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Type
+  nameWithType: PassportElementErrorDataField.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorDataField_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.Type
+  nameWithType: PassportElementErrorDataField.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile
+  name: PassportElementErrorFile
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile
+  nameWithType: PassportElementErrorFile
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.FileHash
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFile_FileHash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.FileHash
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.FileHash
+  nameWithType: PassportElementErrorFile.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.FileHash*
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFile_FileHash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.FileHash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.FileHash
+  nameWithType: PassportElementErrorFile.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFile_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Message
+  nameWithType: PassportElementErrorFile.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFile_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Message
+  nameWithType: PassportElementErrorFile.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFile_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Source
+  nameWithType: PassportElementErrorFile.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFile_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Source
+  nameWithType: PassportElementErrorFile.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFile_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Type
+  nameWithType: PassportElementErrorFile.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFile_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.Type
+  nameWithType: PassportElementErrorFile.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles
+  name: PassportElementErrorFiles
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles
+  nameWithType: PassportElementErrorFiles
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.FileHashes
+  name: FileHashes
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFiles_FileHashes
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.FileHashes
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.FileHashes
+  nameWithType: PassportElementErrorFiles.FileHashes
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.FileHashes*
+  name: FileHashes
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFiles_FileHashes_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.FileHashes
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.FileHashes
+  nameWithType: PassportElementErrorFiles.FileHashes
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFiles_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Message
+  nameWithType: PassportElementErrorFiles.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFiles_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Message
+  nameWithType: PassportElementErrorFiles.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFiles_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Source
+  nameWithType: PassportElementErrorFiles.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFiles_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Source
+  nameWithType: PassportElementErrorFiles.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFiles_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Type
+  nameWithType: PassportElementErrorFiles.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFiles_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.Type
+  nameWithType: PassportElementErrorFiles.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide
+  name: PassportElementErrorFrontSide
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide
+  nameWithType: PassportElementErrorFrontSide
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.FileHash
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFrontSide_FileHash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.FileHash
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.FileHash
+  nameWithType: PassportElementErrorFrontSide.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.FileHash*
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFrontSide_FileHash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.FileHash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.FileHash
+  nameWithType: PassportElementErrorFrontSide.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFrontSide_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Message
+  nameWithType: PassportElementErrorFrontSide.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFrontSide_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Message
+  nameWithType: PassportElementErrorFrontSide.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFrontSide_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Source
+  nameWithType: PassportElementErrorFrontSide.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFrontSide_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Source
+  nameWithType: PassportElementErrorFrontSide.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFrontSide_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Type
+  nameWithType: PassportElementErrorFrontSide.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorFrontSide_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Type
+  nameWithType: PassportElementErrorFrontSide.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide
+  name: PassportElementErrorReverseFrontSide
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide
+  nameWithType: PassportElementErrorReverseFrontSide
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_FileHash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
+  nameWithType: PassportElementErrorReverseFrontSide.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash*
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_FileHash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
+  nameWithType: PassportElementErrorReverseFrontSide.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
+  nameWithType: PassportElementErrorReverseFrontSide.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
+  nameWithType: PassportElementErrorReverseFrontSide.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
+  nameWithType: PassportElementErrorReverseFrontSide.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
+  nameWithType: PassportElementErrorReverseFrontSide.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
+  nameWithType: PassportElementErrorReverseFrontSide.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
+  nameWithType: PassportElementErrorReverseFrontSide.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie
+  name: PassportElementErrorSelfie
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie
+  nameWithType: PassportElementErrorSelfie
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.FileHash
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorSelfie_FileHash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.FileHash
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.FileHash
+  nameWithType: PassportElementErrorSelfie.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.FileHash*
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorSelfie_FileHash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.FileHash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.FileHash
+  nameWithType: PassportElementErrorSelfie.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorSelfie_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Message
+  nameWithType: PassportElementErrorSelfie.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorSelfie_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Message
+  nameWithType: PassportElementErrorSelfie.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorSelfie_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Source
+  nameWithType: PassportElementErrorSelfie.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorSelfie_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Source
+  nameWithType: PassportElementErrorSelfie.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorSelfie_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Type
+  nameWithType: PassportElementErrorSelfie.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorSelfie_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Type
+  nameWithType: PassportElementErrorSelfie.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportFile
+  name: PassportFile
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportFile.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportFile
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportFile
+  nameWithType: PassportFile
+- uid: TelegramBotApi.Types.TelegramPassport.PassportFile.Date
+  name: Date
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportFile.html#TelegramBotApi_Types_TelegramPassport_PassportFile_Date
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportFile.Date
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportFile.Date
+  nameWithType: PassportFile.Date
+- uid: TelegramBotApi.Types.TelegramPassport.PassportFile.Date*
+  name: Date
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportFile.html#TelegramBotApi_Types_TelegramPassport_PassportFile_Date_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportFile.Date
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportFile.Date
+  nameWithType: PassportFile.Date
+- uid: TelegramBotApi.Types.TelegramPassport.PassportFile.FileId
+  name: FileId
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportFile.html#TelegramBotApi_Types_TelegramPassport_PassportFile_FileId
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportFile.FileId
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportFile.FileId
+  nameWithType: PassportFile.FileId
+- uid: TelegramBotApi.Types.TelegramPassport.PassportFile.FileId*
+  name: FileId
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportFile.html#TelegramBotApi_Types_TelegramPassport_PassportFile_FileId_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportFile.FileId
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportFile.FileId
+  nameWithType: PassportFile.FileId
+- uid: TelegramBotApi.Types.TelegramPassport.PassportFile.FileSize
+  name: FileSize
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportFile.html#TelegramBotApi_Types_TelegramPassport_PassportFile_FileSize
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportFile.FileSize
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportFile.FileSize
+  nameWithType: PassportFile.FileSize
+- uid: TelegramBotApi.Types.TelegramPassport.PassportFile.FileSize*
+  name: FileSize
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportFile.html#TelegramBotApi_Types_TelegramPassport_PassportFile_FileSize_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportFile.FileSize
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportFile.FileSize
+  nameWithType: PassportFile.FileSize
 - uid: TelegramBotApi.Types.Update
   name: Update
   href: api/TelegramBotApi.Types.Update.html
@@ -9439,6 +10489,180 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Upload.InputMedia.Type
   nameWithType: InputMedia.Type
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation
+  name: InputMediaAnimation
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html
+  commentId: T:TelegramBotApi.Types.Upload.InputMediaAnimation
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation
+  nameWithType: InputMediaAnimation
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Duration
+  name: Duration
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Duration
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAnimation.Duration
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Duration
+  nameWithType: InputMediaAnimation.Duration
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Duration*
+  name: Duration
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Duration_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAnimation.Duration
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Duration
+  nameWithType: InputMediaAnimation.Duration
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Height
+  name: Height
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Height
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAnimation.Height
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Height
+  nameWithType: InputMediaAnimation.Height
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Height*
+  name: Height
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Height_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAnimation.Height
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Height
+  nameWithType: InputMediaAnimation.Height
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Thumb
+  name: Thumb
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Thumb
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAnimation.Thumb
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Thumb
+  nameWithType: InputMediaAnimation.Thumb
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Thumb*
+  name: Thumb
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Thumb_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAnimation.Thumb
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Thumb
+  nameWithType: InputMediaAnimation.Thumb
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Type
+  name: Type
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Type
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAnimation.Type
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Type
+  nameWithType: InputMediaAnimation.Type
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Type_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAnimation.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Type
+  nameWithType: InputMediaAnimation.Type
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Width
+  name: Width
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Width
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAnimation.Width
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Width
+  nameWithType: InputMediaAnimation.Width
+- uid: TelegramBotApi.Types.Upload.InputMediaAnimation.Width*
+  name: Width
+  href: api/TelegramBotApi.Types.Upload.InputMediaAnimation.html#TelegramBotApi_Types_Upload_InputMediaAnimation_Width_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAnimation.Width
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAnimation.Width
+  nameWithType: InputMediaAnimation.Width
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio
+  name: InputMediaAudio
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html
+  commentId: T:TelegramBotApi.Types.Upload.InputMediaAudio
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio
+  nameWithType: InputMediaAudio
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Duration
+  name: Duration
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Duration
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAudio.Duration
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Duration
+  nameWithType: InputMediaAudio.Duration
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Duration*
+  name: Duration
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Duration_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAudio.Duration
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Duration
+  nameWithType: InputMediaAudio.Duration
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Performer
+  name: Performer
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Performer
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAudio.Performer
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Performer
+  nameWithType: InputMediaAudio.Performer
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Performer*
+  name: Performer
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Performer_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAudio.Performer
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Performer
+  nameWithType: InputMediaAudio.Performer
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Thumb
+  name: Thumb
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Thumb
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAudio.Thumb
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Thumb
+  nameWithType: InputMediaAudio.Thumb
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Thumb*
+  name: Thumb
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Thumb_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAudio.Thumb
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Thumb
+  nameWithType: InputMediaAudio.Thumb
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Title
+  name: Title
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Title
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAudio.Title
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Title
+  nameWithType: InputMediaAudio.Title
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Title*
+  name: Title
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Title_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAudio.Title
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Title
+  nameWithType: InputMediaAudio.Title
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Type
+  name: Type
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Type
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaAudio.Type
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Type
+  nameWithType: InputMediaAudio.Type
+- uid: TelegramBotApi.Types.Upload.InputMediaAudio.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.Upload.InputMediaAudio.html#TelegramBotApi_Types_Upload_InputMediaAudio_Type_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaAudio.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaAudio.Type
+  nameWithType: InputMediaAudio.Type
+- uid: TelegramBotApi.Types.Upload.InputMediaDocument
+  name: InputMediaDocument
+  href: api/TelegramBotApi.Types.Upload.InputMediaDocument.html
+  commentId: T:TelegramBotApi.Types.Upload.InputMediaDocument
+  fullName: TelegramBotApi.Types.Upload.InputMediaDocument
+  nameWithType: InputMediaDocument
+- uid: TelegramBotApi.Types.Upload.InputMediaDocument.Thumb
+  name: Thumb
+  href: api/TelegramBotApi.Types.Upload.InputMediaDocument.html#TelegramBotApi_Types_Upload_InputMediaDocument_Thumb
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaDocument.Thumb
+  fullName: TelegramBotApi.Types.Upload.InputMediaDocument.Thumb
+  nameWithType: InputMediaDocument.Thumb
+- uid: TelegramBotApi.Types.Upload.InputMediaDocument.Thumb*
+  name: Thumb
+  href: api/TelegramBotApi.Types.Upload.InputMediaDocument.html#TelegramBotApi_Types_Upload_InputMediaDocument_Thumb_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaDocument.Thumb
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaDocument.Thumb
+  nameWithType: InputMediaDocument.Thumb
+- uid: TelegramBotApi.Types.Upload.InputMediaDocument.Type
+  name: Type
+  href: api/TelegramBotApi.Types.Upload.InputMediaDocument.html#TelegramBotApi_Types_Upload_InputMediaDocument_Type
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaDocument.Type
+  fullName: TelegramBotApi.Types.Upload.InputMediaDocument.Type
+  nameWithType: InputMediaDocument.Type
+- uid: TelegramBotApi.Types.Upload.InputMediaDocument.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.Upload.InputMediaDocument.html#TelegramBotApi_Types_Upload_InputMediaDocument_Type_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaDocument.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaDocument.Type
+  nameWithType: InputMediaDocument.Type
 - uid: TelegramBotApi.Types.Upload.InputMediaPhoto
   name: InputMediaPhoto
   href: api/TelegramBotApi.Types.Upload.InputMediaPhoto.html
@@ -9503,6 +10727,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Upload.InputMediaVideo.SupportsStreaming
   nameWithType: InputMediaVideo.SupportsStreaming
+- uid: TelegramBotApi.Types.Upload.InputMediaVideo.Thumb
+  name: Thumb
+  href: api/TelegramBotApi.Types.Upload.InputMediaVideo.html#TelegramBotApi_Types_Upload_InputMediaVideo_Thumb
+  commentId: P:TelegramBotApi.Types.Upload.InputMediaVideo.Thumb
+  fullName: TelegramBotApi.Types.Upload.InputMediaVideo.Thumb
+  nameWithType: InputMediaVideo.Thumb
+- uid: TelegramBotApi.Types.Upload.InputMediaVideo.Thumb*
+  name: Thumb
+  href: api/TelegramBotApi.Types.Upload.InputMediaVideo.html#TelegramBotApi_Types_Upload_InputMediaVideo_Thumb_
+  commentId: Overload:TelegramBotApi.Types.Upload.InputMediaVideo.Thumb
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.InputMediaVideo.Thumb
+  nameWithType: InputMediaVideo.Thumb
 - uid: TelegramBotApi.Types.Upload.InputMediaVideo.Type
   name: Type
   href: api/TelegramBotApi.Types.Upload.InputMediaVideo.html#TelegramBotApi_Types_Upload_InputMediaVideo_Type
@@ -9950,6 +11187,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Venue.FoursquareId
   nameWithType: Venue.FoursquareId
+- uid: TelegramBotApi.Types.Venue.FoursquareType
+  name: FoursquareType
+  href: api/TelegramBotApi.Types.Venue.html#TelegramBotApi_Types_Venue_FoursquareType
+  commentId: P:TelegramBotApi.Types.Venue.FoursquareType
+  fullName: TelegramBotApi.Types.Venue.FoursquareType
+  nameWithType: Venue.FoursquareType
+- uid: TelegramBotApi.Types.Venue.FoursquareType*
+  name: FoursquareType
+  href: api/TelegramBotApi.Types.Venue.html#TelegramBotApi_Types_Venue_FoursquareType_
+  commentId: Overload:TelegramBotApi.Types.Venue.FoursquareType
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Venue.FoursquareType
+  nameWithType: Venue.FoursquareType
 - uid: TelegramBotApi.Types.Venue.Location
   name: Location
   href: api/TelegramBotApi.Types.Venue.html#TelegramBotApi_Types_Venue_Location

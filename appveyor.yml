@@ -12,6 +12,10 @@ before_build:
 build_script:
   - msbuild TelegramBotApi.sln
 
+test:
+  assemblies:
+    - '**\TelegramBotApiTests.dll'
+
 after_build:
   - ps: |
         if(-Not $env:APPVEYOR_PULL_REQUEST_TITLE)

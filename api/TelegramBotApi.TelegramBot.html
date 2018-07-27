@@ -10004,7 +10004,13 @@ Returns an error, if the new score is not greater than the user's current score 
   </span>
   <a id="TelegramBotApi_TelegramBot_SetPassportDataErrors_" data-uid="TelegramBotApi.TelegramBot.SetPassportDataErrors*"></a>
   <h4 id="TelegramBotApi_TelegramBot_SetPassportDataErrors_System_Int32_TelegramBotApi_Types_TelegramPassport_PassportElementError___" data-uid="TelegramBotApi.TelegramBot.SetPassportDataErrors(System.Int32,TelegramBotApi.Types.TelegramPassport.PassportElementError[])">SetPassportDataErrors(Int32, PassportElementError[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Informs a user that some of the Telegram Passport elements they provided contains errors. 
+The user will not be able to re-submit their Passport to you until the errors are fixed 
+(the contents of the field for which you returned the error must change). Returns True on success.</p>
+<p>Use this if the data submitted by the user doesn&apos;t satisfy the standards your service requires for any reason. 
+For example, if a birthday date seems invalid, a submitted document is blurry, a scan shows evidence of tampering, etc. 
+Supply some details in the error message to make sure the user knows how to correct the issues.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -10023,12 +10029,14 @@ Returns an error, if the new score is not greater than the user's current score 
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>User identifier</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="TelegramBotApi.Types.TelegramPassport.PassportElementError.html">PassportElementError</a>[]</td>
         <td><span class="parametername">errors</span></td>
-        <td></td>
+        <td><p>A JSON-serialized array describing the errors</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -10043,7 +10051,8 @@ Returns an error, if the new score is not greater than the user's current score 
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True on success</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -10056,7 +10065,13 @@ Returns an error, if the new score is not greater than the user's current score 
   </span>
   <a id="TelegramBotApi_TelegramBot_SetPassportDataErrorsAsync_" data-uid="TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync*"></a>
   <h4 id="TelegramBotApi_TelegramBot_SetPassportDataErrorsAsync_System_Int32_TelegramBotApi_Types_TelegramPassport_PassportElementError___" data-uid="TelegramBotApi.TelegramBot.SetPassportDataErrorsAsync(System.Int32,TelegramBotApi.Types.TelegramPassport.PassportElementError[])">SetPassportDataErrorsAsync(Int32, PassportElementError[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Informs a user that some of the Telegram Passport elements they provided contains errors. 
+The user will not be able to re-submit their Passport to you until the errors are fixed 
+(the contents of the field for which you returned the error must change). Returns True on success.</p>
+<p>Use this if the data submitted by the user doesn&apos;t satisfy the standards your service requires for any reason. 
+For example, if a birthday date seems invalid, a submitted document is blurry, a scan shows evidence of tampering, etc. 
+Supply some details in the error message to make sure the user knows how to correct the issues.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -10075,12 +10090,14 @@ Returns an error, if the new score is not greater than the user's current score 
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>User identifier</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="TelegramBotApi.Types.TelegramPassport.PassportElementError.html">PassportElementError</a>[]</td>
         <td><span class="parametername">errors</span></td>
-        <td></td>
+        <td><p>A JSON-serialized array describing the errors</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -10095,7 +10112,8 @@ Returns an error, if the new score is not greater than the user's current score 
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>True on success</p>
+</td>
       </tr>
     </tbody>
   </table>

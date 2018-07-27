@@ -2,6 +2,8 @@
 using System;
 using TelegramBotApi.Enums;
 using TelegramBotApi.Types.Payment;
+using TelegramBotApi.Types.TelegramPassport;
+
 
 namespace TelegramBotApi.Types
 {
@@ -49,7 +51,7 @@ namespace TelegramBotApi.Types
         /// <summary>
         /// The user this message was forwarded from, if any
         /// </summary>
-        [JsonProperty(PropertyName = "forwarded_from")]
+        [JsonProperty(PropertyName = "forward_from")]
         public User ForwardFrom { get; set; }
 
         /// <summary>
@@ -327,6 +329,12 @@ namespace TelegramBotApi.Types
         /// </summary>
         [JsonProperty(PropertyName = "connected_website")]
         public string ConnectedWebsite { get; set; }
+
+        /// <summary>
+        /// Optional. Telegram Passport data
+        /// </summary>
+        [JsonProperty(PropertyName = "passport_data")]
+        public PassportData PassportData { get; set; }
 
         /// <summary>
         /// Type of this message

@@ -49,6 +49,7 @@
     <Compile Include="Enums\ChatAction.cs" />
     <Compile Include="Enums\ChatMemberStatus.cs" />
     <Compile Include="Enums\ChatType.cs" />
+    <Compile Include="Enums\EncryptedPassportElementType.cs" />
     <Compile Include="Enums\Enum.cs" />
     <Compile Include="Enums\MaskPositionPointType.cs" />
     <Compile Include="Enums\MessageEntityType.cs" />
@@ -135,6 +136,17 @@
     <Compile Include="Types\ResponseParameters.cs" />
     <Compile Include="Types\Sticker.cs" />
     <Compile Include="Types\StickerSet.cs" />
+    <Compile Include="Types\TelegramPassport\EncryptedCredentials.cs" />
+    <Compile Include="Types\TelegramPassport\EncryptedPassportElement.cs" />
+    <Compile Include="Types\TelegramPassport\PassportData.cs" />
+    <Compile Include="Types\TelegramPassport\PassportElementError.cs" />
+    <Compile Include="Types\TelegramPassport\PassportElementErrorDataField.cs" />
+    <Compile Include="Types\TelegramPassport\PassportElementErrorFile.cs" />
+    <Compile Include="Types\TelegramPassport\PassportElementErrorFiles.cs" />
+    <Compile Include="Types\TelegramPassport\PassportElementErrorFrontSide.cs" />
+    <Compile Include="Types\TelegramPassport\PassportElementErrorReverseSide.cs" />
+    <Compile Include="Types\TelegramPassport\PassportElementErrorSelfie.cs" />
+    <Compile Include="Types\TelegramPassport\PassportFile.cs" />
     <Compile Include="Types\Update.cs" />
     <Compile Include="Types\Upload\InputMedia.cs" />
     <Compile Include="Types\Upload\InputMediaAnimation.cs" />

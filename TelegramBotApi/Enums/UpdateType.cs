@@ -48,6 +48,10 @@ namespace TelegramBotApi.Enums
         /// </summary>
         PreCheckoutQuery,
         /// <summary>
+        /// A Telegram Passport data
+        /// </summary>
+        PassportData,
+        /// <summary>
         /// An update type not yet implemented
         /// </summary>
         Unknown

@@ -2,6 +2,7 @@
 using TelegramBotApi.Enums;
 using TelegramBotApi.Types.Inline;
 using TelegramBotApi.Types.Payment;
+using TelegramBotApi.Types.TelegramPassport;
 
 namespace TelegramBotApi.Types
 {
@@ -73,6 +74,12 @@ namespace TelegramBotApi.Types
         public PreCheckoutQuery PreCheckoutQuery { get; set; }
 
         /// <summary>
+        /// Optional. Contains information about Telegram Passport data shared with the bot by the user.
+        /// </summary>
+        [JsonProperty(PropertyName = "passport_data")]
+        public PassportData PassportData { get; set; }
+
+        /// <summary>
         /// <see cref="UpdateType"/> of this update. Only the corresponding optional property will be filled.
         /// </summary>
         public UpdateType Type
@@ -88,6 +95,7 @@ namespace TelegramBotApi.Types
                 else if (CallbackQuery != null) return UpdateType.CallbackQuery;
                 else if (ShippingQuery != null) return UpdateType.ShippingQuery;
                 else if (PreCheckoutQuery != null) return UpdateType.PreCheckoutQuery;
+                else if (PassportData != null) return UpdateType.PassportData;
                 else return UpdateType.Unknown;
             }
         }

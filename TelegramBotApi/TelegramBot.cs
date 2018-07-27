@@ -16,6 +16,7 @@ using TelegramBotApi.Types.Game;
 using TelegramBotApi.Types.Inline;
 using TelegramBotApi.Types.Markup;
 using TelegramBotApi.Types.Payment;
+using TelegramBotApi.Types.TelegramPassport;
 using TelegramBotApi.Types.Upload;
 using Enum = TelegramBotApi.Enums.Enum;
 using File = TelegramBotApi.Types.File;
@@ -2805,6 +2806,42 @@ namespace TelegramBotApi
                 { "user_id", userId }, { "inline_message_id", inlineMessageId }
             };
             return await ApiMethodAsync<GameHighScore[]>("getGameHighScores", args);
+        }
+        #endregion
+        #region Telegram Passport
+        /// <summary>
+        /// <para>Informs a user that some of the Telegram Passport elements they provided contains errors. 
+        /// The user will not be able to re-submit their Passport to you until the errors are fixed 
+        /// (the contents of the field for which you returned the error must change). Returns True on success.
+        /// 
+        /// <para>Use this if the data submitted by the user doesn't satisfy the standards your service requires for any reason. 
+        /// For example, if a birthday date seems invalid, a submitted document is blurry, a scan shows evidence of tampering, etc. 
+        /// Supply some details in the error message to make sure the user knows how to correct the issues.</para>
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="errors"></param>
+        /// <returns>True on success</returns>
+        public bool SetPassportDataErrors(int userId, PassportElementError[] errors)
+            => SetPassportDataErrorsAsync(userId, errors).Result;
+        /// <summary>
+        /// <para>Informs a user that some of the Telegram Passport elements they provided contains errors. 
+        /// The user will not be able to re-submit their Passport to you until the errors are fixed 
+        /// (the contents of the field for which you returned the error must change). Returns True on success.
+        /// 
+        /// <para>Use this if the data submitted by the user doesn't satisfy the standards your service requires for any reason. 
+        /// For example, if a birthday date seems invalid, a submitted document is blurry, a scan shows evidence of tampering, etc. 
+        /// Supply some details in the error message to make sure the user knows how to correct the issues.</para>
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="errors"></param>
+        /// <returns>True on success</returns>
+        public async Task<bool> SetPassportDataErrorsAsync(int userId, PassportElementError[] errors)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>()
+            {
+                { "user_id", userId }, { "errors", errors }
+            };
+            return await ApiMethodAsync<bool>("setPassportDataErrors", args);
         }
         #endregion
     }

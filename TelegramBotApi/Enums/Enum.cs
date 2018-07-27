@@ -319,5 +319,75 @@
                     return ChatAction.Typing;
             }
         }
+
+        public static string GetString(EncryptedPassportElementType epe)
+        {
+            switch (epe)
+            {
+                case EncryptedPassportElementType.PersonalDetails:
+                    return "personal_details";
+                case EncryptedPassportElementType.Passport:
+                    return "passport";
+                case EncryptedPassportElementType.DriverLicense:
+                    return "driver_license";
+                case EncryptedPassportElementType.IdentityCard:
+                    return "identity_card";
+                case EncryptedPassportElementType.InternalPassport:
+                    return "internal_passport";
+                case EncryptedPassportElementType.Address:
+                    return "address";
+                case EncryptedPassportElementType.UtilityBill:
+                    return "utility_bill";
+                case EncryptedPassportElementType.BankStatement:
+                    return "bank_statement";
+                case EncryptedPassportElementType.RentalAgreement:
+                    return "rental_agreement";
+                case EncryptedPassportElementType.PassportRegistration:
+                    return "passport_registratrion";
+                case EncryptedPassportElementType.TemporaryRegistration:
+                    return "temporary_registration";
+                case EncryptedPassportElementType.PhoneNumber:
+                    return "phone_number";
+                case EncryptedPassportElementType.Email:
+                    return "email";
+                default:
+                    return "unknown";
+            }
+        }
+
+        public static EncryptedPassportElementType GetEncryptedPassportElementType(string str)
+        {
+            switch (str)
+            {
+                case "personal_details":
+                    return EncryptedPassportElementType.PersonalDetails;
+                case "passport":
+                    return EncryptedPassportElementType.Passport;
+                case "driver_license":
+                    return EncryptedPassportElementType.DriverLicense;
+                case "identity_card":
+                    return EncryptedPassportElementType.IdentityCard;
+                case "internal_passport":
+                    return EncryptedPassportElementType.InternalPassport;
+                case "address":
+                    return EncryptedPassportElementType.Address;
+                case "utility_bill":
+                    return EncryptedPassportElementType.UtilityBill;
+                case "bank_statement":
+                    return EncryptedPassportElementType.BankStatement;
+                case "rental_agreement":
+                    return EncryptedPassportElementType.RentalAgreement;
+                case "passport_registration":
+                    return EncryptedPassportElementType.PassportRegistration;
+                case "temporary_registration":
+                    return EncryptedPassportElementType.TemporaryRegistration;
+                case "phone_number":
+                    return EncryptedPassportElementType.PhoneNumber;
+                case "email":
+                    return EncryptedPassportElementType.Email;
+                default:
+                    return EncryptedPassportElementType.Unknown;
+            }
+        }
     }
 }

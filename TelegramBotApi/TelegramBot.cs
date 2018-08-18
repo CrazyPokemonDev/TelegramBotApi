@@ -1050,6 +1050,55 @@ namespace TelegramBotApi
 
             return await ApiMethodAsync<Message>("sendContact", args);
         }
+
+        /// <summary>
+        /// Use this method when you need to tell the user that something is happening on the bot's side. 
+        /// The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status). 
+        /// 
+        /// <para>Example: The ImageBot needs some time to process a request and upload the image. 
+        /// Instead of sending a text message along the lines of “Retrieving image, please wait…”, 
+        /// the bot may use sendChatAction with action = upload_photo. 
+        /// The user will see a “sending photo” status for the bot.</para>
+        /// 
+        /// <para>We only recommend using this method when a response from the bot will take a noticeable amount of time to arrive.</para>
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel (in the format @channelusername)</param>
+        /// <param name="action">Type of action to broadcast. Choose one, depending on what the user is about to receive:
+        /// <see cref="ChatAction.Typing"/> for text messages, 
+        /// <see cref="ChatAction.UploadPhoto"/> for photos, 
+        /// <see cref="ChatAction.RecordVideo"/> or <see cref="ChatAction.UploadVideo"/> for videos, 
+        /// <see cref="ChatAction.RecordAudio"/> or <see cref="ChatAction.UploadAudio"/> for audio files, 
+        /// <see cref="ChatAction.UploadDocument"/> for general files, <see cref="ChatAction.FindLocation"/> for location data, 
+        /// <see cref="ChatAction.RecordVideoNote"/> or <see cref="ChatAction.UploadVideoNote"/> for video notes.</param>
+        /// <returns>True on success</returns>
+        public bool SendChatAction(ChatId chatId, ChatAction action)
+            => SendChatActionAsync(chatId, action).Result;
+        /// <summary>
+        /// Use this method when you need to tell the user that something is happening on the bot's side. 
+        /// The status is set for 5 seconds or less (when a message arrives from your bot, Telegram clients clear its typing status). 
+        /// 
+        /// <para>Example: The ImageBot needs some time to process a request and upload the image. 
+        /// Instead of sending a text message along the lines of “Retrieving image, please wait…”, 
+        /// the bot may use sendChatAction with action = upload_photo. 
+        /// The user will see a “sending photo” status for the bot.</para>
+        /// 
+        /// <para>We only recommend using this method when a response from the bot will take a noticeable amount of time to arrive.</para>
+        /// </summary>
+        /// <param name="chatId">Unique identifier for the target chat or username of the target channel (in the format @channelusername)</param>
+        /// <param name="action">Type of action to broadcast. Choose one, depending on what the user is about to receive:
+        /// <see cref="ChatAction.Typing"/> for text messages, 
+        /// <see cref="ChatAction.UploadPhoto"/> for photos, 
+        /// <see cref="ChatAction.RecordVideo"/> or <see cref="ChatAction.UploadVideo"/> for videos, 
+        /// <see cref="ChatAction.RecordAudio"/> or <see cref="ChatAction.UploadAudio"/> for audio files, 
+        /// <see cref="ChatAction.UploadDocument"/> for general files, <see cref="ChatAction.FindLocation"/> for location data, 
+        /// <see cref="ChatAction.RecordVideoNote"/> or <see cref="ChatAction.UploadVideoNote"/> for video notes.</param>
+        /// <returns>True on success</returns>
+        public async Task<bool> SendChatActionAsync(ChatId chatId, ChatAction action)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "action", Enum.GetString(action) } };
+
+            return await ApiMethodAsync<bool>("sendChatAction", args);
+        }
         #endregion
         #region Live locations
         /// <summary>

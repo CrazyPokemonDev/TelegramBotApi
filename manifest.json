@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.ChatAction.html",
-          "hash": "dulShTm86dk5V02k81CNGw=="
+          "hash": "FTUXwUYxViz/XRn+LYX0zw=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.ChatMemberStatus.html",
-          "hash": "kxANVN9JhdZxRJnT0Wuq6g=="
+          "hash": "RFbznP3BDAj/99D7haIWzA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.ChatType.html",
-          "hash": "BSDAxWQnpny8tGXqpW2tMw=="
+          "hash": "VeB1BjNGLddv7gikcmuHVg=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.EncryptedPassportElementType.html",
-          "hash": "4KubN+r0cxPZ5ABskThLWw=="
+          "hash": "6hvtiHlU333jYiD0IRO7ow=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.MaskPositionPointType.html",
-          "hash": "FC6K0Xjb9sv/Hq6hqaYlMA=="
+          "hash": "pTC55kGQEoU6gdalnjKK8w=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.MessageEntityType.html",
-          "hash": "qvd+ttB8utH3FjMcHO8wAw=="
+          "hash": "oJFNdwMYw5rHwkWli8Q7mg=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.MessageType.html",
-          "hash": "OEYqe34Oi2mnonNsVJGHwg=="
+          "hash": "0cRQ0nYSV++OPhkmm39rzQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.ParseMode.html",
-          "hash": "KJzIRiBQxdgEFrpZZLPGZQ=="
+          "hash": "Jm4M8h5dqVrPKGtiY5yPVg=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.UpdateType.html",
-          "hash": "LbQsFsoHIyc4z3zrYJ5hbQ=="
+          "hash": "zXltWXE+SkBypLZM51RQtg=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Enums.html",
-          "hash": "0Ze7J4Zw8VJbDTX93Ep/pQ=="
+          "hash": "Ys4U/f2StUdGeL6a57OW8w=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.TelegramBot.html",
-          "hash": "AHwbwcf4/jbIf1l8PHJMTA=="
+          "hash": "RDYS3iquV2wm1VUUFQ5nWA=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Animation.html",
-          "hash": "Xn5bL0O+0gGWBvqbkCVteQ=="
+          "hash": "Jsol9XZUiHbpasnvYIJZDQ=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.ApiResponse-1.html",
-          "hash": "R1f0p68FXb/is/6+ZJ7TNQ=="
+          "hash": "8GHqxiBmgLZ/a9cLB4JYrQ=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Audio.html",
-          "hash": "WyzgKSx+GDMgQ8S8+9r6bA=="
+          "hash": "mOet9DmSsIQXH1OmnW0Pag=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.CallbackQuery.html",
-          "hash": "p3jd1W+uTFyAhn6eX58I7Q=="
+          "hash": "IHZ2jHa9n/73taKb2duBhg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Chat.html",
-          "hash": "Ryg7XnUT2rlTc+zJv2y9qg=="
+          "hash": "BiPDi7uGPZDlmN32J/NR6A=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.ChatId.html",
-          "hash": "l/wrz/CWl1CEkw/fwga/yw=="
+          "hash": "0CvEOMpS+QipNIBE8XhgTw=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.ChatMember.html",
-          "hash": "nu258Lv/LsQmnI8E2yYR5A=="
+          "hash": "a63xH9pirhZVkPrKPjQqNg=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.ChatPhoto.html",
-          "hash": "lbRYrSW29jZvh2AdUGxrYA=="
+          "hash": "P2blfmQkgVv/3csTN1kc6w=="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Contact.html",
-          "hash": "9oRHe6YpRLp9QqhuMkBDqw=="
+          "hash": "lkr2IP2YA58/BoQeUuSDWA=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Document.html",
-          "hash": "r/wzJfIDPEv4cx5sm6Ud4g=="
+          "hash": "ohrCTXltCqNbrS2OJBna7g=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.CallbackQueryEventArgs.html",
-          "hash": "By3faQI1trC2UUPyC7ykPQ=="
+          "hash": "9c4H4sgHAN1if4swGtyt3w=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.ChannelPostEventArgs.html",
-          "hash": "xtBLummcLLASjo8nS0Xx1Q=="
+          "hash": "ykn5rxY05W7DXmQcq7qzWA=="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.ChosenInlineResultEventArgs.html",
-          "hash": "oGum1IhC08iZ8Q9WQjfrEg=="
+          "hash": "HzbZ5tjAcreNMPZbwiPFtQ=="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.EditedChannelPostEventArgs.html",
-          "hash": "ML5DKZsXmDz3US/rjhMG0Q=="
+          "hash": "xInbBY1dzF0P6QPhcfO/Xw=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.EditedMessageEventArgs.html",
-          "hash": "VAo0d5jGVwFCjOIxzsV4zQ=="
+          "hash": "MzrAMBNhdD16mguvSRl90w=="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.InlineQueryEventArgs.html",
-          "hash": "z/mp10TXLxbhxMQabm20Lw=="
+          "hash": "crvCdYO4ITPnDkaldt2Rsw=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.MessageEventArgs.html",
-          "hash": "sfneMSoOzy1qmanxgdqZbg=="
+          "hash": "03euS3Uqn1xMt35BBJvODQ=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.PreCheckoutQueryEventArgs.html",
-          "hash": "+IIrKsncfQ1zYjXrHCqNrQ=="
+          "hash": "RcCeF9fWA7OTPh8tDP1HHA=="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.ShippingQueryEventArgs.html",
-          "hash": "qVFgGfrTa+MUeCKvg2P2Mg=="
+          "hash": "LiZSHvbtIpD8qYO0BMtRww=="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.UpdateEventArgs.html",
-          "hash": "LW+E14a9w/R3FFHf1EKHZA=="
+          "hash": "+rjRM16xK26rsfRWGuliMw=="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Events.html",
-          "hash": "LpJi4LamsX6K20e6dbAMFQ=="
+          "hash": "Mk1Pzviqlu5nmYjWhW79UA=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Exceptions.ApiRequestException.html",
-          "hash": "BroyRduZWSYl3L7aj5Raew=="
+          "hash": "inDIaMhbsNmLzgCRghNgSQ=="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Exceptions.html",
-          "hash": "fb1hHMEdwVqPOJlNp75EuA=="
+          "hash": "jpqUMU4qPjY2e7PpTC7FoA=="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.File.html",
-          "hash": "0q1GSduNzUdSp/S08K5J2Q=="
+          "hash": "pBaOkE8uT5ub1is3sZ90OQ=="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Game.Animation.html",
-          "hash": "83Q/vIvZGv2BJ0VfS57ITg=="
+          "hash": "niCg96lE4On5sJAdRQdjmw=="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Game.CallbackGame.html",
-          "hash": "86nUrMJ75y57+XJuKZ1BWw=="
+          "hash": "EB0g6Ql9DPnGl/CBXAcX5A=="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Game.Game.html",
-          "hash": "nQKfWIRkm8ZpQnv92ALYGw=="
+          "hash": "Fxjy+Xy1WC/GVNxajnebqw=="
         }
       },
       "is_incremental": false,
@@ -465,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Game.GameHighScore.html",
-          "hash": "tbo3+LrA6dpCrpsp5HvypA=="
+          "hash": "k4oypkzvOgOBBlijo44voA=="
         }
       },
       "is_incremental": false,
@@ -477,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Game.html",
-          "hash": "+/icN2wmcZgJ1IXSAEe5tg=="
+          "hash": "pe7/eqWodyI5zqMXSR2fiw=="
         }
       },
       "is_incremental": false,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.ChosenInlineResult.html",
-          "hash": "7LSsTLJ+8VvvsfWd5WR6tQ=="
+          "hash": "WiMK0bVV2VLRKNxX46sWXA=="
         }
       },
       "is_incremental": false,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQuery.html",
-          "hash": "LxhE2yD+FEZNmW+pCfcpWQ=="
+          "hash": "DfBzUFSFAiO/0iauAUf7og=="
         }
       },
       "is_incremental": false,
@@ -513,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResult.html",
-          "hash": "ciik4H7Qo2+P3pizBPF6ag=="
+          "hash": "/0ovJEBrHi7B3kuqtStktw=="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultArticle.html",
-          "hash": "p0g5Plnl8NaxPtUvvZGAFQ=="
+          "hash": "zn4Z+K7ILHqU5pNNaAOxKQ=="
         }
       },
       "is_incremental": false,
@@ -537,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultAudio.html",
-          "hash": "nrlgPNX8sVBEjTGeuijM2w=="
+          "hash": "KH6kiUU5XRQUdXgGFojjOg=="
         }
       },
       "is_incremental": false,
@@ -549,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedAudio.html",
-          "hash": "TPcLqI9dnd0rb8Socbar+A=="
+          "hash": "N6XkKrBw/bj9tEPRsbzrJQ=="
         }
       },
       "is_incremental": false,
@@ -561,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedDocument.html",
-          "hash": "ANijF/6+htIQic9eNByPTw=="
+          "hash": "hjyhOe30WI8tD1ezT/szhw=="
         }
       },
       "is_incremental": false,
@@ -573,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedGif.html",
-          "hash": "vGrw7OX1ETIl0Ss0XdYCDg=="
+          "hash": "gVBVhKGKdP5i6Tdbeqm5qA=="
         }
       },
       "is_incremental": false,
@@ -585,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedMpeg4Gif.html",
-          "hash": "e+MSLJKCJAXFDVPRgDRBTQ=="
+          "hash": "m52AvJHBuNxI1XBKhDbMMw=="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedPhoto.html",
-          "hash": "wjffmuEO2nopXZfa2rYL2g=="
+          "hash": "m7RfkpCdWLldUtRghVBuUQ=="
         }
       },
       "is_incremental": false,
@@ -609,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedSticker.html",
-          "hash": "ZjnK8k8Kyb8kZriNk3rTEQ=="
+          "hash": "8p1GHS4xGQIzGIIIobe+Zg=="
         }
       },
       "is_incremental": false,
@@ -621,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedVideo.html",
-          "hash": "AEsKy8geS9lt/uuFwp5KfQ=="
+          "hash": "K8iy5Reio7Xgle3I1F3y7A=="
         }
       },
       "is_incremental": false,
@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultCachedVoice.html",
-          "hash": "n5FfzpakeSv7M0UcwofiPw=="
+          "hash": "SJun9lF783oac9IAnQxEWQ=="
         }
       },
       "is_incremental": false,
@@ -645,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultContact.html",
-          "hash": "8ZRRp9j9Xev+nneZQSb/ag=="
+          "hash": "9N63XcYMjfrpm8dD28eREw=="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultDocument.html",
-          "hash": "zfzahaqz/xDXqqCdYqliaA=="
+          "hash": "e85A41NegCuM88JP2DGHHA=="
         }
       },
       "is_incremental": false,
@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultGame.html",
-          "hash": "peFWDMk2okb3JZxoFCyWFw=="
+          "hash": "W+AL9vNQ509W7N2dA3yMiA=="
         }
       },
       "is_incremental": false,
@@ -681,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultGif.html",
-          "hash": "664GN3Zmgb1+YYYLgPm8hw=="
+          "hash": "7dTHyPD53ju7JmD7/UCkfA=="
         }
       },
       "is_incremental": false,
@@ -693,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultLocation.html",
-          "hash": "4yD0HfOE3pjDMtWhwbr/Sw=="
+          "hash": "6aiBK8C+bcIrynQR7kI3VA=="
         }
       },
       "is_incremental": false,
@@ -705,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultMpeg4Gif.html",
-          "hash": "HjIUoRJAebCBz2caFjzewg=="
+          "hash": "9LFTUHvXRHOboEJQXFqhkQ=="
         }
       },
       "is_incremental": false,
@@ -717,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultPhoto.html",
-          "hash": "o0K7u0CGuYTyMUmGvU63+g=="
+          "hash": "L8IqfvtSCnOupNovB4oVww=="
         }
       },
       "is_incremental": false,
@@ -729,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVenue.html",
-          "hash": "3Uned0NodemmM9hW7Krtfg=="
+          "hash": "TWmLLfrDzpRWMQrDg10RKw=="
         }
       },
       "is_incremental": false,
@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVideo.html",
-          "hash": "/JfQhSNRLtehpiudNTTj+w=="
+          "hash": "ioKnsUKqo8xIQgHGzXXXaQ=="
         }
       },
       "is_incremental": false,
@@ -753,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InlineQueryResultVoice.html",
-          "hash": "oHHrgGPH0N/xtK9MfaYMHg=="
+          "hash": "LoGVi8uPEPD0L6ypF7M3yQ=="
         }
       },
       "is_incremental": false,
@@ -765,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InputContactMessageContent.html",
-          "hash": "6V6/ikbrl2pSmXWJObZprQ=="
+          "hash": "kWmnJmVVl+i2E8R55Wj9xg=="
         }
       },
       "is_incremental": false,
@@ -777,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InputLocationMessageContent.html",
-          "hash": "J/zzIFU2rwRpJAIQyLYFoQ=="
+          "hash": "N+R9R4HdROPyAb87z3ffqw=="
         }
       },
       "is_incremental": false,
@@ -789,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InputMessageContent.html",
-          "hash": "o5YcLjBg07WRwLK5OyvN6g=="
+          "hash": "eEYNuT+It5ayJ/gXs+/thA=="
         }
       },
       "is_incremental": false,
@@ -801,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InputTextMessageContent.html",
-          "hash": "w4+SHV4AcLe92U1O9RcR/A=="
+          "hash": "fW4bWHESjwFoxytygQ/jKA=="
         }
       },
       "is_incremental": false,
@@ -813,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.InputVenueMessageContent.html",
-          "hash": "liIvj83e0D/cHD6O5gyZzw=="
+          "hash": "idSWvLnlkAVCzM1B8lB8hQ=="
         }
       },
       "is_incremental": false,
@@ -825,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Inline.html",
-          "hash": "+gS3sN9t9apIT5bJmw08bw=="
+          "hash": "9YWYsgsr1Ah4BeByW/kFgw=="
         }
       },
       "is_incremental": false,
@@ -837,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Location.html",
-          "hash": "Ub6fty9tIFI3T/99dkMvXQ=="
+          "hash": "pDfZd9oxInRvjL3tkxIjBA=="
         }
       },
       "is_incremental": false,
@@ -849,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.ForceReplyMarkup.html",
-          "hash": "cntjm1beyc4cKzks98EONw=="
+          "hash": "2vqN6zgdNxuWvevL4Mrh1w=="
         }
       },
       "is_incremental": false,
@@ -861,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.InlineKeyboardButton.html",
-          "hash": "Jkdeny/GccYjZDYX5sF3DQ=="
+          "hash": "gRB65SRe/jPtvFNl4Rv3Wg=="
         }
       },
       "is_incremental": false,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.InlineKeyboardMarkup.html",
-          "hash": "KjDy8yUpHqYamb+XAg/SDQ=="
+          "hash": "ibCpMuEOs+YeF4LsuOZ0qA=="
         }
       },
       "is_incremental": false,
@@ -885,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.KeyboardButton.html",
-          "hash": "+QxyxKMYpOY0l2sCMGF+CQ=="
+          "hash": "ltiZiqQj9eeiT6A57tUuEA=="
         }
       },
       "is_incremental": false,
@@ -897,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.ReplyKeyboardMarkup.html",
-          "hash": "uPz/TEG4kysVVYO4PzPDww=="
+          "hash": "5s+uOryoq+/Le97eKNR/XQ=="
         }
       },
       "is_incremental": false,
@@ -909,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.ReplyKeyboardRemove.html",
-          "hash": "u+S6ExwJRwEKx7tzPghanw=="
+          "hash": "+L58GyTKYNwom5P9ydMIBg=="
         }
       },
       "is_incremental": false,
@@ -921,7 +921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupBase.html",
-          "hash": "4DAN5oy6M7ckUGd87dxuxg=="
+          "hash": "lQqPRoJntinoBtGz2AX2Jw=="
         }
       },
       "is_incremental": false,
@@ -933,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupMaker.ReplyMarkupType.html",
-          "hash": "oYoCzXzIJDt0SIEt5a3fLg=="
+          "hash": "DrkPVlqte49hz5Z5V5rXDw=="
         }
       },
       "is_incremental": false,
@@ -945,7 +945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.ReplyMarkupMaker.html",
-          "hash": "YEVh2maLsaVebnmCFAaMFA=="
+          "hash": "p/xGvEQU+G8xrNu7NltCCA=="
         }
       },
       "is_incremental": false,
@@ -957,7 +957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Markup.html",
-          "hash": "xDi1UkbeYmnhke5Qskll3A=="
+          "hash": "aOOIINTrcChVN75zS3go1A=="
         }
       },
       "is_incremental": false,
@@ -969,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.MaskPosition.html",
-          "hash": "qpG1O51fFM+XPVyCqZ2UyA=="
+          "hash": "HV3yqdj3hkNM4vYF6TtFmQ=="
         }
       },
       "is_incremental": false,
@@ -981,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Message.html",
-          "hash": "jZWC89bFtQ9Vd1X4r8Rrqg=="
+          "hash": "0WY8l9Sbg3GnXFYufHXt1w=="
         }
       },
       "is_incremental": false,
@@ -993,7 +993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.MessageEntity.html",
-          "hash": "8mtd9Iamqe6+2l6aEP5cYg=="
+          "hash": "BYZezUfF6jtT9vGH3qm1/g=="
         }
       },
       "is_incremental": false,
@@ -1005,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.Invoice.html",
-          "hash": "gyTCty7YJDZzVFnxpNmR9g=="
+          "hash": "kvuj7LuRTMX3FGCVzgGLiA=="
         }
       },
       "is_incremental": false,
@@ -1017,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.LabeledPrice.html",
-          "hash": "qJasORLhJdSQzDGRmGq8Ow=="
+          "hash": "A1x9y5PN1iLAEfMCxLs+0w=="
         }
       },
       "is_incremental": false,
@@ -1029,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.OrderInfo.html",
-          "hash": "rxN+kKTfLeNfH7sKqCjzBg=="
+          "hash": "deoQ8lbzdOpg5HVuCx/9Lw=="
         }
       },
       "is_incremental": false,
@@ -1041,7 +1041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.PreCheckoutQuery.html",
-          "hash": "JZ+MPFBPFlQbeVDE/kVu9A=="
+          "hash": "veMr+EKQpnnXu1UF1Z2vWA=="
         }
       },
       "is_incremental": false,
@@ -1053,7 +1053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.ShippingAddress.html",
-          "hash": "x+sVGEOXW7HtUJih0JcFyA=="
+          "hash": "QOi16cvxoAbNiYuu6OyhDQ=="
         }
       },
       "is_incremental": false,
@@ -1065,7 +1065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.ShippingOption.html",
-          "hash": "L5pJx0/7CpogfxRoRSs+zQ=="
+          "hash": "7FSNfqWG3yKdiE4FIXg6uw=="
         }
       },
       "is_incremental": false,
@@ -1077,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.ShippingQuery.html",
-          "hash": "id7zD7p7pXkwnLV1EOEW3g=="
+          "hash": "h10S+LNR/mEf7GNvuUv3ag=="
         }
       },
       "is_incremental": false,
@@ -1089,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.SuccessfulPayment.html",
-          "hash": "t6GsNUraA3/aOW81Am+ocw=="
+          "hash": "8e2fdzRBAOT4mAf1NIo/Eg=="
         }
       },
       "is_incremental": false,
@@ -1101,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Payment.html",
-          "hash": "YT+f/RLuavUGuWVX+oYEvw=="
+          "hash": "XcqQTY2C+toBK+39TGf5jQ=="
         }
       },
       "is_incremental": false,
@@ -1113,7 +1113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.PhotoSize.html",
-          "hash": "Pb5GBJCZvt9jECj4ZTIyxw=="
+          "hash": "MGtp04Ri8qXcVUYT4Cy4aA=="
         }
       },
       "is_incremental": false,
@@ -1125,7 +1125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.ResponseParameters.html",
-          "hash": "Be8x78dy3oKiWUShUth3QA=="
+          "hash": "Ex9W/vi/qKYps97kG7ZEOg=="
         }
       },
       "is_incremental": false,
@@ -1137,7 +1137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Sticker.html",
-          "hash": "AKsQD+yX2+zVhgskPC2zlA=="
+          "hash": "XzlnQkd9XcK0gMA00b35MA=="
         }
       },
       "is_incremental": false,
@@ -1149,7 +1149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.StickerSet.html",
-          "hash": "+5Tl8YiUGdEWHU1aq2/wdg=="
+          "hash": "hDfXRU5846+LxevouzEzxg=="
         }
       },
       "is_incremental": false,
@@ -1161,7 +1161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html",
-          "hash": "B1+hpo1uM/Uzhc86k1POUQ=="
+          "hash": "QDsQ7FdFPWfX6DL4+4i1Wg=="
         }
       },
       "is_incremental": false,
@@ -1173,7 +1173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html",
-          "hash": "58LxhKlhnreV9YMwmx6hyw=="
+          "hash": "UFW8IhZ5Dme3QKzEz3atdA=="
         }
       },
       "is_incremental": false,
@@ -1185,7 +1185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportData.html",
-          "hash": "u/Ml2l1pUHavoJAQcNesXw=="
+          "hash": "sF6xLF4MK/zVbJszBiuI+Q=="
         }
       },
       "is_incremental": false,
@@ -1197,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html",
-          "hash": "QKGUb9WdT6CLZvMargnLLA=="
+          "hash": "Cim5lIOa9+UQA8Xf908/1A=="
         }
       },
       "is_incremental": false,
@@ -1209,7 +1209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorDataField.html",
-          "hash": "1Qb0Y86J8Uy3dgBhXX7yVw=="
+          "hash": "mFIAU/PmPbMQUUJIpw5M7A=="
         }
       },
       "is_incremental": false,
@@ -1221,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html",
-          "hash": "03TbwHzggU5dKKxKyNPFRQ=="
+          "hash": "X9AeOVxgd2xNOCcTEmAPgQ=="
         }
       },
       "is_incremental": false,
@@ -1233,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html",
-          "hash": "sC6VshBZuQHB1DfS/vEnMQ=="
+          "hash": "0kLWj8pwmWSMIaVsXCeMqg=="
         }
       },
       "is_incremental": false,
@@ -1245,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.html",
-          "hash": "+TAR3Ye9UDkweURtpG2ocA=="
+          "hash": "8Mb8KkTlFdyMZYaxyOBe6w=="
         }
       },
       "is_incremental": false,
@@ -1257,7 +1257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html",
-          "hash": "kHPPWVA4702Xh2zV6oXwjA=="
+          "hash": "7JGNXgXFjKs3sb6gDtUZ3A=="
         }
       },
       "is_incremental": false,
@@ -1269,7 +1269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html",
-          "hash": "j0rnyhgrH5hLOGEvteT4AQ=="
+          "hash": "Q5jnTnRMwmBgSBhPHTjaMQ=="
         }
       },
       "is_incremental": false,
@@ -1281,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportFile.html",
-          "hash": "dpwGVXr+MPFH5cGNaVcFTA=="
+          "hash": "jhkiFW6Ao1ODBouqEV/fmA=="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.html",
-          "hash": "Y8umdE97A4vCt+qPxfp10Q=="
+          "hash": "YxIF/CGW7mwLD70ZSNgkdw=="
         }
       },
       "is_incremental": false,
@@ -1305,7 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Update.html",
-          "hash": "4hOLbLiwMZ/Drtt0tZQNOg=="
+          "hash": "s1ielsq4Zl7vH1+4GqSHsg=="
         }
       },
       "is_incremental": false,
@@ -1317,7 +1317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.InputMedia.html",
-          "hash": "HBiUQMHIxaI9/TgboMEN4w=="
+          "hash": "8gxShBWHj1KzlzBet4E+0w=="
         }
       },
       "is_incremental": false,
@@ -1329,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.InputMediaAnimation.html",
-          "hash": "NK0e3XOsmi+45WL6WTF5hQ=="
+          "hash": "uEXOH6vv/yDCIytlRVkvLg=="
         }
       },
       "is_incremental": false,
@@ -1341,7 +1341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.InputMediaAudio.html",
-          "hash": "s3rHNGQEcz3dTPF/9h8NuA=="
+          "hash": "yn+YUcTrOJsJKDM1crhSZQ=="
         }
       },
       "is_incremental": false,
@@ -1353,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.InputMediaDocument.html",
-          "hash": "HAwe2KgH8ZHIzD/Hu+udRA=="
+          "hash": "LBrY0yViZrJqcNmBLDHeIg=="
         }
       },
       "is_incremental": false,
@@ -1365,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.InputMediaPhoto.html",
-          "hash": "5C94vRlACq9oTtKY1ZaQ3w=="
+          "hash": "PDbJBVahB1eVkj3G/ebvDA=="
         }
       },
       "is_incremental": false,
@@ -1377,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.InputMediaVideo.html",
-          "hash": "WIOIett50jKZaHAulgPBhA=="
+          "hash": "VrRyWMW41xi8WVG23P7PpA=="
         }
       },
       "is_incremental": false,
@@ -1389,7 +1389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.SendFile.html",
-          "hash": "7MFKwTn1n89BwrEHFhFQhA=="
+          "hash": "PESYc8cfeckt72594Y/Pqg=="
         }
       },
       "is_incremental": false,
@@ -1401,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.SendFileAttach.html",
-          "hash": "dyjqYMr8axULOOxmPJQPaQ=="
+          "hash": "Kz/ziCg+F/wH3cLAZEPorg=="
         }
       },
       "is_incremental": false,
@@ -1413,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.SendFileId.html",
-          "hash": "E/nSagKJXHh/rHGR5fXXlw=="
+          "hash": "pVAvOl/MpO9wxDaidoSRGg=="
         }
       },
       "is_incremental": false,
@@ -1425,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.SendFileMultipart.html",
-          "hash": "YqzpVhR7zPtOQ3BJuRQr/g=="
+          "hash": "W12Qs/fHPih0LWt/Ao9fFg=="
         }
       },
       "is_incremental": false,
@@ -1437,7 +1437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.SendFileType.html",
-          "hash": "PTut6fwOJjVWSqsfU4WBJw=="
+          "hash": "Tedc5/dUkHRUhRiL2SiqOw=="
         }
       },
       "is_incremental": false,
@@ -1449,7 +1449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.SendFileUrl.html",
-          "hash": "A3Ttjq9ATzF6NmRE6i2Ojw=="
+          "hash": "bcTElWzG95fdgJS9bjKHAA=="
         }
       },
       "is_incremental": false,
@@ -1461,7 +1461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Upload.html",
-          "hash": "YZVnep6+nOgnbAQ80wwNMA=="
+          "hash": "FOSqlgKY3QMU8+CKpfg9nw=="
         }
       },
       "is_incremental": false,
@@ -1473,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.User.html",
-          "hash": "4h7ZrcI/WXuNFfw276ByTw=="
+          "hash": "uqANg++9OMyHP4CnClGNHQ=="
         }
       },
       "is_incremental": false,
@@ -1485,7 +1485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.UserProfilePictures.html",
-          "hash": "s6ChcDrnjn8vaVnLioAHGw=="
+          "hash": "oSp52K1gpYQfX+Xf6tIPJQ=="
         }
       },
       "is_incremental": false,
@@ -1497,7 +1497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Venue.html",
-          "hash": "/62a9zjiF2GloX2eVigNAA=="
+          "hash": "G8CmwWZy1cRTKOaQ0+jJnQ=="
         }
       },
       "is_incremental": false,
@@ -1509,7 +1509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Video.html",
-          "hash": "gINYvbiQuvzEs9k6WKfIDg=="
+          "hash": "rfNYm00P36PaQlQBypLimg=="
         }
       },
       "is_incremental": false,
@@ -1521,7 +1521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.VideoNote.html",
-          "hash": "ZDcwae9ybLNxKn0iAYb2vQ=="
+          "hash": "AIzIqQ56oBO9cqnIG3WX1Q=="
         }
       },
       "is_incremental": false,
@@ -1533,7 +1533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Voice.html",
-          "hash": "YZa1P1H/Fz+5aZ8yRM970A=="
+          "hash": "0WDAmtuKe1khHN+LjQOSkA=="
         }
       },
       "is_incremental": false,
@@ -1545,7 +1545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.WebhookInfo.html",
-          "hash": "Jn6Uo4f1SqWATLbWp94beA=="
+          "hash": "HWtUh1epsD4TAz0qGzx20w=="
         }
       },
       "is_incremental": false,
@@ -1557,7 +1557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.html",
-          "hash": "Ipgxz149oav82K0Uc5uSpA=="
+          "hash": "LlAW9RqfAL6QEf6+LzuvKw=="
         }
       },
       "is_incremental": false,
@@ -1569,7 +1569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.html",
-          "hash": "nLJ0Uxkl8UzuNqmamm3NSg=="
+          "hash": "NilhgXyZF7qU+W6hTWj63g=="
         }
       },
       "is_incremental": false,
@@ -1581,7 +1581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "4eh3+43wYdNs8kGOcg/YBA=="
+          "hash": "fa7UIWGvbSqunBm1MPyn4A=="
         }
       },
       "is_incremental": false,
@@ -1593,7 +1593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "v11Lg7z0et+nhxl572jObQ=="
+          "hash": "ouX8ScnV/M12ssdVx4gTNA=="
         }
       },
       "is_incremental": false,
@@ -1605,7 +1605,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "dDCqixZx1JraDskcxQBtCA=="
+          "hash": "vYN+F4Pzj8FE+H3LaIQECg=="
         }
       },
       "is_incremental": false,
@@ -1617,7 +1617,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "xVlQaX7Tk85omoiWv3O+Ag=="
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
         }
       },
       "is_incremental": false,
@@ -1629,7 +1629,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "SN0+eCUrO6BPtI4CTb9hpw=="
+          "hash": "qWUSUWWPF5O5gMZ3NbxJeg=="
         }
       },
       "is_incremental": false,
@@ -1641,7 +1641,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "ob7LqWp4kTNLz+9W4omdTw=="
+          "hash": "k+/dkjFuwAVS32HduMpmBw=="
         }
       },
       "is_incremental": false,

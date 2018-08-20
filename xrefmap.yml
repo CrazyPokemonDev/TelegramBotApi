@@ -1915,6 +1915,32 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendAudioAsync
   nameWithType: TelegramBot.SendAudioAsync
+- uid: TelegramBotApi.TelegramBot.SendChatAction(TelegramBotApi.Types.ChatId,TelegramBotApi.Enums.ChatAction)
+  name: SendChatAction(ChatId, ChatAction)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendChatAction_TelegramBotApi_Types_ChatId_TelegramBotApi_Enums_ChatAction_
+  commentId: M:TelegramBotApi.TelegramBot.SendChatAction(TelegramBotApi.Types.ChatId,TelegramBotApi.Enums.ChatAction)
+  fullName: TelegramBotApi.TelegramBot.SendChatAction(TelegramBotApi.Types.ChatId, TelegramBotApi.Enums.ChatAction)
+  nameWithType: TelegramBot.SendChatAction(ChatId, ChatAction)
+- uid: TelegramBotApi.TelegramBot.SendChatAction*
+  name: SendChatAction
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendChatAction_
+  commentId: Overload:TelegramBotApi.TelegramBot.SendChatAction
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SendChatAction
+  nameWithType: TelegramBot.SendChatAction
+- uid: TelegramBotApi.TelegramBot.SendChatActionAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Enums.ChatAction)
+  name: SendChatActionAsync(ChatId, ChatAction)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendChatActionAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Enums_ChatAction_
+  commentId: M:TelegramBotApi.TelegramBot.SendChatActionAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Enums.ChatAction)
+  fullName: TelegramBotApi.TelegramBot.SendChatActionAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Enums.ChatAction)
+  nameWithType: TelegramBot.SendChatActionAsync(ChatId, ChatAction)
+- uid: TelegramBotApi.TelegramBot.SendChatActionAsync*
+  name: SendChatActionAsync
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendChatActionAsync_
+  commentId: Overload:TelegramBotApi.TelegramBot.SendChatActionAsync
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SendChatActionAsync
+  nameWithType: TelegramBot.SendChatActionAsync
 - uid: TelegramBotApi.TelegramBot.SendContact(TelegramBotApi.Types.ChatId,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
   name: SendContact(ChatId, String, String, String, String, Boolean, Int32, ReplyMarkupBase)
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendContact_TelegramBotApi_Types_ChatId_System_String_System_String_System_String_System_String_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_

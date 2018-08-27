@@ -29,7 +29,7 @@ namespace TelegramBotApi.Types.TelegramPassport
         /// Base64-encoded element hash
         /// </summary>
         [JsonProperty(PropertyName = "element_hash", Required = Required.Always)]
-        public string[] ElementHash { get; set; }
+        public string ElementHash { get; set; }
 
         /// <summary>
         /// Error message

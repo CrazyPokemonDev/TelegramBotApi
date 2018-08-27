@@ -91,5 +91,11 @@ namespace TelegramBotApi.Types.TelegramPassport
         /// </summary>
         [JsonProperty(PropertyName = "translation")]
         public PassportFile[] Translation { get; set; }
+
+        /// <summary>
+        /// Base64-encoded element hash for using in <see cref="PassportElementErrorUnspecified"/>
+        /// </summary>
+        [JsonProperty(PropertyName = "hash")]
+        public string Hash { get; set; }
     }
 }

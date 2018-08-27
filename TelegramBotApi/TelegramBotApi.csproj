@@ -145,6 +145,7 @@
     <Compile Include="Types\TelegramPassport\PassportElementErrorFiles.cs" />
     <Compile Include="Types\TelegramPassport\PassportElementErrorFrontSide.cs" />
     <Compile Include="Types\TelegramPassport\PassportElementErrorReverseSide.cs" />
+    <Compile Include="Types\TelegramPassport\PassportElementErrorUnspecified.cs" />
     <Compile Include="Types\TelegramPassport\PassportElementErrorTranslationFiles.cs" />
     <Compile Include="Types\TelegramPassport\PassportElementErrorTranslationFile.cs" />
     <Compile Include="Types\TelegramPassport\PassportElementErrorSelfie.cs" />

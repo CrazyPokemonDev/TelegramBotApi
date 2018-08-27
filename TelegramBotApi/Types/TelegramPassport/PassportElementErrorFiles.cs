@@ -14,7 +14,7 @@ namespace TelegramBotApi.Types.TelegramPassport
         /// <summary>
         /// Error source, must be files
         /// </summary>
-        [JsonProperty(PropertyName = "files", Required = Required.Always)]
+        [JsonProperty(PropertyName = "source", Required = Required.Always)]
         public override string Source { get { return _source; } set { _source = "files"; } }
 
         [JsonProperty(PropertyName = "type", Required = Required.Always)]

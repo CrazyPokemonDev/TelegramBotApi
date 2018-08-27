@@ -4,7 +4,7 @@ using TelegramBotApi.Enums;
 namespace TelegramBotApi.Types.TelegramPassport
 {
     /// <summary>
-    /// Represents an issue with the selfie with a document. The error is considered resolved when the file with the selfie changes.
+    /// Represents an issue with one of the files that constitute the translation of a document. The error is considered resolved when the file changes.
     /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class PassportElementErrorTranslationFile : PassportElementError

@@ -4,33 +4,32 @@ using TelegramBotApi.Enums;
 namespace TelegramBotApi.Types.TelegramPassport
 {
     /// <summary>
-    /// Represents an issue with a document scan. The error is considered resolved when the file with the document scan changes.
+    /// Represents an issue with the translated version of a document. The error is considered resolved when a file with the document translation change.
     /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
-    public class PassportElementErrorFile : PassportElementError
+    public class PassportElementErrorUnspecified : PassportElementError
     {
-        private string _source = "file";
+        private string _source = "unspecified";
 
         /// <summary>
-        /// Error source, must be file
+        /// Error source, must be unspecified
         /// </summary>
         [JsonProperty(PropertyName = "source", Required = Required.Always)]
-        public override string Source { get { return _source; } set { _source = "file"; } }
+        public override string Source { get { return _source; } set { _source = "unspecified"; } }
 
         [JsonProperty(PropertyName = "type", Required = Required.Always)]
         private string _type { get; set; }
 
         /// <summary>
-        /// The section of the user's Telegram Passport which has the issue, 
-        /// one of “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”
+        /// Type of element of the user's Telegram Passport which has the issue
         /// </summary>
         public override EncryptedPassportElementType Type { get { return Enum.GetEncryptedPassportElementType(_type); } set { _type = Enum.GetString(Type); } }
 
         /// <summary>
-        /// Base64-encoded file hash
+        /// Base64-encoded element hash
         /// </summary>
-        [JsonProperty(PropertyName = "file_hash", Required = Required.Always)]
-        public string FileHash { get; set; }
+        [JsonProperty(PropertyName = "element_hash", Required = Required.Always)]
+        public string[] ElementHash { get; set; }
 
         /// <summary>
         /// Error message

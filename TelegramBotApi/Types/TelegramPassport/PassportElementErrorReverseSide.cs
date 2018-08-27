@@ -8,7 +8,7 @@ namespace TelegramBotApi.Types.TelegramPassport
     /// The error is considered resolved when the file with reverse side of the document changes.
     /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
-    public class PassportElementErrorReverseFrontSide : PassportElementError
+    public class PassportElementErrorReverseSide : PassportElementError
     {
         private string _source = "reverse_side";
 

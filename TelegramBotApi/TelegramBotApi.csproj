@@ -56,6 +56,8 @@
     <Compile Include="Enums\MessageType.cs" />
     <Compile Include="Enums\ParseMode.cs" />
     <Compile Include="Enums\UpdateType.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\TimeoutHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelegramBot.cs" />
     <Compile Include="Types\Animation.cs" />

@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using TelegramBotApi.Enums;
+using TelegramBotApi.Helpers;
 using TelegramBotApi.Types;
 using TelegramBotApi.Types.Events;
 using TelegramBotApi.Types.Exceptions;
@@ -46,6 +47,12 @@ namespace TelegramBotApi
         public bool IsReceiving { get; set; } = false;
 
         private int _lastUpdateReceived = 0;
+
+        /// <summary>
+        /// A custom HttpClient with better timeout handling to have configurable per-request timeout
+        /// </summary>
+        private HttpClient httpClient = new HttpClient(new TimeoutHandler { InnerHandler = new HttpClientHandler() }) { Timeout = Timeout.InfiniteTimeSpan };
+
         #endregion
 
         #region Events
@@ -225,9 +232,9 @@ namespace TelegramBotApi
                     }
                     url += $"{kvp.Key}={Serialize(kvp.Value)}&";
                 }
-            HttpWebRequest request = WebRequest.CreateHttp(url);
-            if (timeout != 0) request.Timeout = timeout;
-            WebResponse response = await request.GetResponseAsync();
+            var request = new HttpRequestMessage(HttpMethod.Get, url);
+            request.SetTimeout(TimeSpan.FromSeconds(timeout));
+            HttpResponseMessage response = await httpClient.SendAsync(request);
             return DeserializeResponse<T>(response);
         }
 
@@ -241,9 +248,10 @@ namespace TelegramBotApi
             {
                 form.Add(new StringContent(Serialize(kvp.Value)), kvp.Key);
             }
-            form.Add(new StreamContent(multipartFile.FileStream), multipartObjectKey);
             string url = ApiUrl + method;
-            return DeserializeResponse<T>(await httpClient.PostAsync(url, form).Result.Content.ReadAsStringAsync());
+            var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
+            request.SetTimeout(TimeSpan.FromSeconds(timeout));
+            return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
         }
 
         private async Task<T> ApiMethodManyFileAsync<T>(string method, Dictionary<string, object> args, int timeout = 100)
@@ -267,7 +275,9 @@ namespace TelegramBotApi
                 form.Add(new StringContent(Serialize(kvp.Value)), kvp.Key);
             }
             string url = ApiUrl + method;
-            return DeserializeResponse<T>(await httpClient.PostAsync(url, form).Result.Content.ReadAsStringAsync());
+            var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
+            request.SetTimeout(TimeSpan.FromSeconds(timeout));
+            return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
         }
 
         private string Serialize(object obj)
@@ -286,13 +296,10 @@ namespace TelegramBotApi
             return WebUtility.UrlEncode(JsonConvert.SerializeObject(obj));
         }
 
-        private T DeserializeResponse<T>(WebResponse response)
+        private T DeserializeResponse<T>(HttpResponseMessage response)
         {
-            using (StreamReader sr = new StreamReader(response.GetResponseStream()))
-            {
-                string responseData = sr.ReadToEnd();
-                return DeserializeResponse<T>(responseData);
-            }
+            string responseData = response.Content.ReadAsStringAsync().Result;
+            return DeserializeResponse<T>(responseData);
         }
 
         private T DeserializeResponse<T>(string response)

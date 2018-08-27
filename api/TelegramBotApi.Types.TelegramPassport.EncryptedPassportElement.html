@@ -251,6 +251,38 @@ public PassportFile FrontSide { get; set; }</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/master/apiSpec/new?filename=TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Hash.md&amp;value=---%0Auid%3A%20TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/blob/master/TelegramBotApi/Types/TelegramPassport/EncryptedPassportElement.cs/#L98">View Source</a>
+  </span>
+  <a id="TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Hash_" data-uid="TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash*"></a>
+  <h4 id="TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Hash" data-uid="TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash">Hash</h4>
+  <div class="markdown level1 summary"><p>Base64-encoded element hash for using in <a class="xref" href="TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html">PassportElementErrorUnspecified</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(PropertyName = &quot;hash&quot;)]
+public string Hash { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/master/apiSpec/new?filename=TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_PhoneNumber.md&amp;value=---%0Auid%3A%20TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.PhoneNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -324,7 +356,7 @@ public PassportFile ReverseSide { get; set; }</code></pre>
   </span>
   <a id="TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Selfie_" data-uid="TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie*"></a>
   <h4 id="TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Selfie" data-uid="TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie">Selfie</h4>
-  <div class="markdown level1 summary"><p>ptional. Encrypted file with the selfie of the user holding a document, provided by the user;
+  <div class="markdown level1 summary"><p>Optional. Encrypted file with the selfie of the user holding a document, provided by the user;
 available for “passport”, “driver_license”, “identity_card” and “internal_passport”.
 The file can be decrypted and verified using the accompanying  <a class="xref" href="TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html">EncryptedCredentials</a>.</p>
 </div>
@@ -345,6 +377,41 @@ public PassportFile Selfie { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="TelegramBotApi.Types.TelegramPassport.PassportFile.html">PassportFile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/master/apiSpec/new?filename=TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Translation.md&amp;value=---%0Auid%3A%20TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/blob/master/TelegramBotApi/Types/TelegramPassport/EncryptedPassportElement.cs/#L92">View Source</a>
+  </span>
+  <a id="TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Translation_" data-uid="TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation*"></a>
+  <h4 id="TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Translation" data-uid="TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation">Translation</h4>
+  <div class="markdown level1 summary"><p>Optional. Array of encrypted files with translated versions of documents provided by the user.
+Available if requested for “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”,
+“bank_statement”, “rental_agreement”, “passport_registration” and “temporary_registration” types.
+Files can be decrypted and verified using the accompanying <a class="xref" href="TelegramBotApi.Types.TelegramPassport.EncryptedCredentials.html">EncryptedCredentials</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(PropertyName = &quot;translation&quot;)]
+public PassportFile[] Translation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TelegramBotApi.Types.TelegramPassport.PassportFile.html">PassportFile</a>[]</td>
         <td></td>
       </tr>
     </tbody>

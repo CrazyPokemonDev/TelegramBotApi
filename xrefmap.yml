@@ -9767,6 +9767,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.FrontSide
   nameWithType: EncryptedPassportElement.FrontSide
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash
+  name: Hash
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Hash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash
+  nameWithType: EncryptedPassportElement.Hash
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash*
+  name: Hash
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Hash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Hash
+  nameWithType: EncryptedPassportElement.Hash
 - uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.PhoneNumber
   name: PhoneNumber
   href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_PhoneNumber
@@ -9806,6 +9819,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Selfie
   nameWithType: EncryptedPassportElement.Selfie
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation
+  name: Translation
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Translation
+  commentId: P:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation
+  nameWithType: EncryptedPassportElement.Translation
+- uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation*
+  name: Translation
+  href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Translation_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Translation
+  nameWithType: EncryptedPassportElement.Translation
 - uid: TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.Type
   name: Type
   href: api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html#TelegramBotApi_Types_TelegramPassport_EncryptedPassportElement_Type
@@ -10141,64 +10167,64 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorFrontSide.Type
   nameWithType: PassportElementErrorFrontSide.Type
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide
-  name: PassportElementErrorReverseFrontSide
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html
-  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide
-  nameWithType: PassportElementErrorReverseFrontSide
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide
+  name: PassportElementErrorReverseSide
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide
+  nameWithType: PassportElementErrorReverseSide
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.FileHash
   name: FileHash
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_FileHash
-  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
-  nameWithType: PassportElementErrorReverseFrontSide.FileHash
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash*
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseSide_FileHash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.FileHash
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.FileHash
+  nameWithType: PassportElementErrorReverseSide.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.FileHash*
   name: FileHash
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_FileHash_
-  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseSide_FileHash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.FileHash
   isSpec: "True"
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.FileHash
-  nameWithType: PassportElementErrorReverseFrontSide.FileHash
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.FileHash
+  nameWithType: PassportElementErrorReverseSide.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Message
   name: Message
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Message
-  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
-  nameWithType: PassportElementErrorReverseFrontSide.Message
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message*
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseSide_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Message
+  nameWithType: PassportElementErrorReverseSide.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Message*
   name: Message
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Message_
-  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseSide_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Message
   isSpec: "True"
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Message
-  nameWithType: PassportElementErrorReverseFrontSide.Message
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Message
+  nameWithType: PassportElementErrorReverseSide.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Source
   name: Source
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Source
-  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
-  nameWithType: PassportElementErrorReverseFrontSide.Source
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source*
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseSide_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Source
+  nameWithType: PassportElementErrorReverseSide.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Source*
   name: Source
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Source_
-  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseSide_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Source
   isSpec: "True"
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Source
-  nameWithType: PassportElementErrorReverseFrontSide.Source
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Source
+  nameWithType: PassportElementErrorReverseSide.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Type
   name: Type
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Type
-  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
-  nameWithType: PassportElementErrorReverseFrontSide.Type
-- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type*
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseSide_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Type
+  nameWithType: PassportElementErrorReverseSide.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Type*
   name: Type
-  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseFrontSide_Type_
-  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorReverseSide_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Type
   isSpec: "True"
-  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.Type
-  nameWithType: PassportElementErrorReverseFrontSide.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.Type
+  nameWithType: PassportElementErrorReverseSide.Type
 - uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie
   name: PassportElementErrorSelfie
   href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html
@@ -10257,6 +10283,180 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.Type
   nameWithType: PassportElementErrorSelfie.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile
+  name: PassportElementErrorTranslationFile
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile
+  nameWithType: PassportElementErrorTranslationFile
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.FileHash
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFile_FileHash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.FileHash
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.FileHash
+  nameWithType: PassportElementErrorTranslationFile.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.FileHash*
+  name: FileHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFile_FileHash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.FileHash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.FileHash
+  nameWithType: PassportElementErrorTranslationFile.FileHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFile_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Message
+  nameWithType: PassportElementErrorTranslationFile.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFile_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Message
+  nameWithType: PassportElementErrorTranslationFile.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFile_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Source
+  nameWithType: PassportElementErrorTranslationFile.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFile_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Source
+  nameWithType: PassportElementErrorTranslationFile.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFile_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Type
+  nameWithType: PassportElementErrorTranslationFile.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFile_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.Type
+  nameWithType: PassportElementErrorTranslationFile.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles
+  name: PassportElementErrorTranslationFiles
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles
+  nameWithType: PassportElementErrorTranslationFiles
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.FileHashes
+  name: FileHashes
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFiles_FileHashes
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.FileHashes
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.FileHashes
+  nameWithType: PassportElementErrorTranslationFiles.FileHashes
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.FileHashes*
+  name: FileHashes
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFiles_FileHashes_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.FileHashes
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.FileHashes
+  nameWithType: PassportElementErrorTranslationFiles.FileHashes
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFiles_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Message
+  nameWithType: PassportElementErrorTranslationFiles.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFiles_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Message
+  nameWithType: PassportElementErrorTranslationFiles.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFiles_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Source
+  nameWithType: PassportElementErrorTranslationFiles.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFiles_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Source
+  nameWithType: PassportElementErrorTranslationFiles.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFiles_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Type
+  nameWithType: PassportElementErrorTranslationFiles.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorTranslationFiles_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.Type
+  nameWithType: PassportElementErrorTranslationFiles.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified
+  name: PassportElementErrorUnspecified
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html
+  commentId: T:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified
+  nameWithType: PassportElementErrorUnspecified
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.ElementHash
+  name: ElementHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorUnspecified_ElementHash
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.ElementHash
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.ElementHash
+  nameWithType: PassportElementErrorUnspecified.ElementHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.ElementHash*
+  name: ElementHash
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorUnspecified_ElementHash_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.ElementHash
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.ElementHash
+  nameWithType: PassportElementErrorUnspecified.ElementHash
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Message
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorUnspecified_Message
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Message
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Message
+  nameWithType: PassportElementErrorUnspecified.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Message*
+  name: Message
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorUnspecified_Message_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Message
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Message
+  nameWithType: PassportElementErrorUnspecified.Message
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Source
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorUnspecified_Source
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Source
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Source
+  nameWithType: PassportElementErrorUnspecified.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Source*
+  name: Source
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorUnspecified_Source_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Source
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Source
+  nameWithType: PassportElementErrorUnspecified.Source
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Type
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorUnspecified_Type
+  commentId: P:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Type
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Type
+  nameWithType: PassportElementErrorUnspecified.Type
+- uid: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Type*
+  name: Type
+  href: api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html#TelegramBotApi_Types_TelegramPassport_PassportElementErrorUnspecified_Type_
+  commentId: Overload:TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Type
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.Type
+  nameWithType: PassportElementErrorUnspecified.Type
 - uid: TelegramBotApi.Types.TelegramPassport.PassportFile
   name: PassportFile
   href: api/TelegramBotApi.Types.TelegramPassport.PassportFile.html

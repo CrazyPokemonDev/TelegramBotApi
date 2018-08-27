@@ -1173,7 +1173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.EncryptedPassportElement.html",
-          "hash": "UFW8IhZ5Dme3QKzEz3atdA=="
+          "hash": "2BezgnFEyIcb3HGhQgcQqA=="
         }
       },
       "is_incremental": false,
@@ -1197,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementError.html",
-          "hash": "Cim5lIOa9+UQA8Xf908/1A=="
+          "hash": "tGkh0rDtiVKdm6CfQokpPQ=="
         }
       },
       "is_incremental": false,
@@ -1221,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFile.html",
-          "hash": "X9AeOVxgd2xNOCcTEmAPgQ=="
+          "hash": "oVenoZY2uzwVwcTEBAGfzQ=="
         }
       },
       "is_incremental": false,
@@ -1233,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorFiles.html",
-          "hash": "0kLWj8pwmWSMIaVsXCeMqg=="
+          "hash": "IlOPT71PWjmkHdVx1p83wQ=="
         }
       },
       "is_incremental": false,
@@ -1253,11 +1253,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.yml",
+      "source_relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseFrontSide.html",
-          "hash": "7JGNXgXFjKs3sb6gDtUZ3A=="
+          "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorReverseSide.html",
+          "hash": "Ve6aRDz2yBhJ8j48ajkcJw=="
         }
       },
       "is_incremental": false,
@@ -1269,7 +1269,43 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorSelfie.html",
-          "hash": "Q5jnTnRMwmBgSBhPHTjaMQ=="
+          "hash": "v0uNCnvV/NHYRSgL0z4n7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFile.html",
+          "hash": "BzQyiSxbnTBusHZJf6Q++w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorTranslationFiles.html",
+          "hash": "7b1/LEjQERT7dTgGm0SZ2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Types.TelegramPassport.PassportElementErrorUnspecified.html",
+          "hash": "IgE9JP2AQgtlaQ8+Tv13og=="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.TelegramPassport.html",
-          "hash": "YxIF/CGW7mwLD70ZSNgkdw=="
+          "hash": "74fw5WaQhCbAvnt0fajwOg=="
         }
       },
       "is_incremental": false,
@@ -1593,7 +1629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ouX8ScnV/M12ssdVx4gTNA=="
+          "hash": "hKLmXcmAY/xbtAp8rybu7g=="
         }
       },
       "is_incremental": false,

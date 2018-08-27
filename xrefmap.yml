@@ -625,6 +625,41 @@ references:
   commentId: F:TelegramBotApi.Enums.UpdateType.Unknown
   fullName: TelegramBotApi.Enums.UpdateType.Unknown
   nameWithType: UpdateType.Unknown
+- uid: TelegramBotApi.Extensions
+  name: Extensions
+  href: api/TelegramBotApi.Extensions.html
+  commentId: T:TelegramBotApi.Extensions
+  fullName: TelegramBotApi.Extensions
+  nameWithType: Extensions
+- uid: TelegramBotApi.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
+  name: GetTimeout(HttpRequestMessage)
+  href: api/TelegramBotApi.Extensions.html#TelegramBotApi_Extensions_GetTimeout_System_Net_Http_HttpRequestMessage_
+  commentId: M:TelegramBotApi.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
+  fullName: TelegramBotApi.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
+  nameWithType: Extensions.GetTimeout(HttpRequestMessage)
+- uid: TelegramBotApi.Extensions.GetTimeout*
+  name: GetTimeout
+  href: api/TelegramBotApi.Extensions.html#TelegramBotApi_Extensions_GetTimeout_
+  commentId: Overload:TelegramBotApi.Extensions.GetTimeout
+  isSpec: "True"
+  fullName: TelegramBotApi.Extensions.GetTimeout
+  nameWithType: Extensions.GetTimeout
+- uid: TelegramBotApi.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage,System.Nullable{System.TimeSpan})
+  name: SetTimeout(HttpRequestMessage, Nullable<TimeSpan>)
+  href: api/TelegramBotApi.Extensions.html#TelegramBotApi_Extensions_SetTimeout_System_Net_Http_HttpRequestMessage_System_Nullable_System_TimeSpan__
+  commentId: M:TelegramBotApi.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage,System.Nullable{System.TimeSpan})
+  name.vb: SetTimeout(HttpRequestMessage, Nullable(Of TimeSpan))
+  fullName: TelegramBotApi.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage, System.Nullable<System.TimeSpan>)
+  fullName.vb: TelegramBotApi.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage, System.Nullable(Of System.TimeSpan))
+  nameWithType: Extensions.SetTimeout(HttpRequestMessage, Nullable<TimeSpan>)
+  nameWithType.vb: Extensions.SetTimeout(HttpRequestMessage, Nullable(Of TimeSpan))
+- uid: TelegramBotApi.Extensions.SetTimeout*
+  name: SetTimeout
+  href: api/TelegramBotApi.Extensions.html#TelegramBotApi_Extensions_SetTimeout_
+  commentId: Overload:TelegramBotApi.Extensions.SetTimeout
+  isSpec: "True"
+  fullName: TelegramBotApi.Extensions.SetTimeout
+  nameWithType: Extensions.SetTimeout
 - uid: TelegramBotApi.TelegramBot
   name: TelegramBot
   href: api/TelegramBotApi.TelegramBot.html

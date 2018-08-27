@@ -125,11 +125,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Extensions.html",
+          "hash": "gt0XGsEKNa9fWKTn1WdyfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TelegramBotApi.TelegramBot.yml",
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.TelegramBot.html",
-          "hash": "RDYS3iquV2wm1VUUFQ5nWA=="
+          "hash": "TRb7QCosclzOsSJR/7kDbw=="
         }
       },
       "is_incremental": false,
@@ -1605,7 +1617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.html",
-          "hash": "NilhgXyZF7qU+W6hTWj63g=="
+          "hash": "6Ss7uF2aURkHwj8/fO4F0w=="
         }
       },
       "is_incremental": false,
@@ -1629,7 +1641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "hKLmXcmAY/xbtAp8rybu7g=="
+          "hash": "i4QV/h0hYlkD7a+vUj2RuA=="
         }
       },
       "is_incremental": false,
@@ -1692,17 +1704,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

@@ -76,11 +76,20 @@ namespace TelegramBotApi.Types.TelegramPassport
         public PassportFile ReverseSide { get; set; }
 
         /// <summary>
-        /// ptional. Encrypted file with the selfie of the user holding a document, provided by the user; 
+        /// Optional. Encrypted file with the selfie of the user holding a document, provided by the user; 
         /// available for “passport”, “driver_license”, “identity_card” and “internal_passport”. 
         /// The file can be decrypted and verified using the accompanying  <see cref="EncryptedCredentials"/>.
         /// </summary>
         [JsonProperty(PropertyName = "selfie")]
         public PassportFile Selfie { get; set; }
+
+        /// <summary>
+        /// Optional. Array of encrypted files with translated versions of documents provided by the user. 
+        /// Available if requested for “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”, 
+        /// “bank_statement”, “rental_agreement”, “passport_registration” and “temporary_registration” types. 
+        /// Files can be decrypted and verified using the accompanying <see cref="EncryptedCredentials"/>.
+        /// </summary>
+        [JsonProperty(PropertyName = "translation")]
+        public PassportFile[] Translation { get; set; }
     }
 }

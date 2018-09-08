@@ -1,4 +1,15 @@
 image: Visual Studio 2017
+pull_requests:
+  do_not_increment_build_number: true
+
+branches:
+  only:
+  - master
+  - dev
+
+nuget:
+  disable_publish_on_pr: true
+
 before_build:
   - ps: |
         if(-Not $env:APPVEYOR_PULL_REQUEST_TITLE)
@@ -9,8 +20,9 @@ before_build:
         }
   - nuget restore
 
-build_script:
-  - msbuild TelegramBotApi.sln
+build:
+  project: TelegramBotApi.sln
+  publish_nuget: true
 
 after_build:
   - ps: |
@@ -34,3 +46,17 @@ after_build:
             git commit -m "Auto Generated Docs" -q 2>&1 | % { $_.ToString() } 
             git push origin gh-pages -q --porcelain 2>&1 | % { $_.ToString() } 
         }
+        
+artifacts:
+  - path: '**\*.nupkg'
+    name: Nuget
+
+deploy:
+    # Deploying to NuGet feed
+  - provider: NuGet
+    on:
+      branch: master
+    api_key:
+      secure: oA0jnbpx2uv2Hkxzd4PegxHtKf0/tjrHLrSiMC+aJ7Mvi2elT276fqNYzGD0+G/w
+    skip_symbols: false
+    artifact: /.*\.nupkg/

@@ -608,20 +608,20 @@ namespace TelegramBotApi
         /// <param name="chatId">The chat id or channel username of the chat to send the message to</param>
         /// <param name="document">The document to send. One of <see cref="SendFileId"/>, <see cref="SendFileUrl"/>
         ///  or <see cref="SendFileMultipart"/></param>
-        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
-        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
-        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
-        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="caption">The caption of the document, if any</param>
         /// <param name="parseMode">The parse mode of the message, if any</param>
         /// <param name="disableNotification">If this is true, the user will receive a notification without sound</param>
         /// <param name="replyToMessageId">The message id of the message to reply to in the target chat, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <returns>The sent message on success</returns>
-        public Message SendDocument(ChatId chatId, SendFile document, SendFile thumb = null, string caption = null,
+        public Message SendDocument(ChatId chatId, SendFile document, string caption = null,
             ParseMode parseMode = ParseMode.None, bool disableNotification = false, int replyToMessageId = -1,
-            ReplyMarkupBase replyMarkup = null)
-            => SendDocumentAsync(chatId, document, thumb, caption, parseMode, disableNotification, replyToMessageId, replyMarkup).Result;
+            ReplyMarkupBase replyMarkup = null, SendFile thumb = null)
+            => SendDocumentAsync(chatId, document, caption, parseMode, disableNotification, replyToMessageId, replyMarkup, thumb).Result;
         /// <summary>
         /// Use this method to send general files. On success, the sent Message is returned. 
         /// Bots can currently send files of any type of up to 50 MB in size, this limit may be changed in the future.
@@ -629,19 +629,19 @@ namespace TelegramBotApi
         /// <param name="chatId">The chat id or channel username of the chat to send the message to</param>
         /// <param name="document">The document to send. One of <see cref="SendFileId"/>, <see cref="SendFileUrl"/>
         ///  or <see cref="SendFileMultipart"/></param>
-        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
-        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
-        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
-        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <param name="caption">The caption of the document, if any</param>
         /// <param name="parseMode">The parse mode of the message, if any</param>
         /// <param name="disableNotification">If this is true, the user will receive a notification without sound</param>
         /// <param name="replyToMessageId">The message id of the message to reply to in the target chat, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. 
+        /// A thumbnail‘s width and height should not exceed 90. Ignored if the file is not uploaded using multipart/form-data. 
+        /// Thumbnails can’t be reused and can be only uploaded as a new file, so you can pass “attach://&lt;file_attach_name&gt;” 
+        /// if the thumbnail was uploaded using multipart/form-data under &lt;file_attach_name&gt;.</param>
         /// <returns>The sent message on success</returns>
-        public async Task<Message> SendDocumentAsync(ChatId chatId, SendFile document, SendFile thumb = null, string caption = null,
+        public async Task<Message> SendDocumentAsync(ChatId chatId, SendFile document, string caption = null,
             ParseMode parseMode = ParseMode.None, bool disableNotification = false, int replyToMessageId = -1,
-            ReplyMarkupBase replyMarkup = null)
+            ReplyMarkupBase replyMarkup = null, SendFile thumb = null)
         {
             Dictionary<string, object> args = new Dictionary<string, object>() { { "chat_id", chatId }, { "document", document } };
             if (thumb != null) args.Add("thumb", thumb);

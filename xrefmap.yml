@@ -2002,12 +2002,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendContactAsync
   nameWithType: TelegramBot.SendContactAsync
-- uid: TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendDocument(ChatId, SendFile, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocument_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendDocument(ChatId, SendFile, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase,TelegramBotApi.Types.Upload.SendFile)
+  name: SendDocument(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase, SendFile)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocument_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_TelegramBotApi_Types_Upload_SendFile_
+  commentId: M:TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase,TelegramBotApi.Types.Upload.SendFile)
+  fullName: TelegramBotApi.TelegramBot.SendDocument(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase, TelegramBotApi.Types.Upload.SendFile)
+  nameWithType: TelegramBot.SendDocument(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase, SendFile)
 - uid: TelegramBotApi.TelegramBot.SendDocument*
   name: SendDocument
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocument_
@@ -2015,12 +2015,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendDocument
   nameWithType: TelegramBot.SendDocument
-- uid: TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendDocumentAsync(ChatId, SendFile, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocumentAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendDocumentAsync(ChatId, SendFile, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase,TelegramBotApi.Types.Upload.SendFile)
+  name: SendDocumentAsync(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase, SendFile)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocumentAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_TelegramBotApi_Types_Upload_SendFile_
+  commentId: M:TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase,TelegramBotApi.Types.Upload.SendFile)
+  fullName: TelegramBotApi.TelegramBot.SendDocumentAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase, TelegramBotApi.Types.Upload.SendFile)
+  nameWithType: TelegramBot.SendDocumentAsync(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase, SendFile)
 - uid: TelegramBotApi.TelegramBot.SendDocumentAsync*
   name: SendDocumentAsync
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendDocumentAsync_

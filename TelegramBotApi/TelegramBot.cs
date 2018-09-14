@@ -2932,9 +2932,9 @@ namespace TelegramBotApi
         /// <summary>
         /// Sends a text message with a queue. Using this method you should never hit 429-Errors (Too many requests).
         /// If you do, please open a GitHub issue.
-        /// Note that the parameters <paramref name="disableWebPagePreview"/>, <paramref name="disableNotification"/>,
-        /// <paramref name="replyToMessageId"/> and <paramref name="replyMarkup"/> of only the first queued message that has this field specified
-        /// will be used.
+        /// Note that the parameters <paramref name="disableWebPagePreview"/> and <paramref name="disableNotification"/>
+        /// will be overridden by the last merged message, if you enable message merging. If you want to use this method to send messages, 
+        /// you need to call the <see cref="StartQueue(ParseMode, bool)"/> method to start it.
         /// </summary>
         /// <param name="chatId">The id or channel username of the chat to send the message to</param>
         /// <param name="text">The text of the message</param>

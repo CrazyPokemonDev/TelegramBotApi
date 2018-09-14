@@ -67,5 +67,24 @@ namespace TelegramBotApi.Types
         {
             return cId.ChannelUsername;
         }
+
+        /// <summary>
+        /// Find out whether this <see cref="ChatId"/> is equal to another object. This is true if the other object is a <see cref="ChatId"/> and has the same <see cref="ChatIdentifier"/> and <see cref="ChannelUsername"/>.
+        /// </summary>
+        /// <param name="obj">The object to compare this <see cref="ChatId"/> with.</param>
+        /// <returns>True if <paramref name="obj"/> is equal to this <see cref="ChatId"/>.</returns>
+        public override bool Equals(object obj)
+        {
+            return obj is ChatId cId && ChatIdentifier == cId.ChatIdentifier && ChannelUsername == cId.ChannelUsername;
+        }
+
+        /// <summary>
+        /// Get the HashCode for this <see cref="ChatId"/> object
+        /// </summary>
+        /// <returns>The <see cref="ChatId"/>'s HashCode</returns>
+        public override int GetHashCode()
+        {
+            return $"{ChannelUsername}{ChatIdentifier}".GetHashCode();
+        }
     }
 }

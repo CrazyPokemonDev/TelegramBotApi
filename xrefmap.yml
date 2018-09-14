@@ -1682,6 +1682,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.IsChatAdministratorAsync
   nameWithType: TelegramBot.IsChatAdministratorAsync
+- uid: TelegramBotApi.TelegramBot.IsMessageQueueing
+  name: IsMessageQueueing
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_IsMessageQueueing
+  commentId: P:TelegramBotApi.TelegramBot.IsMessageQueueing
+  fullName: TelegramBotApi.TelegramBot.IsMessageQueueing
+  nameWithType: TelegramBot.IsMessageQueueing
+- uid: TelegramBotApi.TelegramBot.IsMessageQueueing*
+  name: IsMessageQueueing
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_IsMessageQueueing_
+  commentId: Overload:TelegramBotApi.TelegramBot.IsMessageQueueing
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.IsMessageQueueing
+  nameWithType: TelegramBot.IsMessageQueueing
 - uid: TelegramBotApi.TelegramBot.IsReceiving
   name: IsReceiving
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_IsReceiving
@@ -2144,6 +2157,45 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendMediaGroupAsync
   nameWithType: TelegramBot.SendMediaGroupAsync
+- uid: TelegramBotApi.TelegramBot.SendMessage(TelegramBotApi.Types.ChatId,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendMessage(ChatId, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessage_TelegramBotApi_Types_ChatId_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendMessage(TelegramBotApi.Types.ChatId,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendMessage(TelegramBotApi.Types.ChatId, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendMessage(ChatId, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendMessage*
+  name: SendMessage
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessage_
+  commentId: Overload:TelegramBotApi.TelegramBot.SendMessage
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SendMessage
+  nameWithType: TelegramBot.SendMessage
+- uid: TelegramBotApi.TelegramBot.SendMessageAsync(TelegramBotApi.Types.ChatId,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendMessageAsync(ChatId, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageAsync_TelegramBotApi_Types_ChatId_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendMessageAsync(TelegramBotApi.Types.ChatId,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendMessageAsync(TelegramBotApi.Types.ChatId, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendMessageAsync(ChatId, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageAsync_
+  commentId: Overload:TelegramBotApi.TelegramBot.SendMessageAsync
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SendMessageAsync
+  nameWithType: TelegramBot.SendMessageAsync
+- uid: TelegramBotApi.TelegramBot.SendMessageWithQueue(TelegramBotApi.Types.ChatId,System.String,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageWithQueue_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendMessageWithQueue(TelegramBotApi.Types.ChatId,System.String,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendMessageWithQueue(TelegramBotApi.Types.ChatId, System.String, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendMessageWithQueue*
+  name: SendMessageWithQueue
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageWithQueue_
+  commentId: Overload:TelegramBotApi.TelegramBot.SendMessageWithQueue
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.SendMessageWithQueue
+  nameWithType: TelegramBot.SendMessageWithQueue
 - uid: TelegramBotApi.TelegramBot.SendPhoto(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
   name: SendPhoto(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendPhoto_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
@@ -2558,6 +2610,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SetWebhookAsync
   nameWithType: TelegramBot.SetWebhookAsync
+- uid: TelegramBotApi.TelegramBot.StartQueue(TelegramBotApi.Enums.ParseMode,System.Boolean)
+  name: StartQueue(ParseMode, Boolean)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StartQueue_TelegramBotApi_Enums_ParseMode_System_Boolean_
+  commentId: M:TelegramBotApi.TelegramBot.StartQueue(TelegramBotApi.Enums.ParseMode,System.Boolean)
+  fullName: TelegramBotApi.TelegramBot.StartQueue(TelegramBotApi.Enums.ParseMode, System.Boolean)
+  nameWithType: TelegramBot.StartQueue(ParseMode, Boolean)
+- uid: TelegramBotApi.TelegramBot.StartQueue*
+  name: StartQueue
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StartQueue_
+  commentId: Overload:TelegramBotApi.TelegramBot.StartQueue
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.StartQueue
+  nameWithType: TelegramBot.StartQueue
 - uid: TelegramBotApi.TelegramBot.StartReceiving(TelegramBotApi.Enums.UpdateType[])
   name: StartReceiving(UpdateType[])
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StartReceiving_TelegramBotApi_Enums_UpdateType___
@@ -2612,6 +2677,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.StopMessageLiveLocationAsync
   nameWithType: TelegramBot.StopMessageLiveLocationAsync
+- uid: TelegramBotApi.TelegramBot.StopQueue
+  name: StopQueue()
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StopQueue
+  commentId: M:TelegramBotApi.TelegramBot.StopQueue
+  fullName: TelegramBotApi.TelegramBot.StopQueue()
+  nameWithType: TelegramBot.StopQueue()
+- uid: TelegramBotApi.TelegramBot.StopQueue*
+  name: StopQueue
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StopQueue_
+  commentId: Overload:TelegramBotApi.TelegramBot.StopQueue
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.StopQueue
+  nameWithType: TelegramBot.StopQueue
 - uid: TelegramBotApi.TelegramBot.StopReceiving
   name: StopReceiving()
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StopReceiving
@@ -3297,6 +3375,32 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.ChatId.ChatIdentifier
   nameWithType: ChatId.ChatIdentifier
+- uid: TelegramBotApi.Types.ChatId.Equals(System.Object)
+  name: Equals(Object)
+  href: api/TelegramBotApi.Types.ChatId.html#TelegramBotApi_Types_ChatId_Equals_System_Object_
+  commentId: M:TelegramBotApi.Types.ChatId.Equals(System.Object)
+  fullName: TelegramBotApi.Types.ChatId.Equals(System.Object)
+  nameWithType: ChatId.Equals(Object)
+- uid: TelegramBotApi.Types.ChatId.Equals*
+  name: Equals
+  href: api/TelegramBotApi.Types.ChatId.html#TelegramBotApi_Types_ChatId_Equals_
+  commentId: Overload:TelegramBotApi.Types.ChatId.Equals
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.ChatId.Equals
+  nameWithType: ChatId.Equals
+- uid: TelegramBotApi.Types.ChatId.GetHashCode
+  name: GetHashCode()
+  href: api/TelegramBotApi.Types.ChatId.html#TelegramBotApi_Types_ChatId_GetHashCode
+  commentId: M:TelegramBotApi.Types.ChatId.GetHashCode
+  fullName: TelegramBotApi.Types.ChatId.GetHashCode()
+  nameWithType: ChatId.GetHashCode()
+- uid: TelegramBotApi.Types.ChatId.GetHashCode*
+  name: GetHashCode
+  href: api/TelegramBotApi.Types.ChatId.html#TelegramBotApi_Types_ChatId_GetHashCode_
+  commentId: Overload:TelegramBotApi.Types.ChatId.GetHashCode
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.ChatId.GetHashCode
+  nameWithType: ChatId.GetHashCode
 - uid: TelegramBotApi.Types.ChatId.op_Explicit(TelegramBotApi.Types.ChatId)~System.Int64
   name: Explicit(ChatId to Int64)
   href: api/TelegramBotApi.Types.ChatId.html#TelegramBotApi_Types_ChatId_op_Explicit_TelegramBotApi_Types_ChatId__System_Int64

@@ -55,7 +55,7 @@ namespace TelegramBotApi
         private HttpClient httpClient = new HttpClient(new TimeoutHandler { InnerHandler = new HttpClientHandler() }) { Timeout = Timeout.InfiniteTimeSpan };
 
         /// <summary>
-        /// Whether the message queue for <see cref="SendMessageWithQueue(ChatId, string, ParseMode, bool, bool, int, ReplyMarkupBase)"/> is enabled.
+        /// Whether the message queue for <see cref="SendMessageWithQueue(ChatId, string, bool, bool, int, ReplyMarkupBase)"/> is enabled.
         /// </summary>
         public bool IsMessageQueueing { get; private set; } = false;
 

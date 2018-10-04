@@ -174,7 +174,7 @@
   </span>
   <a id="TelegramBotApi_TelegramBot_IsMessageQueueing_" data-uid="TelegramBotApi.TelegramBot.IsMessageQueueing*"></a>
   <h4 id="TelegramBotApi_TelegramBot_IsMessageQueueing" data-uid="TelegramBotApi.TelegramBot.IsMessageQueueing">IsMessageQueueing</h4>
-  <div class="markdown level1 summary"><p>Whether the message queue for <a class="xref" href="TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageWithQueue_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_">SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)</a> is enabled.</p>
+  <div class="markdown level1 summary"><p>Whether the message queue for <see cref="!:SendMessageWithQueue(ChatId, string, bool, bool, int, ReplyMarkupBase)"></see> is enabled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -8210,74 +8210,6 @@ Must contain 2-10 elements.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/dev/apiSpec/new?filename=TelegramBotApi_TelegramBot_SendMessageWithQueue_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_.md&amp;value=---%0Auid%3A%20TelegramBotApi.TelegramBot.SendMessageWithQueue(TelegramBotApi.Types.ChatId%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Int32%2CTelegramBotApi.Types.Markup.ReplyMarkupBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/blob/dev/TelegramBotApi/TelegramBot.cs/#L2945">View Source</a>
-  </span>
-  <a id="TelegramBotApi_TelegramBot_SendMessageWithQueue_" data-uid="TelegramBotApi.TelegramBot.SendMessageWithQueue*"></a>
-  <h4 id="TelegramBotApi_TelegramBot_SendMessageWithQueue_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_" data-uid="TelegramBotApi.TelegramBot.SendMessageWithQueue(TelegramBotApi.Types.ChatId,System.String,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)">SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)</h4>
-  <div class="markdown level1 summary"><p>Sends a text message with a queue. Using this method you should never hit 429-Errors (Too many requests).
-If you do, please open a GitHub issue.
-Note that the parameters <code data-dev-comment-type="paramref" class="paramref">disableWebPagePreview</code> and <code data-dev-comment-type="paramref" class="paramref">disableNotification</code>
-will be overridden by the last merged message, if you enable message merging. If you want to use this method to send messages,
-you need to call the <a class="xref" href="TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StartQueue_TelegramBotApi_Enums_ParseMode_System_Boolean_">StartQueue(ParseMode, Boolean)</a> method to start it.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SendMessageWithQueue(ChatId chatId, string text, bool disableWebPagePreview = false, bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TelegramBotApi.Types.ChatId.html">ChatId</a></td>
-        <td><span class="parametername">chatId</span></td>
-        <td><p>The id or channel username of the chat to send the message to</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">text</span></td>
-        <td><p>The text of the message</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">disableWebPagePreview</span></td>
-        <td><p>If this is true, no website preview will be shown</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">disableNotification</span></td>
-        <td><p>If this is true, users will not receive a notification or a silent one for this message</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">replyToMessageId</span></td>
-        <td><p>The message id of the message to reply to in this chat, if any</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="TelegramBotApi.Types.Markup.ReplyMarkupBase.html">ReplyMarkupBase</a></td>
-        <td><span class="parametername">replyMarkup</span></td>
-        <td><p>A <a class="xref" href="TelegramBotApi.Types.Markup.ReplyMarkupBase.html">ReplyMarkupBase</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/dev/apiSpec/new?filename=TelegramBotApi_TelegramBot_SendPhoto_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_.md&amp;value=---%0Auid%3A%20TelegramBotApi.TelegramBot.SendPhoto(TelegramBotApi.Types.ChatId%2CTelegramBotApi.Types.Upload.SendFile%2CSystem.String%2CTelegramBotApi.Enums.ParseMode%2CSystem.Boolean%2CSystem.Int32%2CTelegramBotApi.Types.Markup.ReplyMarkupBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -10760,46 +10692,6 @@ Defaults to 40. Use lower values to limit the load on your bot‘s server, and h
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/dev/apiSpec/new?filename=TelegramBotApi_TelegramBot_StartQueue_TelegramBotApi_Enums_ParseMode_System_Boolean_.md&amp;value=---%0Auid%3A%20TelegramBotApi.TelegramBot.StartQueue(TelegramBotApi.Enums.ParseMode%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/blob/dev/TelegramBotApi/TelegramBot.cs/#L2960">View Source</a>
-  </span>
-  <a id="TelegramBotApi_TelegramBot_StartQueue_" data-uid="TelegramBotApi.TelegramBot.StartQueue*"></a>
-  <h4 id="TelegramBotApi_TelegramBot_StartQueue_TelegramBotApi_Enums_ParseMode_System_Boolean_" data-uid="TelegramBotApi.TelegramBot.StartQueue(TelegramBotApi.Enums.ParseMode,System.Boolean)">StartQueue(ParseMode, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Start the message queue. Messages enqueued by <a class="xref" href="TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageWithQueue_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_">SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)</a> will only be sent after this method was called.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void StartQueue(ParseMode parseMode, bool mergeMessages = true)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="TelegramBotApi.Enums.ParseMode.html">ParseMode</a></td>
-        <td><span class="parametername">parseMode</span></td>
-        <td><p>All messages that are enqueued with <a class="xref" href="TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageWithQueue_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_">SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)</a> will use this ParseMode.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">mergeMessages</span></td>
-        <td><p>If this is true, multiple queued messages can be merged into one, seperated by two newlines, for more efficient message sending. Note that messages having a replyToMessageId or replyMarkup will never be merged.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/dev/apiSpec/new?filename=TelegramBotApi_TelegramBot_StartReceiving_TelegramBotApi_Enums_UpdateType___.md&amp;value=---%0Auid%3A%20TelegramBotApi.TelegramBot.StartReceiving(TelegramBotApi.Enums.UpdateType%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -11073,22 +10965,6 @@ On success, the sent Message is returned.</p>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/dev/apiSpec/new?filename=TelegramBotApi_TelegramBot_StopQueue.md&amp;value=---%0Auid%3A%20TelegramBotApi.TelegramBot.StopQueue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/blob/dev/TelegramBotApi/TelegramBot.cs/#L2974">View Source</a>
-  </span>
-  <a id="TelegramBotApi_TelegramBot_StopQueue_" data-uid="TelegramBotApi.TelegramBot.StopQueue*"></a>
-  <h4 id="TelegramBotApi_TelegramBot_StopQueue" data-uid="TelegramBotApi.TelegramBot.StopQueue">StopQueue()</h4>
-  <div class="markdown level1 summary"><p>Stop the message queue. Messages enqueued by <a class="xref" href="TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageWithQueue_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_">SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)</a> will no longer be sent. The current queue will be emptied.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void StopQueue()</code></pre>
-  </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/CrazyPokemonDev/TelegramBotApi/new/dev/apiSpec/new?filename=TelegramBotApi_TelegramBot_StopReceiving.md&amp;value=---%0Auid%3A%20TelegramBotApi.TelegramBot.StopReceiving%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -11743,6 +11619,16 @@ dimensions must not exceed 512px, and either width or height must be exactly 512
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_SendMessageWithQueue_TelegramBotApi_TelegramBot_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_">MessageQueueing.SendMessageWithQueue(TelegramBot, ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)</a>
+  </div>
+  <div>
+      <a class="xref" href="TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_StartQueue_TelegramBotApi_TelegramBot_TelegramBotApi_Enums_ParseMode_System_Boolean_">MessageQueueing.StartQueue(TelegramBot, ParseMode, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_StopQueue_TelegramBotApi_TelegramBot_">MessageQueueing.StopQueue(TelegramBot)</a>
+  </div>
 </article>
           </div>
           

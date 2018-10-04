@@ -125,11 +125,95 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/TelegramBotApi.Extensions.yml",
+      "source_relative_path": "api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TelegramBotApi.Extensions.html",
-          "hash": "AAwcZnX3YyZ7RwIx2j4BHw=="
+          "relative_path": "api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.html",
+          "hash": "Lux3qDBpldzv4O/1+TX0gQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Extensions.FormattedTextExtraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Extensions.FormattedTextExtraction.html",
+          "hash": "X4iklIomEwf0cWal4707fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.html",
+          "hash": "wuA8giF+8yILryKH2JKR5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Extensions.FormattedTextValidation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Extensions.FormattedTextValidation.html",
+          "hash": "nmteHXgt2xCOLsGcp29ZnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html",
+          "hash": "DuB5MZAjMMJ/WQTLG3Z1ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Extensions.MessageQueueing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Extensions.MessageQueueing.html",
+          "hash": "FvW+fC5Nz5MaPzxJp/m5lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Helpers.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Helpers.Extensions.html",
+          "hash": "4CgRSLysohLGLqXBM903YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TelegramBotApi.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TelegramBotApi.Helpers.html",
+          "hash": "U+j1iSa9AhTBub10c6wRrg=="
         }
       },
       "is_incremental": false,
@@ -141,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.TelegramBot.html",
-          "hash": "EPj+pMTG7TryZ0y+VunDiw=="
+          "hash": "J5blQsQLFGRpad1IE2utww=="
         }
       },
       "is_incremental": false,
@@ -993,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.Types.Message.html",
-          "hash": "Uj4sZE+fff8r7p6WkDc21A=="
+          "hash": "81pgjoZHuHZDqm6jXIazPw=="
         }
       },
       "is_incremental": false,
@@ -1617,7 +1701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TelegramBotApi.html",
-          "hash": "Wfxqcqr6uksPySJsTzNiwA=="
+          "hash": "DJtLwTPwaYNKaJ7YLaxxBg=="
         }
       },
       "is_incremental": false,
@@ -1641,7 +1725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "i4QV/h0hYlkD7a+vUj2RuA=="
+          "hash": "NyNuUGx6kLV321x8WGFlXQ=="
         }
       },
       "is_incremental": false,

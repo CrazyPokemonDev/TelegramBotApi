@@ -625,40 +625,178 @@ references:
   commentId: F:TelegramBotApi.Enums.UpdateType.Unknown
   fullName: TelegramBotApi.Enums.UpdateType.Unknown
   nameWithType: UpdateType.Unknown
-- uid: TelegramBotApi.Extensions
-  name: Extensions
-  href: api/TelegramBotApi.Extensions.html
-  commentId: T:TelegramBotApi.Extensions
-  fullName: TelegramBotApi.Extensions
-  nameWithType: Extensions
-- uid: TelegramBotApi.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
-  name: GetTimeout(HttpRequestMessage)
-  href: api/TelegramBotApi.Extensions.html#TelegramBotApi_Extensions_GetTimeout_System_Net_Http_HttpRequestMessage_
-  commentId: M:TelegramBotApi.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
-  fullName: TelegramBotApi.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
-  nameWithType: Extensions.GetTimeout(HttpRequestMessage)
-- uid: TelegramBotApi.Extensions.GetTimeout*
-  name: GetTimeout
-  href: api/TelegramBotApi.Extensions.html#TelegramBotApi_Extensions_GetTimeout_
-  commentId: Overload:TelegramBotApi.Extensions.GetTimeout
+- uid: TelegramBotApi.Extensions.FormattedTextExtraction
+  name: TelegramBotApi.Extensions.FormattedTextExtraction
+  href: api/TelegramBotApi.Extensions.FormattedTextExtraction.html
+  commentId: N:TelegramBotApi.Extensions.FormattedTextExtraction
+  fullName: TelegramBotApi.Extensions.FormattedTextExtraction
+  nameWithType: TelegramBotApi.Extensions.FormattedTextExtraction
+- uid: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction
+  name: FormattedTextExtraction
+  href: api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.html
+  commentId: T:TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction
+  fullName: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction
+  nameWithType: FormattedTextExtraction
+- uid: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML(System.String,TelegramBotApi.Types.MessageEntity[])
+  name: ExtractHTML(String, MessageEntity[])
+  href: api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.html#TelegramBotApi_Extensions_FormattedTextExtraction_FormattedTextExtraction_ExtractHTML_System_String_TelegramBotApi_Types_MessageEntity___
+  commentId: M:TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML(System.String,TelegramBotApi.Types.MessageEntity[])
+  name.vb: ExtractHTML(String, MessageEntity())
+  fullName: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML(System.String, TelegramBotApi.Types.MessageEntity[])
+  fullName.vb: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML(System.String, TelegramBotApi.Types.MessageEntity())
+  nameWithType: FormattedTextExtraction.ExtractHTML(String, MessageEntity[])
+  nameWithType.vb: FormattedTextExtraction.ExtractHTML(String, MessageEntity())
+- uid: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML(TelegramBotApi.Types.Message)
+  name: ExtractHTML(Message)
+  href: api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.html#TelegramBotApi_Extensions_FormattedTextExtraction_FormattedTextExtraction_ExtractHTML_TelegramBotApi_Types_Message_
+  commentId: M:TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML(TelegramBotApi.Types.Message)
+  fullName: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML(TelegramBotApi.Types.Message)
+  nameWithType: FormattedTextExtraction.ExtractHTML(Message)
+- uid: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML*
+  name: ExtractHTML
+  href: api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.html#TelegramBotApi_Extensions_FormattedTextExtraction_FormattedTextExtraction_ExtractHTML_
+  commentId: Overload:TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML
   isSpec: "True"
-  fullName: TelegramBotApi.Extensions.GetTimeout
+  fullName: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractHTML
+  nameWithType: FormattedTextExtraction.ExtractHTML
+- uid: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown(System.String,TelegramBotApi.Types.MessageEntity[])
+  name: ExtractMarkdown(String, MessageEntity[])
+  href: api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.html#TelegramBotApi_Extensions_FormattedTextExtraction_FormattedTextExtraction_ExtractMarkdown_System_String_TelegramBotApi_Types_MessageEntity___
+  commentId: M:TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown(System.String,TelegramBotApi.Types.MessageEntity[])
+  name.vb: ExtractMarkdown(String, MessageEntity())
+  fullName: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown(System.String, TelegramBotApi.Types.MessageEntity[])
+  fullName.vb: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown(System.String, TelegramBotApi.Types.MessageEntity())
+  nameWithType: FormattedTextExtraction.ExtractMarkdown(String, MessageEntity[])
+  nameWithType.vb: FormattedTextExtraction.ExtractMarkdown(String, MessageEntity())
+- uid: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown(TelegramBotApi.Types.Message)
+  name: ExtractMarkdown(Message)
+  href: api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.html#TelegramBotApi_Extensions_FormattedTextExtraction_FormattedTextExtraction_ExtractMarkdown_TelegramBotApi_Types_Message_
+  commentId: M:TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown(TelegramBotApi.Types.Message)
+  fullName: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown(TelegramBotApi.Types.Message)
+  nameWithType: FormattedTextExtraction.ExtractMarkdown(Message)
+- uid: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown*
+  name: ExtractMarkdown
+  href: api/TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.html#TelegramBotApi_Extensions_FormattedTextExtraction_FormattedTextExtraction_ExtractMarkdown_
+  commentId: Overload:TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown
+  isSpec: "True"
+  fullName: TelegramBotApi.Extensions.FormattedTextExtraction.FormattedTextExtraction.ExtractMarkdown
+  nameWithType: FormattedTextExtraction.ExtractMarkdown
+- uid: TelegramBotApi.Extensions.FormattedTextValidation
+  name: TelegramBotApi.Extensions.FormattedTextValidation
+  href: api/TelegramBotApi.Extensions.FormattedTextValidation.html
+  commentId: N:TelegramBotApi.Extensions.FormattedTextValidation
+  fullName: TelegramBotApi.Extensions.FormattedTextValidation
+  nameWithType: TelegramBotApi.Extensions.FormattedTextValidation
+- uid: TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation
+  name: FormattedTextValidation
+  href: api/TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.html
+  commentId: T:TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation
+  fullName: TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation
+  nameWithType: FormattedTextValidation
+- uid: TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.ValidateHTML(System.String)
+  name: ValidateHTML(String)
+  href: api/TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.html#TelegramBotApi_Extensions_FormattedTextValidation_FormattedTextValidation_ValidateHTML_System_String_
+  commentId: M:TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.ValidateHTML(System.String)
+  fullName: TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.ValidateHTML(System.String)
+  nameWithType: FormattedTextValidation.ValidateHTML(String)
+- uid: TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.ValidateHTML*
+  name: ValidateHTML
+  href: api/TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.html#TelegramBotApi_Extensions_FormattedTextValidation_FormattedTextValidation_ValidateHTML_
+  commentId: Overload:TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.ValidateHTML
+  isSpec: "True"
+  fullName: TelegramBotApi.Extensions.FormattedTextValidation.FormattedTextValidation.ValidateHTML
+  nameWithType: FormattedTextValidation.ValidateHTML
+- uid: TelegramBotApi.Extensions.MessageQueueing
+  name: TelegramBotApi.Extensions.MessageQueueing
+  href: api/TelegramBotApi.Extensions.MessageQueueing.html
+  commentId: N:TelegramBotApi.Extensions.MessageQueueing
+  fullName: TelegramBotApi.Extensions.MessageQueueing
+  nameWithType: TelegramBotApi.Extensions.MessageQueueing
+- uid: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing
+  name: MessageQueueing
+  href: api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html
+  commentId: T:TelegramBotApi.Extensions.MessageQueueing.MessageQueueing
+  fullName: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing
+  nameWithType: MessageQueueing
+- uid: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.SendMessageWithQueue(TelegramBotApi.TelegramBot,TelegramBotApi.Types.ChatId,System.String,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendMessageWithQueue(TelegramBot, ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_SendMessageWithQueue_TelegramBotApi_TelegramBot_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.SendMessageWithQueue(TelegramBotApi.TelegramBot,TelegramBotApi.Types.ChatId,System.String,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.SendMessageWithQueue(TelegramBotApi.TelegramBot, TelegramBotApi.Types.ChatId, System.String, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: MessageQueueing.SendMessageWithQueue(TelegramBot, ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.SendMessageWithQueue*
+  name: SendMessageWithQueue
+  href: api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_SendMessageWithQueue_
+  commentId: Overload:TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.SendMessageWithQueue
+  isSpec: "True"
+  fullName: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.SendMessageWithQueue
+  nameWithType: MessageQueueing.SendMessageWithQueue
+- uid: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StartQueue(TelegramBotApi.TelegramBot,TelegramBotApi.Enums.ParseMode,System.Boolean)
+  name: StartQueue(TelegramBot, ParseMode, Boolean)
+  href: api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_StartQueue_TelegramBotApi_TelegramBot_TelegramBotApi_Enums_ParseMode_System_Boolean_
+  commentId: M:TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StartQueue(TelegramBotApi.TelegramBot,TelegramBotApi.Enums.ParseMode,System.Boolean)
+  fullName: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StartQueue(TelegramBotApi.TelegramBot, TelegramBotApi.Enums.ParseMode, System.Boolean)
+  nameWithType: MessageQueueing.StartQueue(TelegramBot, ParseMode, Boolean)
+- uid: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StartQueue*
+  name: StartQueue
+  href: api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_StartQueue_
+  commentId: Overload:TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StartQueue
+  isSpec: "True"
+  fullName: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StartQueue
+  nameWithType: MessageQueueing.StartQueue
+- uid: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StopQueue(TelegramBotApi.TelegramBot)
+  name: StopQueue(TelegramBot)
+  href: api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_StopQueue_TelegramBotApi_TelegramBot_
+  commentId: M:TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StopQueue(TelegramBotApi.TelegramBot)
+  fullName: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StopQueue(TelegramBotApi.TelegramBot)
+  nameWithType: MessageQueueing.StopQueue(TelegramBot)
+- uid: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StopQueue*
+  name: StopQueue
+  href: api/TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.html#TelegramBotApi_Extensions_MessageQueueing_MessageQueueing_StopQueue_
+  commentId: Overload:TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StopQueue
+  isSpec: "True"
+  fullName: TelegramBotApi.Extensions.MessageQueueing.MessageQueueing.StopQueue
+  nameWithType: MessageQueueing.StopQueue
+- uid: TelegramBotApi.Helpers
+  name: TelegramBotApi.Helpers
+  href: api/TelegramBotApi.Helpers.html
+  commentId: N:TelegramBotApi.Helpers
+  fullName: TelegramBotApi.Helpers
+  nameWithType: TelegramBotApi.Helpers
+- uid: TelegramBotApi.Helpers.Extensions
+  name: Extensions
+  href: api/TelegramBotApi.Helpers.Extensions.html
+  commentId: T:TelegramBotApi.Helpers.Extensions
+  fullName: TelegramBotApi.Helpers.Extensions
+  nameWithType: Extensions
+- uid: TelegramBotApi.Helpers.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
+  name: GetTimeout(HttpRequestMessage)
+  href: api/TelegramBotApi.Helpers.Extensions.html#TelegramBotApi_Helpers_Extensions_GetTimeout_System_Net_Http_HttpRequestMessage_
+  commentId: M:TelegramBotApi.Helpers.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
+  fullName: TelegramBotApi.Helpers.Extensions.GetTimeout(System.Net.Http.HttpRequestMessage)
+  nameWithType: Extensions.GetTimeout(HttpRequestMessage)
+- uid: TelegramBotApi.Helpers.Extensions.GetTimeout*
+  name: GetTimeout
+  href: api/TelegramBotApi.Helpers.Extensions.html#TelegramBotApi_Helpers_Extensions_GetTimeout_
+  commentId: Overload:TelegramBotApi.Helpers.Extensions.GetTimeout
+  isSpec: "True"
+  fullName: TelegramBotApi.Helpers.Extensions.GetTimeout
   nameWithType: Extensions.GetTimeout
-- uid: TelegramBotApi.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage,System.Nullable{System.TimeSpan})
+- uid: TelegramBotApi.Helpers.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage,System.Nullable{System.TimeSpan})
   name: SetTimeout(HttpRequestMessage, Nullable<TimeSpan>)
-  href: api/TelegramBotApi.Extensions.html#TelegramBotApi_Extensions_SetTimeout_System_Net_Http_HttpRequestMessage_System_Nullable_System_TimeSpan__
-  commentId: M:TelegramBotApi.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage,System.Nullable{System.TimeSpan})
+  href: api/TelegramBotApi.Helpers.Extensions.html#TelegramBotApi_Helpers_Extensions_SetTimeout_System_Net_Http_HttpRequestMessage_System_Nullable_System_TimeSpan__
+  commentId: M:TelegramBotApi.Helpers.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage,System.Nullable{System.TimeSpan})
   name.vb: SetTimeout(HttpRequestMessage, Nullable(Of TimeSpan))
-  fullName: TelegramBotApi.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage, System.Nullable<System.TimeSpan>)
-  fullName.vb: TelegramBotApi.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage, System.Nullable(Of System.TimeSpan))
+  fullName: TelegramBotApi.Helpers.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage, System.Nullable<System.TimeSpan>)
+  fullName.vb: TelegramBotApi.Helpers.Extensions.SetTimeout(System.Net.Http.HttpRequestMessage, System.Nullable(Of System.TimeSpan))
   nameWithType: Extensions.SetTimeout(HttpRequestMessage, Nullable<TimeSpan>)
   nameWithType.vb: Extensions.SetTimeout(HttpRequestMessage, Nullable(Of TimeSpan))
-- uid: TelegramBotApi.Extensions.SetTimeout*
+- uid: TelegramBotApi.Helpers.Extensions.SetTimeout*
   name: SetTimeout
-  href: api/TelegramBotApi.Extensions.html#TelegramBotApi_Extensions_SetTimeout_
-  commentId: Overload:TelegramBotApi.Extensions.SetTimeout
+  href: api/TelegramBotApi.Helpers.Extensions.html#TelegramBotApi_Helpers_Extensions_SetTimeout_
+  commentId: Overload:TelegramBotApi.Helpers.Extensions.SetTimeout
   isSpec: "True"
-  fullName: TelegramBotApi.Extensions.SetTimeout
+  fullName: TelegramBotApi.Helpers.Extensions.SetTimeout
   nameWithType: Extensions.SetTimeout
 - uid: TelegramBotApi.TelegramBot
   name: TelegramBot
@@ -2183,19 +2321,6 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendMessageAsync
   nameWithType: TelegramBot.SendMessageAsync
-- uid: TelegramBotApi.TelegramBot.SendMessageWithQueue(TelegramBotApi.Types.ChatId,System.String,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageWithQueue_TelegramBotApi_Types_ChatId_System_String_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendMessageWithQueue(TelegramBotApi.Types.ChatId,System.String,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendMessageWithQueue(TelegramBotApi.Types.ChatId, System.String, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendMessageWithQueue(ChatId, String, Boolean, Boolean, Int32, ReplyMarkupBase)
-- uid: TelegramBotApi.TelegramBot.SendMessageWithQueue*
-  name: SendMessageWithQueue
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendMessageWithQueue_
-  commentId: Overload:TelegramBotApi.TelegramBot.SendMessageWithQueue
-  isSpec: "True"
-  fullName: TelegramBotApi.TelegramBot.SendMessageWithQueue
-  nameWithType: TelegramBot.SendMessageWithQueue
 - uid: TelegramBotApi.TelegramBot.SendPhoto(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
   name: SendPhoto(ChatId, SendFile, String, ParseMode, Boolean, Int32, ReplyMarkupBase)
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendPhoto_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
@@ -2610,19 +2735,6 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SetWebhookAsync
   nameWithType: TelegramBot.SetWebhookAsync
-- uid: TelegramBotApi.TelegramBot.StartQueue(TelegramBotApi.Enums.ParseMode,System.Boolean)
-  name: StartQueue(ParseMode, Boolean)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StartQueue_TelegramBotApi_Enums_ParseMode_System_Boolean_
-  commentId: M:TelegramBotApi.TelegramBot.StartQueue(TelegramBotApi.Enums.ParseMode,System.Boolean)
-  fullName: TelegramBotApi.TelegramBot.StartQueue(TelegramBotApi.Enums.ParseMode, System.Boolean)
-  nameWithType: TelegramBot.StartQueue(ParseMode, Boolean)
-- uid: TelegramBotApi.TelegramBot.StartQueue*
-  name: StartQueue
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StartQueue_
-  commentId: Overload:TelegramBotApi.TelegramBot.StartQueue
-  isSpec: "True"
-  fullName: TelegramBotApi.TelegramBot.StartQueue
-  nameWithType: TelegramBot.StartQueue
 - uid: TelegramBotApi.TelegramBot.StartReceiving(TelegramBotApi.Enums.UpdateType[])
   name: StartReceiving(UpdateType[])
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StartReceiving_TelegramBotApi_Enums_UpdateType___
@@ -2677,19 +2789,6 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.StopMessageLiveLocationAsync
   nameWithType: TelegramBot.StopMessageLiveLocationAsync
-- uid: TelegramBotApi.TelegramBot.StopQueue
-  name: StopQueue()
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StopQueue
-  commentId: M:TelegramBotApi.TelegramBot.StopQueue
-  fullName: TelegramBotApi.TelegramBot.StopQueue()
-  nameWithType: TelegramBot.StopQueue()
-- uid: TelegramBotApi.TelegramBot.StopQueue*
-  name: StopQueue
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StopQueue_
-  commentId: Overload:TelegramBotApi.TelegramBot.StopQueue
-  isSpec: "True"
-  fullName: TelegramBotApi.TelegramBot.StopQueue
-  nameWithType: TelegramBot.StopQueue
 - uid: TelegramBotApi.TelegramBot.StopReceiving
   name: StopReceiving()
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_StopReceiving

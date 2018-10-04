@@ -57,17 +57,17 @@ namespace TelegramBotApi
         /// <summary>
         /// Whether the message queue for <see cref="SendMessageWithQueue(ChatId, string, bool, bool, int, ReplyMarkupBase)"/> is enabled.
         /// </summary>
-        public bool IsMessageQueueing { get; private set; } = false;
+        public bool IsMessageQueueing { get; internal set; } = false;
 
-        private Dictionary<ChatId, Queue<QueuedMessage>> _messageQueue = new Dictionary<ChatId, Queue<QueuedMessage>>();
+        internal Dictionary<ChatId, Queue<QueuedMessage>> _messageQueue = new Dictionary<ChatId, Queue<QueuedMessage>>();
 
-        private Thread _messageQueueThread;
+        internal Thread _messageQueueThread;
 
-        private Dictionary<ChatId, int> _messageQueueTimeout = new Dictionary<ChatId, int>();
+        internal Dictionary<ChatId, int> _messageQueueTimeout = new Dictionary<ChatId, int>();
 
-        private ParseMode _messageQueueParseMode;
+        internal ParseMode _messageQueueParseMode;
 
-        private bool _messageQueueMerging;
+        internal bool _messageQueueMerging;
         #endregion
 
         #region Events
@@ -2925,129 +2925,6 @@ namespace TelegramBotApi
             };
             return await ApiMethodAsync<bool>("setPassportDataErrors", args);
         }
-        #endregion
-
-        #region Custom Extensions
-        #region Message Queue
-        /// <summary>
-        /// Sends a text message with a queue. Using this method you should never hit 429-Errors (Too many requests).
-        /// If you do, please open a GitHub issue.
-        /// Note that the parameters <paramref name="disableWebPagePreview"/> and <paramref name="disableNotification"/>
-        /// will be overridden by the last merged message, if you enable message merging. If you want to use this method to send messages, 
-        /// you need to call the <see cref="StartQueue(ParseMode, bool)"/> method to start it.
-        /// </summary>
-        /// <param name="chatId">The id or channel username of the chat to send the message to</param>
-        /// <param name="text">The text of the message</param>
-        /// <param name="disableWebPagePreview">If this is true, no website preview will be shown</param>
-        /// <param name="disableNotification">If this is true, users will not receive a notification or a silent one for this message</param>
-        /// <param name="replyToMessageId">The message id of the message to reply to in this chat, if any</param>
-        /// <param name="replyMarkup">A <see cref="ReplyMarkupBase"/>.</param>
-        public void SendMessageWithQueue(ChatId chatId, string text,
-            bool disableWebPagePreview = false, bool disableNotification = false, int replyToMessageId = -1,
-            ReplyMarkupBase replyMarkup = null)
-        {
-            if (_messageQueue.ContainsKey(chatId))
-                _messageQueue[chatId].Enqueue(new QueuedMessage(chatId, text, disableWebPagePreview, disableNotification, replyToMessageId, replyMarkup));
-
-            else _messageQueue.Add(chatId, new Queue<QueuedMessage>(new[] { new QueuedMessage(chatId, text, disableWebPagePreview, disableNotification, replyToMessageId, replyMarkup) }));
-        }
-
-        /// <summary>
-        /// Start the message queue. Messages enqueued by <see cref="SendMessageWithQueue(ChatId, string, bool, bool, int, ReplyMarkupBase)"/> will only be sent after this method was called.
-        /// </summary>
-        /// <param name="parseMode">All messages that are enqueued with <see cref="SendMessageWithQueue(ChatId, string, bool, bool, int, ReplyMarkupBase)"/> will use this ParseMode.</param>
-        /// <param name="mergeMessages">If this is true, multiple queued messages can be merged into one, seperated by two newlines, for more efficient message sending. Note that messages having a replyToMessageId or replyMarkup will never be merged.</param>
-        public void StartQueue(ParseMode parseMode, bool mergeMessages = true)
-        {
-            if (IsMessageQueueing) return;
-
-            IsMessageQueueing = true;
-            _messageQueueParseMode = parseMode;
-            _messageQueueMerging = mergeMessages;
-            _messageQueueThread = new Thread(MessageQueue);
-            _messageQueueThread.Start();
-        }
-
-        /// <summary>
-        /// Stop the message queue. Messages enqueued by <see cref="SendMessageWithQueue(ChatId, string, bool, bool, int, ReplyMarkupBase)"/> will no longer be sent. The current queue will be emptied.
-        /// </summary>
-        public void StopQueue()
-        {
-            if (!IsMessageQueueing) return;
-
-            IsMessageQueueing = false;
-            _messageQueue.Clear();
-            _messageQueueTimeout.Clear();
-        }
-
-        private void MessageQueue()
-        {
-            while (IsMessageQueueing)
-            {
-                var chatIds = _messageQueue.Keys.ToList().Where(x => !_messageQueueTimeout.ContainsKey(x));
-                foreach (var chatId in chatIds)
-                {
-                    var queue = _messageQueue[chatId];
-                    string final = "";
-                    bool byteMax = false;
-                    int i = 0;
-
-                    bool disableWebPagePreview = false;
-                    bool disableNotification = false;
-                    int replyToMessageId = -1;
-                    ReplyMarkupBase replyMarkup = null;
-
-                    while (!byteMax && queue.Count > 0 && (_messageQueueMerging || i == 0))
-                    {
-                        i++;
-                        var m = queue.Peek();
-                        if (i > 1 &&
-                            ((replyToMessageId != -1 || m.ReplyToMessageId != -1) ||
-                            replyMarkup != null || m.ReplyMarkup != null))
-                            break;
-
-                        var temp = final + m.Text + Environment.NewLine + Environment.NewLine;
-
-                        if (Encoding.UTF8.GetByteCount(temp) > 512)
-                        {
-                            if (i > 1)
-                            {
-                                break; // we already have at least one message and yet it's below 512 bytes, so send that and keep this message for the next time.
-                            }
-                            else
-                            {
-                                _messageQueueTimeout.Add(chatId, 3); // this is the first message and it's over 512 bytes, so send it and add some additional timeout.
-                                byteMax = true;
-                            }
-                        }
-                        queue.Dequeue(); //remove the message, we are sending it.
-                        final += m.Text + Environment.NewLine + Environment.NewLine;
-                        disableWebPagePreview = m.DisableWebPagePreview;
-                        disableNotification = m.DisableNotification;
-                        replyToMessageId = m.ReplyToMessageId;
-                        replyMarkup = m.ReplyMarkup;
-                    }
-
-                    if (!IsMessageQueueing) return;
-
-                    if (!string.IsNullOrEmpty(final))
-                    {
-                        SendMessage(chatId, final, _messageQueueParseMode, disableWebPagePreview, disableNotification, replyToMessageId, replyMarkup);
-                    }
-
-                    if (queue.Count == 0) _messageQueue.Remove(chatId);
-                }
-                if (!IsMessageQueueing) return;
-                foreach (var timeout in _messageQueueTimeout.Keys.ToList())
-                {
-                    if (!IsMessageQueueing) return;
-                    _messageQueueTimeout[timeout]--;
-                    if (_messageQueueTimeout[timeout] == 0) _messageQueueTimeout.Remove(timeout);
-                }
-                Thread.Sleep(4000);
-            }
-        }
-        #endregion
         #endregion
     }
 }

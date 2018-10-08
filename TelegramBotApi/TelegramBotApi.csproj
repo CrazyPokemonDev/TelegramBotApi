@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\FormattedTextExtraction\FormattedTextExtraction.cs" />
     <Compile Include="Enums\ChatAction.cs" />
     <Compile Include="Enums\ChatMemberStatus.cs" />
     <Compile Include="Enums\ChatType.cs" />
@@ -56,6 +57,8 @@
     <Compile Include="Enums\MessageType.cs" />
     <Compile Include="Enums\ParseMode.cs" />
     <Compile Include="Enums\UpdateType.cs" />
+    <Compile Include="Extensions\MessageQueueing\MessageQueueing.cs" />
+    <Compile Include="Extensions\FormattedTextValidation\FormattedTextValidation.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Helpers\TimeoutHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,6 +138,7 @@
     <Compile Include="Types\Payment\ShippingQuery.cs" />
     <Compile Include="Types\Payment\SuccessfulPayment.cs" />
     <Compile Include="Types\PhotoSize.cs" />
+    <Compile Include="Types\QueuedMessage.cs" />
     <Compile Include="Types\ResponseParameters.cs" />
     <Compile Include="Types\Sticker.cs" />
     <Compile Include="Types\StickerSet.cs" />

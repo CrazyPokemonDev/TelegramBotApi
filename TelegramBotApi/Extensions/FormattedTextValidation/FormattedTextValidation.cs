@@ -11,7 +11,7 @@ namespace TelegramBotApi.Extensions.FormattedTextValidation
     {
         #region HTML
         /// <summary>
-        /// Validates whether the given text is correctly HTML-formatted and can be sent with <see cref="ParseMode.Html"/>
+        /// Validates whether the given text is correctly HTML-formatted and can be sent with <see cref="ParseMode.Html"/>. Calling this method will not result in an API call.
         /// </summary>
         /// <param name="str">The string for which the HTML-formatting is validated</param>
         /// <returns>Whether this string is correctly HTML-formatted and can be sent with <see cref="ParseMode.Html"/></returns>

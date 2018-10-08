@@ -10,7 +10,7 @@ using TelegramBotApi.Types.Markup;
 namespace TelegramBotApi.Extensions.MessageQueueing
 {
     /// <summary>
-    /// Custom extension class for <see cref="TelegramBot"/>, implementation of a basic message queue to avoid hitting 429-Errors (Too many requests)
+    /// Custom extension class, implements a basic message queue to avoid hitting 429-Errors (Too many requests)
     /// </summary>
     public static class MessageQueueing
     {

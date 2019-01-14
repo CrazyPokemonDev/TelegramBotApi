@@ -263,10 +263,25 @@ namespace TelegramBotApi
             {
                 form.Add(new StringContent(Serialize(kvp.Value)), kvp.Key);
             }
-            string url = ApiUrl + method;
-            var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
-            request.SetTimeout(TimeSpan.FromSeconds(timeout));
-            return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+            if (multipartFile.FileStream != null)
+            {
+                form.Add(new StreamContent(multipartFile.FileStream), multipartObjectKey, multipartFile.FileName);
+                string url = ApiUrl + method;
+                var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
+                request.SetTimeout(TimeSpan.FromSeconds(timeout));
+                return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+            }
+            else
+            {
+                using (var fs = System.IO.File.OpenRead(multipartFile.Path))
+                {
+                    form.Add(new StreamContent(fs), multipartObjectKey, multipartFile.FileName);
+                    string url = ApiUrl + method;
+                    var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
+                    request.SetTimeout(TimeSpan.FromSeconds(timeout));
+                    return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+                }
+            }
         }
 
         private async Task<T> ApiMethodManyFileAsync<T>(string method, Dictionary<string, object> args, int timeout = 100)

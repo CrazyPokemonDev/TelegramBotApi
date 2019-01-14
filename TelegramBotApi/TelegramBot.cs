@@ -203,11 +203,17 @@ namespace TelegramBotApi
         /// <summary>
         /// Marks all pending updates as read. Don't use this while the bot is receiving.
         /// </summary>
-        public void ClearUpdates()
+        public void ClearUpdates() => ClearUpdatesAsync().Wait();
+
+        /// <summary>
+        /// Marks all pending updates as read. Don't use this while the bot is receiving.
+        /// </summary>
+        /// <returns></returns>
+        public async Task ClearUpdatesAsync()
         {
             if (IsReceiving) throw new Exception("Cannot clear updates while bot is receiving");
-            Update[] updates = GetUpdatesAsync(timeout: 0, offset: -1).Result;
-            if (updates.Length > 0) GetUpdatesAsync(timeout: 0, offset: updates[0].Id + 1).Wait();
+            Update[] updates = await GetUpdatesAsync(timeout: 0, offset: -1);
+            if (updates.Length > 0) await GetUpdatesAsync(timeout: 0, offset: updates[0].Id + 1);
         }
         #endregion
 

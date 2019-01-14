@@ -11370,18 +11370,18 @@ references:
   commentId: T:TelegramBotApi.Types.Upload.SendFileMultipart
   fullName: TelegramBotApi.Types.Upload.SendFileMultipart
   nameWithType: SendFileMultipart
-- uid: TelegramBotApi.Types.Upload.SendFileMultipart.#ctor(System.IO.Stream)
-  name: SendFileMultipart(Stream)
-  href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart__ctor_System_IO_Stream_
-  commentId: M:TelegramBotApi.Types.Upload.SendFileMultipart.#ctor(System.IO.Stream)
-  fullName: TelegramBotApi.Types.Upload.SendFileMultipart.SendFileMultipart(System.IO.Stream)
-  nameWithType: SendFileMultipart.SendFileMultipart(Stream)
-- uid: TelegramBotApi.Types.Upload.SendFileMultipart.#ctor(System.String)
-  name: SendFileMultipart(String)
-  href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart__ctor_System_String_
-  commentId: M:TelegramBotApi.Types.Upload.SendFileMultipart.#ctor(System.String)
-  fullName: TelegramBotApi.Types.Upload.SendFileMultipart.SendFileMultipart(System.String)
-  nameWithType: SendFileMultipart.SendFileMultipart(String)
+- uid: TelegramBotApi.Types.Upload.SendFileMultipart.#ctor(System.IO.Stream,System.String)
+  name: SendFileMultipart(Stream, String)
+  href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart__ctor_System_IO_Stream_System_String_
+  commentId: M:TelegramBotApi.Types.Upload.SendFileMultipart.#ctor(System.IO.Stream,System.String)
+  fullName: TelegramBotApi.Types.Upload.SendFileMultipart.SendFileMultipart(System.IO.Stream, System.String)
+  nameWithType: SendFileMultipart.SendFileMultipart(Stream, String)
+- uid: TelegramBotApi.Types.Upload.SendFileMultipart.#ctor(System.String,System.String)
+  name: SendFileMultipart(String, String)
+  href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart__ctor_System_String_System_String_
+  commentId: M:TelegramBotApi.Types.Upload.SendFileMultipart.#ctor(System.String,System.String)
+  fullName: TelegramBotApi.Types.Upload.SendFileMultipart.SendFileMultipart(System.String, System.String)
+  nameWithType: SendFileMultipart.SendFileMultipart(String, String)
 - uid: TelegramBotApi.Types.Upload.SendFileMultipart.#ctor*
   name: SendFileMultipart
   href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart__ctor_
@@ -11389,6 +11389,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Upload.SendFileMultipart.SendFileMultipart
   nameWithType: SendFileMultipart.SendFileMultipart
+- uid: TelegramBotApi.Types.Upload.SendFileMultipart.FileName
+  name: FileName
+  href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart_FileName
+  commentId: P:TelegramBotApi.Types.Upload.SendFileMultipart.FileName
+  fullName: TelegramBotApi.Types.Upload.SendFileMultipart.FileName
+  nameWithType: SendFileMultipart.FileName
+- uid: TelegramBotApi.Types.Upload.SendFileMultipart.FileName*
+  name: FileName
+  href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart_FileName_
+  commentId: Overload:TelegramBotApi.Types.Upload.SendFileMultipart.FileName
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.SendFileMultipart.FileName
+  nameWithType: SendFileMultipart.FileName
 - uid: TelegramBotApi.Types.Upload.SendFileMultipart.FileStream
   name: FileStream
   href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart_FileStream
@@ -11402,6 +11415,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.Types.Upload.SendFileMultipart.FileStream
   nameWithType: SendFileMultipart.FileStream
+- uid: TelegramBotApi.Types.Upload.SendFileMultipart.Path
+  name: Path
+  href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart_Path
+  commentId: P:TelegramBotApi.Types.Upload.SendFileMultipart.Path
+  fullName: TelegramBotApi.Types.Upload.SendFileMultipart.Path
+  nameWithType: SendFileMultipart.Path
+- uid: TelegramBotApi.Types.Upload.SendFileMultipart.Path*
+  name: Path
+  href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart_Path_
+  commentId: Overload:TelegramBotApi.Types.Upload.SendFileMultipart.Path
+  isSpec: "True"
+  fullName: TelegramBotApi.Types.Upload.SendFileMultipart.Path
+  nameWithType: SendFileMultipart.Path
 - uid: TelegramBotApi.Types.Upload.SendFileMultipart.Type
   name: Type
   href: api/TelegramBotApi.Types.Upload.SendFileMultipart.html#TelegramBotApi_Types_Upload_SendFileMultipart_Type

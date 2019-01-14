@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json;
 using TelegramBotApi;
 
 namespace TelegramBotApiUnitTest.Integ
@@ -13,6 +15,7 @@ namespace TelegramBotApiUnitTest.Integ
         [TestInitialize]
         public void Setup()
         {
+            Config = JsonConvert.DeserializeObject<IntegrationConfiguration>(File.ReadAllText("IntegrationConfig.json"));
             Bot = new TelegramBot(Config.BotToken);
         }
 

@@ -55,7 +55,7 @@ namespace TelegramBotApi
         private HttpClient httpClient = new HttpClient(new TimeoutHandler { InnerHandler = new HttpClientHandler() }) { Timeout = Timeout.InfiniteTimeSpan };
 
         /// <summary>
-        /// Whether the message queue for <see cref="SendMessageWithQueue(ChatId, string, bool, bool, int, ReplyMarkupBase)"/> is enabled.
+        /// Whether the message queue is enabled.
         /// </summary>
         public bool IsMessageQueueing { get; internal set; } = false;
 
@@ -264,7 +264,7 @@ namespace TelegramBotApi
                 }
             var request = new HttpRequestMessage(HttpMethod.Get, url);
             request.SetTimeout(TimeSpan.FromSeconds(timeout));
-            HttpResponseMessage response = await httpClient.SendAsync(request);
+            HttpResponseMessage response = await httpClient.SendAsync(request).ConfigureAwait(false);
             return DeserializeResponse<T>(response);
         }
 
@@ -284,7 +284,7 @@ namespace TelegramBotApi
                 string url = ApiUrl + method;
                 var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
                 request.SetTimeout(TimeSpan.FromSeconds(timeout));
-                return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+                return DeserializeResponse<T>(await (await httpClient.SendAsync(request).ConfigureAwait(false)).Content.ReadAsStringAsync());
             }
             else
             {
@@ -294,7 +294,7 @@ namespace TelegramBotApi
                     string url = ApiUrl + method;
                     var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
                     request.SetTimeout(TimeSpan.FromSeconds(timeout));
-                    return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+                    return DeserializeResponse<T>(await (await httpClient.SendAsync(request).ConfigureAwait(false)).Content.ReadAsStringAsync());
                 }
             }
         }
@@ -322,7 +322,7 @@ namespace TelegramBotApi
             string url = ApiUrl + method;
             var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
             request.SetTimeout(TimeSpan.FromSeconds(timeout));
-            return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+            return DeserializeResponse<T>(await (await httpClient.SendAsync(request)).Content.ReadAsStringAsync());
         }
 
         private string Serialize(object obj)
@@ -473,11 +473,33 @@ namespace TelegramBotApi
         }
         #endregion
         #region Sending messages
+        /// <summary>
+        /// Obsolete Method, please use <see cref="SendMessage(ChatId, string, ParseMode, bool, bool, int, ReplyMarkupBase)"/>
+        /// </summary>
+        /// <param name="chatId"></param>
+        /// <param name="text"></param>
+        /// <param name="parseMode"></param>
+        /// <param name="disableWebPagePreview"></param>
+        /// <param name="disableNotification"></param>
+        /// <param name="replyToMessageId"></param>
+        /// <param name="replyMarkup"></param>
+        /// <returns></returns>
         [Obsolete("Please use the SendMessage() method instead", true)]
         public Message SendTextMessage(ChatId chatId, string text, ParseMode parseMode = ParseMode.None,
             bool disableWebPagePreview = false, bool disableNotification = false, int replyToMessageId = -1,
             ReplyMarkupBase replyMarkup = null) => null;
 
+        /// <summary>
+        /// Obsolete Method, please use <see cref="SendMessageAsync(ChatId, string, ParseMode, bool, bool, int, ReplyMarkupBase)"/>
+        /// </summary>
+        /// <param name="chatId"></param>
+        /// <param name="text"></param>
+        /// <param name="parseMode"></param>
+        /// <param name="disableWebPagePreview"></param>
+        /// <param name="disableNotification"></param>
+        /// <param name="replyToMessageId"></param>
+        /// <param name="replyMarkup"></param>
+        /// <returns></returns>
         [Obsolete("Please use the SendMessageAsync() method instead", true)]
         public Task<Message> SendTextMessageAsync(ChatId chatId, string text, ParseMode parseMode = ParseMode.None,
             bool disableWebPagePreview = false, bool disableNotification = false, int replyToMessageId = -1,
@@ -732,7 +754,7 @@ namespace TelegramBotApi
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public Message SendVideo(ChatId chatId, SendFile video, int duration = 0, int width = 0, int height = 0, SendFile thumb = null,
+        public Message SendVideo(ChatId chatId, SendFile video, int duration = 0, int width = 0, int height = 0, SendFileMultipart thumb = null,
             string caption = null, ParseMode parseMode = ParseMode.None, bool supportsStreaming = false,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
             => SendVideoAsync(chatId, video, duration, width, height, thumb, caption, parseMode, supportsStreaming, disableNotification,
@@ -748,6 +770,7 @@ namespace TelegramBotApi
         /// <param name="duration">Optional. The duration of the video in seconds</param>
         /// <param name="width">Optional. Width of the video</param>
         /// <param name="height">Optional. Height of the video</param>
+        /// <param name="thumb">Thumbnail of the file sent. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail‘s width and height should not exceed 90.</param>
         /// <param name="caption">Optional. Caption for the video message</param>
         /// <param name="parseMode">Optional. Parse mode for the message caption</param>
         /// <param name="supportsStreaming">Pass true if the uploaded video is suitable for streaming</param>
@@ -755,7 +778,7 @@ namespace TelegramBotApi
         /// <param name="replyToMessageId">The message id of the message to reply to, if any</param>
         /// <param name="replyMarkup">The reply markup. Additional interface options.</param>
         /// <returns>The sent message on success</returns>
-        public async Task<Message> SendVideoAsync(ChatId chatId, SendFile video, int duration = 0, int width = 0, int height = 0, SendFile thumb = null,
+        public async Task<Message> SendVideoAsync(ChatId chatId, SendFile video, int duration = 0, int width = 0, int height = 0, SendFileMultipart thumb = null,
             string caption = null, ParseMode parseMode = ParseMode.None, bool supportsStreaming = false,
             bool disableNotification = false, int replyToMessageId = -1, ReplyMarkupBase replyMarkup = null)
         {

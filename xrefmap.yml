@@ -1953,6 +1953,12 @@ references:
   commentId: E:TelegramBotApi.TelegramBot.OnMessageEdited
   fullName: TelegramBotApi.TelegramBot.OnMessageEdited
   nameWithType: TelegramBot.OnMessageEdited
+- uid: TelegramBotApi.TelegramBot.OnPollingError
+  name: OnPollingError
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_OnPollingError
+  commentId: E:TelegramBotApi.TelegramBot.OnPollingError
+  fullName: TelegramBotApi.TelegramBot.OnPollingError
+  nameWithType: TelegramBot.OnPollingError
 - uid: TelegramBotApi.TelegramBot.OnPreCheckoutQuery
   name: OnPreCheckoutQuery
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_OnPreCheckoutQuery

@@ -2431,12 +2431,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendVenueAsync
   nameWithType: TelegramBot.SendVenueAsync
-- uid: TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendVideo(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideo_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendVideo(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFileMultipart,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendVideo(ChatId, SendFile, Int32, Int32, Int32, SendFileMultipart, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideo_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFileMultipart_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFileMultipart,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendVideo(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFileMultipart, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendVideo(ChatId, SendFile, Int32, Int32, Int32, SendFileMultipart, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendVideo*
   name: SendVideo
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideo_
@@ -2444,12 +2444,12 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.SendVideo
   nameWithType: TelegramBot.SendVideo
-- uid: TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  name: SendVideoAsync(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
-  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFile_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
-  commentId: M:TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFile,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  fullName: TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFile, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
-  nameWithType: TelegramBot.SendVideoAsync(ChatId, SendFile, Int32, Int32, Int32, SendFile, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+- uid: TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFileMultipart,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  name: SendVideoAsync(ChatId, SendFile, Int32, Int32, Int32, SendFileMultipart, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoAsync_TelegramBotApi_Types_ChatId_TelegramBotApi_Types_Upload_SendFile_System_Int32_System_Int32_System_Int32_TelegramBotApi_Types_Upload_SendFileMultipart_System_String_TelegramBotApi_Enums_ParseMode_System_Boolean_System_Boolean_System_Int32_TelegramBotApi_Types_Markup_ReplyMarkupBase_
+  commentId: M:TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId,TelegramBotApi.Types.Upload.SendFile,System.Int32,System.Int32,System.Int32,TelegramBotApi.Types.Upload.SendFileMultipart,System.String,TelegramBotApi.Enums.ParseMode,System.Boolean,System.Boolean,System.Int32,TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  fullName: TelegramBotApi.TelegramBot.SendVideoAsync(TelegramBotApi.Types.ChatId, TelegramBotApi.Types.Upload.SendFile, System.Int32, System.Int32, System.Int32, TelegramBotApi.Types.Upload.SendFileMultipart, System.String, TelegramBotApi.Enums.ParseMode, System.Boolean, System.Boolean, System.Int32, TelegramBotApi.Types.Markup.ReplyMarkupBase)
+  nameWithType: TelegramBot.SendVideoAsync(ChatId, SendFile, Int32, Int32, Int32, SendFileMultipart, String, ParseMode, Boolean, Boolean, Int32, ReplyMarkupBase)
 - uid: TelegramBotApi.TelegramBot.SendVideoAsync*
   name: SendVideoAsync
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_SendVideoAsync_

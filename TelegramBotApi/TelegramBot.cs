@@ -264,7 +264,7 @@ namespace TelegramBotApi
                 }
             var request = new HttpRequestMessage(HttpMethod.Get, url);
             request.SetTimeout(TimeSpan.FromSeconds(timeout));
-            HttpResponseMessage response = await httpClient.SendAsync(request);
+            HttpResponseMessage response = await httpClient.SendAsync(request).ConfigureAwait(false);
             return DeserializeResponse<T>(response);
         }
 
@@ -284,7 +284,7 @@ namespace TelegramBotApi
                 string url = ApiUrl + method;
                 var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
                 request.SetTimeout(TimeSpan.FromSeconds(timeout));
-                return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+                return DeserializeResponse<T>(await (await httpClient.SendAsync(request).ConfigureAwait(false)).Content.ReadAsStringAsync());
             }
             else
             {
@@ -294,7 +294,7 @@ namespace TelegramBotApi
                     string url = ApiUrl + method;
                     var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
                     request.SetTimeout(TimeSpan.FromSeconds(timeout));
-                    return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+                    return DeserializeResponse<T>(await (await httpClient.SendAsync(request).ConfigureAwait(false)).Content.ReadAsStringAsync());
                 }
             }
         }
@@ -322,7 +322,7 @@ namespace TelegramBotApi
             string url = ApiUrl + method;
             var request = new HttpRequestMessage(HttpMethod.Post, url) { Content = form };
             request.SetTimeout(TimeSpan.FromSeconds(timeout));
-            return DeserializeResponse<T>(await httpClient.SendAsync(request).Result.Content.ReadAsStringAsync());
+            return DeserializeResponse<T>(await (await httpClient.SendAsync(request)).Content.ReadAsStringAsync());
         }
 
         private string Serialize(object obj)

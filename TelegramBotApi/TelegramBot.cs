@@ -120,6 +120,11 @@ namespace TelegramBotApi
         /// This event will be fired on every pre-checkout query after <see cref="StartReceiving(UpdateType[])"/> has been called
         /// </summary>
         public event EventHandler<PreCheckoutQueryEventArgs> OnPreCheckoutQuery;
+
+        /// <summary>
+        /// This event will be fired if an exception occurs while waiting for updates with <see cref="StartReceiving(UpdateType[])"/>
+        /// </summary>
+        public event EventHandler<Exception> OnPollingError;
         #endregion
         #region Control Methods
         /// <summary>
@@ -144,11 +149,21 @@ namespace TelegramBotApi
 
         private async Task PollAsync(UpdateType[] allowedUpdates)
         {
+            Update[] updates = new Update[100];
             while (IsReceiving)
             {
-                Update[] updates = await GetUpdatesAsync(allowedUpdates, LongPollingTimeout, _lastUpdateReceived + 1);
+                try
+                {
+                    updates = await GetUpdatesAsync(allowedUpdates, LongPollingTimeout, _lastUpdateReceived + 1, 100);
+                }
+                catch (Exception ex)
+                {
+                    OnPollingError.Invoke(this, ex);
+                }
+
                 foreach (Update update in updates)
                 {
+                    if (update == null) continue;
                     _lastUpdateReceived = update.Id;
                     switch (update.Type)
                     {

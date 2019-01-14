@@ -44,24 +44,30 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.2.1\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Integ\IntegrationConfiguration.cs" />
+    <Compile Include="Integ\IntegTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="IntegrationConfig.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Available Methods\" />
-    <Folder Include="Games\" />
-    <Folder Include="Getting Updates\" />
-    <Folder Include="Inline mode\" />
-    <Folder Include="Payment\" />
-    <Folder Include="Stickers\" />
-    <Folder Include="Telegram Passport\" />
-    <Folder Include="Updating Messages\" />
+    <Folder Include="Integ\Available Methods\" />
+    <Folder Include="Integ\Games\" />
+    <Folder Include="Integ\Getting Updates\" />
+    <Folder Include="Integ\Inline mode\" />
+    <Folder Include="Integ\Payment\" />
+    <Folder Include="Integ\Stickers\" />
+    <Folder Include="Integ\Telegram Passport\" />
+    <Folder Include="Integ\Updating Messages\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TelegramBotApi\TelegramBotApi.csproj">

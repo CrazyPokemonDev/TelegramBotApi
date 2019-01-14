@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Crazypokemondev.TelegramBotApi</id>
-    <version>1.0.14</version>
+    <version>1.0.15</version>
     <title>TelegramBotApi</title>
     <authors>Olfi01, Olgabrezel, jeffffc</authors>
     <owners>Olfi01, Olgabrezel, jeffffc</owners>
@@ -12,7 +12,7 @@
     <copyright></copyright>
     <tags>Telegram Bot TelegramBot Telegram.Bot API BotApi TelegramBotApi</tags>
 	<dependencies>
-		<dependency id="Newtonsoft.Json" version="11.0.2"/>
+		<dependency id="Newtonsoft.Json" version="12.0.1"/>
 	</dependencies>
   </metadata>
 </package>

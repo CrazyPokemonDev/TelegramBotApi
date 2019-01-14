@@ -1030,6 +1030,19 @@ references:
   isSpec: "True"
   fullName: TelegramBotApi.TelegramBot.ClearUpdates
   nameWithType: TelegramBot.ClearUpdates
+- uid: TelegramBotApi.TelegramBot.ClearUpdatesAsync
+  name: ClearUpdatesAsync()
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_ClearUpdatesAsync
+  commentId: M:TelegramBotApi.TelegramBot.ClearUpdatesAsync
+  fullName: TelegramBotApi.TelegramBot.ClearUpdatesAsync()
+  nameWithType: TelegramBot.ClearUpdatesAsync()
+- uid: TelegramBotApi.TelegramBot.ClearUpdatesAsync*
+  name: ClearUpdatesAsync
+  href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_ClearUpdatesAsync_
+  commentId: Overload:TelegramBotApi.TelegramBot.ClearUpdatesAsync
+  isSpec: "True"
+  fullName: TelegramBotApi.TelegramBot.ClearUpdatesAsync
+  nameWithType: TelegramBot.ClearUpdatesAsync
 - uid: TelegramBotApi.TelegramBot.CreateNewStickerSet(System.Int32,System.String,System.String,TelegramBotApi.Types.Upload.SendFile,System.String,System.Boolean,TelegramBotApi.Types.MaskPosition)
   name: CreateNewStickerSet(Int32, String, String, SendFile, String, Boolean, MaskPosition)
   href: api/TelegramBotApi.TelegramBot.html#TelegramBotApi_TelegramBot_CreateNewStickerSet_System_Int32_System_String_System_String_TelegramBotApi_Types_Upload_SendFile_System_String_System_Boolean_TelegramBotApi_Types_MaskPosition_

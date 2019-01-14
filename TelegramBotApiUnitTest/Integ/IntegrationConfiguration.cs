@@ -11,15 +11,15 @@ namespace TelegramBotApiUnitTest.Integ
     public  class IntegrationConfiguration
     {
         [JsonProperty(PropertyName = "bot_token")]
-        public string BotToken { get; }
+        public string BotToken { get; set; }
 
         [JsonProperty(PropertyName = "admin_user_id")]
-        public int AdminUserId { get; }
+        public int AdminUserId { get; set; }
 
         [JsonProperty(PropertyName = "non_admin_user_id")]
-        public int NonAdminUserId { get; }
+        public int NonAdminUserId { get; set; }
 
         [JsonProperty(PropertyName = "testing_group_id")]
-        public long TestingGroupId { get; }
+        public long TestingGroupId { get; set; }
     }
 }

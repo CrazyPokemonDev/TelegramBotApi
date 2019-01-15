@@ -46,7 +46,11 @@ after_build:
             git commit -m "Auto Generated Docs" -q 2>&1 | % { $_.ToString() } 
             git push origin gh-pages -q --porcelain 2>&1 | % { $_.ToString() } 
         }
-        
+
+test:
+  assemblies:
+    - '**\TelegramBotApiUnitTest\**\*.dll'
+
 artifacts:
   - path: '**\*.nupkg'
     name: Nuget
@@ -59,4 +63,4 @@ deploy:
     api_key:
       secure: oA0jnbpx2uv2Hkxzd4PegxHtKf0/tjrHLrSiMC+aJ7Mvi2elT276fqNYzGD0+G/w
     skip_symbols: false
-    artifact: /.*\.nupkg/
+    artifact: /Crazypokemondev\.TelegramBotApi\..*\.nupkg/

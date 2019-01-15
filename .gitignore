@@ -1,4 +1,5 @@
 ## Manual gitignore part
+IntegrationConfiguration.json
 
 # Configuration files for integ tests
 IntegrationConfig.json
